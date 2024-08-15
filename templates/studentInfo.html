@@ -1,0 +1,51 @@
+  <!-- {% load i18n %} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoinUS!</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/studentInfo.css">
+    <link href="/static/images/logo.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+ <main id="main">
+     
+        <div class="title-container">
+        <img src="/static/images/logo.png" alt="joius-logo" class="joinus-logo">
+        <a href="/templates/index.html"><div class="joinus-title">JoinUS!</div></a>
+    </div> 
+   
+    <div class="progress-container">
+        <div class="first-progress progress">1</div>
+        <img src="/static/images/circles.png" alt="" class="circle">
+        <div class="second-progress progress">2</div>
+    </div>
+    
+    <form action="#">
+        <div id="all-container">
+            <a href="#"><div class="search-password">비밀번호 찾기</div></a>
+            <div class="info-container"> 
+
+            <div class="pw-container info">
+                <p class="password-text text">비밀번호</p>
+                <input type="password" class="password pw" placeholder="비밀번호를 입력해주세요">
+            </div>
+
+            <div class="recheck-container info">
+                <p class="recheck-text text" >비밀번호 재확인</p>
+                <input type="password" class="recheck-password pw" placeholder="비밀번호를 한번 더 입력해주세요.">
+            </div>
+        </div>
+        </div>
+
+        <div class="button-wrapper">
+            <button class="next-button" onclick="window.location.href='#'">다음</button>
+        </div>
+    </form>
+     
+
+ </main>
+</body>
+</html>
