@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-15 18:49+0900\n"
+"POT-Creation-Date: 2024-08-16 02:34+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: templates/index.html:32
-msgid "아이디 찾기"
+#: joinus/settings.py:105
+msgid "Korean"
 msgstr ""
+
+#: joinus/settings.py:106
+msgid "English"
+msgstr ""
+
+#: joinus/settings.py:107
+msgid "Spanish"
+msgstr ""
+
+#: templates/index.html:30
+msgid "아이디 작성하기"
+msgstr "Type Id"
+
+#: templates/index.html:31
+msgid "비밀번호 작성하기"
+msgstr "Type Password"
+
+#: templates/index.html:34
+msgid "아이디 찾기"
+msgstr "Forgot id"
+
+#: templates/index.html:36
+msgid "비밀번호 찾기"
+msgstr "Forgot password"
+
+#: templates/index.html:40
+msgid "로그인"
+msgstr "Sign in"
 
 #: venv/lib/python3.12/site-packages/django/contrib/messages/apps.py:16
 msgid "Messages"
