@@ -1,0 +1,56 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoinUS!</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link href="/static/images/logo.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+    <section id="section">
+        <div class="all-container">
+            <div class="title-container">
+                <img src="/static/images/logo.png" alt="joinus" class="joinus-logo">
+                <div class="joinus-title">JoinUS!</div>
+            </div>
+            
+            <div class="language-container">
+                <div class="korean language lan">한국어</div>
+                <div class="contour language">|</div>
+                <div class="english language lan">영어</div>
+            </div>
+
+            <form action="#" id="login-form" class="login-form">
+                <div class="input-group">
+                <input type="text" id="user-id" class="user-id field" placeholder="아이디 작성하기" required>
+                <input type="password" id="user-password" class="user-password field" placeholder="비밀번호 작성하기" required>
+                </div>
+                <div class="options">
+                    <a href="#" class="search-id option">{%trans "아이디 찾기" %}</a>
+                    <span class="contour2 option">|</span>
+                    <a href="#" class="search-password option">비밀번호 찾기</a>
+                </div>
+
+                <div class="button-wrapper">
+                    <button type="submit" id="login-button" class="login-button">로그인</button>
+                </div>
+            </form>
+            
+            <div class="lines">
+                <hr class="left-line line">
+                <div class="guide-message">로그인 및 회원가입 하기</div>
+                <hr class="right-line line">
+            </div>
+            
+            <a href="#"><div class="googlelogin-container">
+                <img src="/static/images/google-logo.png" alt="google" class="google-logo google">
+                <div class="google-login google">구글 계정으로 로그인</div>
+            </div>
+        </a>
+        </div>
+    </section>
+</body>
+</html>
