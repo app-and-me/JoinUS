@@ -26,12 +26,10 @@
 
             <form action="#" id="login-form" class="login-form">
                 <div class="input-group">
-                    <!-- placeholder 내부에는 trans태그 사용 불가 -> trans 필터 쓸 것  -->
-                    <!-- trans filter example : {{ "Hello, World!"|trans }} -->
-                <input type="text" id="user-id" class="user-id field"  placeholder="{{ '아이디작성하기'|trans }}" required>
-                <input type="password" id="user-password" class="user-password field"  placeholder="{{ '비밀번호 작성하기'|trans }}" required>
+                    
+                <input type="text" id="user-id" class="user-id field"  placeholder="{% trans '아이디 작성하기' %}" required>
+                <input type="password" id="user-password" class="user-password field"  placeholder="{%trans '비밀번호 작성하기' %}" required>
                 </div>
-                 
                 <div class="options">
                     <a href="#" class="search-id option">{%trans "아이디 찾기" %}</a>
                     <span class="contour2 option">|</span>
