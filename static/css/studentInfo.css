@@ -1,6 +1,6 @@
 body {
     background: #F5F6FA;
-
+    
 }
 
 #main {
@@ -14,7 +14,6 @@ body {
     display: flex;
     justify-content: center;
     column-gap: 10px;
-    margin-bottom: 3.97rem;
     margin: 12.03rem 0 3.97rem 0;
 }
 
@@ -42,11 +41,11 @@ body {
     text-align: center;
 }
 
-.first-progress {
-    color: #000;
+.second-progress {
+    color: #fff;
 }
 
-.second-progress {
+.first-progress {
     color: var(--color1);
     background-color: #fff;
 }
@@ -58,77 +57,50 @@ body {
     margin-bottom: 69px;
 }
 
-#all-container {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: flex-end;
-
-}
-
-.search-password {
-    color: var(--color6);
-    font-size: 0.75rem;
-    font-weight: 600;
-    margin-bottom: 0.63rem;
-}
-
-.info-container {
-    display: flex;
-    flex-direction: column;
-    row-gap: 3.63rem;
+#table {
+    border-collapse: collapse;  
     width: 53.125rem;
-    height: 10.625rem;
+    height: 26.5625rem;
     border-radius: 0.625rem;
     background: #FFF;
-    box-shadow: 1px 4px 10px 0px rgba(170, 178, 200, 0.45);
-    
+    box-shadow: var(--shadow3);
+    border-collapse: collapse;
 }
-
-.pw-container {
-    column-gap: 7rem;
+td{
+    border-bottom: 1px solid #eaeaed;
 }
-
-.recheck-container {
-    column-gap: 2.7rem;
-}
-
-.info {
-    display: flex;
-    margin-left: 3.87rem;
-}
-
-.text {
+.td{
     color: var(--color5);
     font-size: var(--font-size5);
     font-weight: 200;
+    padding-left: 3.88rem;
 }
 
-.pw {
-    font-size: var(--font-size5);
+.info {
+    width: 38rem;
     border: none;
     outline: none;
-    max-width: 25rem;
-    width: 100%;
+    padding: 8px;
+    font-size: 1.45rem;
 }
 
 input::placeholder {
+    height: 20rem;
+    width: 20rem;
     color: #AAB2C8;
-    font-size: var(--font-size5);
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
-.pw-container {
-    margin-top: 1.75rem;
-}
 
-.button-wrapper{
+.button-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10rem 0 7.87rem 0;
-    
+    margin: 5.25rem 0 7.87rem 0;
+
 }
+
 .next-button {
     width: 21.875rem;
     height: 3.375rem;
