@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root{
+     
+    /* color */
+    --color1: #0047FF;
+    --color:2 #1F64FF;;
+    --color3: #ACCDFF;
+    --color4: #000;
+    --color5: #002;
+    --color6: #CBCBCB;
+    --color7: #AEAEAE;
+    --color8: #DA4948;
+    --color9: rgba(172, 205, 255, 0.57);
+    --color10: linear-gradient(226deg, rgba(66, 133, 244, 0.02) 0.01%, rgba(66, 133, 244, 0.02) 0.02%, rgba(37, 106, 249, 0.04) 0.03%, rgba(0, 71, 255, 0.08) 95.73%);
+
+    /* font size */
+    --font-size1: 0.875rem;
+    --font-size2: 1rem;
+    --font-size3: 1.125rem;
+    --font-size4: 1.25rem;
+    --font-size5: 1.5rem;
+    --font-size6: 2.25rem;
+     
+
+    /* box shadow */
+    --shadow1: 0px 2px 28.7px 0px rgba(0, 0, 0, 0.06);
+    --shadow2: 1px 4px 10px 0px rgba(31, 100, 255, 0.25);
+    --shadow3: 1px 4px 10px 0px rgba(170, 178, 200, 0.45);
+    
+    
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard-Regular';
+}
+
+img{
+    max-width: 100%;
+}
+
+ul,
+ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+html,
+body{
+    width: 100%;
+}
+
+body>header{
+    position: absolute;  
+    top: 0;
+    right: 0;
+    left: 0;
+}

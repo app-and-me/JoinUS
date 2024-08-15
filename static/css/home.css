@@ -1,0 +1,135 @@
+body {
+    /* overflow: hidden; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 88px 300px 0px 300px;
+}
+
+.mypage {
+    width: 34px;
+    height: 34px;
+    background-color: #0047FF;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mypage-img {
+    height: 22px;
+    width: 22px;
+}
+
+
+/* 메인 */
+main {
+    margin-top: 268px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+/* 동아리 */
+.section-club {
+    width: 68%;
+    /* 임시 */
+    min-width: 800px;
+    height: 8.5625rem;
+    border-bottom: 2px #F1F1F1 solid;
+}
+
+#club-container {
+    display: flex;
+      
+}
+
+#club-text {
+    /* 수정 필요 */
+    margin-bottom: 33px;
+    color: #002;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#club-container>div {
+    display: flex;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+#club-container>:first-child {
+    border-bottom: 2px #0047FF solid;
+}
+
+/* 검색바 */
+.search-container {
+    background-color: #F5F6FA;
+    padding: 13px 17px;
+    border-radius: 10px;
+    /* 반응형 */
+    min-width: 400px;
+    width: 100%;
+    max-width: 679px;
+    display: flex;
+    /* align-items: center; */
+    box-sizing: border-box;
+    column-gap: 17px;
+}
+
+.search-container>img {
+    width: 16px;
+    height: 16.014px;
+}
+
+
+#search-bar {
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    flex-grow: 1;
+    /* 정해진 너비에 여유 공간이 있을 때 확장하자 (입력창 커짐) */
+}
+
+
+/* 아티클 임시 */
+.article1, .article {
+    border-radius: 10px;
+    background: #F5F6FA;
+
+    display: flex;
+    width: 1290px;
+    height: 110px;
+    padding: 28px 50px 28px 20px;
+}
+
+.club-list {
+    max-height: 585px;
+    /* 고정된 높이 설정 */
+    overflow-y: auto;
+    /* 스크롤 */
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.club-list::-webkit-scrollbar {
+    border-radius: 10px;
+    background: #F5F6FA;
+    width: 11px;
+    height: 692px;
+}
+
+.club-list::-webkit-scrollbar-thumb {
+    background-color: #E1E2E9;
+    border-radius: 10px;
+}
