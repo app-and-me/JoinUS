@@ -1,0 +1,149 @@
+body {
+    background: #F5F6FA;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin: 192.54px 0 110px 0;
+}
+
+.joinus-title {
+    color: #000;
+    font-size: 3.05419rem;
+    font-weight: 800;
+}
+
+.progress-container {
+    display: flex;
+    column-gap: 10px;
+}
+
+.progress {
+    display: flex;
+    /* 자식 요소들을 플렉스 컨테이너로 설정 */
+    justify-content: center;
+    /* 가로 중앙 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    padding: 13px;
+    font-size: 1.25rem;
+    width: 2.32719rem;
+    height: 2.3125rem;
+    border-radius: 5.1875rem;
+    background: #1F64FF;
+    text-align: center;
+}
+
+.first-progress {
+    color: #000;
+}
+
+.second-progress {
+    color: var(--color1);
+    background-color: #fff;
+}
+
+.circle {
+    width: 18px;
+    height: 4.5px;
+    margin-top: 15px;
+    margin-bottom: 69px;
+}
+
+#all-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.search-password {
+    color: var(--color6);
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.63rem;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.63rem;
+    width: 53.125rem;
+    height: 10.625rem;
+    border-radius: 0.625rem;
+    background: #FFF;
+    box-shadow: 1px 4px 10px 0px rgba(170, 178, 200, 0.45);
+    
+}
+
+.pw-container {
+    column-gap: 7rem;
+}
+
+.recheck-container {
+    column-gap: 2.7rem;
+}
+
+.info {
+    display: flex;
+    margin-left: 3.87rem;
+}
+
+.text {
+    color: var(--color5);
+    font-size: var(--font-size5);
+    font-weight: 200;
+}
+
+.pw {
+    border: none;
+    outline: none;
+    max-width: 25rem;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #AAB2C8;
+    font-size: var(--font-size5);
+    font-weight: 600;
+}
+
+.pw-container {
+    margin-top: 1.75rem;
+}
+
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 0 7.87rem 0;
+    
+}
+.next-button {
+    width: 21.875rem;
+    height: 3.375rem;
+    border: none;
+    border-radius: 0.625rem;
+    background: var(--color2);
+    box-shadow: var(--shadow2);
+    text-align: center;
+    color: #FFF;
+    font-size: var(--font-size4);
+    font-weight: 600;
+    cursor: pointer;
+}
