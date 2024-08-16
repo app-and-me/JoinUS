@@ -1,0 +1,113 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 88px 300px 0px 300px;
+}
+
+.mypage {
+    width: 34px;
+    height: 34px;
+    background-color: #0047FF;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mypage-img {
+    height: 22px;
+    width: 22px;
+}
+
+
+/* 메인 */
+main {
+    margin-top: 268px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+/* 설정 */
+.section-setting {
+    width: 68%;
+    /* 임시 */
+    min-width: 800px;
+    height: 8.5625rem;
+    border-bottom: 2px #F1F1F1 solid;
+}
+
+#setting-container {
+    display: flex;
+}
+
+#setting-text {
+    /* 수정 필요 */
+    margin-bottom: 33px;
+    color: #002;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#setting-container {
+    gap: 40px;
+}
+
+#setting-container>div {
+    display: flex;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#setting-container>:first-child {
+    border-bottom: 2px #0047FF solid;
+}
+
+/* 비밀번호 */
+.section-password {
+    width: 63.875rem;
+    height: 31.75rem;
+    border-radius: 10px;
+    background: #F5F6FA;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-password {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 10px;
+}
+
+.section-password>:first-child {
+    color: #002;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+input {
+    width: 41.875rem;
+    height: 2.47256rem;
+    border-radius: 5px;
+    background: #FFF;
+    border: none;
+}
+
+.button {
+    width: 332px;
+    height: 40px;
+    border-radius: 5px;
+    background: #1F64FF;
+
+    color: #FFF;
+    font-size: 16px;
+    border: none;
+    align-self: center;
+}
