@@ -63,16 +63,20 @@ main {
 }
 
 #situation-container {
-    column-gap: 5.12px;
+    display: flex;
+    column-gap: 10px;
     margin: 61px 0 32px 0;
 }
 
-.current{
+.current {
     box-shadow: var(--shadow2);
 }
 
 .nextCircle {
-    margin-bottom: 15px;
+    width: 15.658px;
+    height: 3.5px;
+
+   margin-top: 17px;
 }
 
 .text {
@@ -148,26 +152,4 @@ textarea::placeholder {
     width: 42.125rem;
     height: 3.125rem;
     padding-top: 0.8rem;
-}
-
-
-.button-wrapper {
-    margin: 122px 0 91px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.next-button {
-    width: 21.875rem;
-    height: 3.375rem;
-    border: none;
-    border-radius: 0.625rem;
-    background: var(--color2);
-    box-shadow: var(--shadow2);
-    text-align: center;
-    color: #FFF;
-    font-size: var(--font-size4);
-    font-weight: 600;
-    cursor: pointer;
 }

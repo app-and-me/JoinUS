@@ -7,6 +7,6 @@
     if(!userId || !userPassword){
         return;
     }
-    window.location.href='studentPassword.html';
+    window.location.href='student-password.html';
 });
 
