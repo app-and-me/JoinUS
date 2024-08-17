@@ -53,7 +53,7 @@ main {
 
 #club-container {
     display: flex;
-      
+    gap: 40px;
 }
 
 #club-text {
@@ -67,17 +67,20 @@ main {
 #club-container>div {
     display: flex;
     padding: 20px 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 45px;
+    color: #AAB2C8;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 #club-container>:first-child {
     border-bottom: 2px #0047FF solid;
+    color: #002;
+    font-size: 20px;
 }
 
 /* 검색바 */
 .search-container {
+    align-self: flex-end;
     background-color: #F5F6FA;
     padding: 13px 17px;
     border-radius: 10px;
@@ -89,6 +92,7 @@ main {
     /* align-items: center; */
     box-sizing: border-box;
     column-gap: 17px;
+    margin-right: 18%;
 }
 
 .search-container>img {
@@ -102,8 +106,6 @@ main {
     border: none;
     background: none;
     outline: none;
-    flex-grow: 1;
-    /* 정해진 너비에 여유 공간이 있을 때 확장하자 (입력창 커짐) */
 }
 
 
@@ -122,7 +124,6 @@ main {
     max-height: 585px;
     /* 고정된 높이 설정 */
     overflow-y: auto;
-    /* 스크롤 */
     padding: 23px;
     display: flex;
     flex-direction: column;

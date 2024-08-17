@@ -66,12 +66,15 @@ main {
 #club-container>div {
     display: flex;
     padding: 20px 10px;
-    justify-content: center;
-    align-items: center;
+    color: #AAB2C8;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 #club-container>:last-child {
     border-bottom: 2px #0047FF solid;
+    color: #002;
+    font-size: 20px;
 }
 
 
