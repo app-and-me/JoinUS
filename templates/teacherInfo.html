@@ -1,0 +1,59 @@
+<!-- {% load i18n %} -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoinUS!</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/teacherInfo.css">
+    <link href="/static/images/logo.png" rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+    <main id="main">
+
+        <div class="title-container">
+            <img src="/static/images/logo.png" alt="joius-logo" class="joinus-logo">
+
+            <div class="joinus-title">JoinUS!</div>
+            </a>
+        </div>
+
+        <form action="#" id="info-form">
+            <table class="first-table table">
+                <tr>
+                    <td class="td">이름</td>
+                    <td><input type="text" class="input-name info" placeholder="*이름" required></td>
+                </tr>
+
+                <tr>
+                    <td class="td">학교</td>
+                    <td><input type="text" class="input-school info" placeholder="*학교" required></td>
+                </tr>
+            </table>
+
+            <table class="second-table table">
+                <tr>
+                    <td class="td">비밀번호</td>
+                    <td><input type="password" class="input-password info" placeholder="비밀번호를 입력해주세요." required></td>
+                </tr>
+
+                <tr>
+                    <td class="td">확인</td>
+                    <td><input type="password" class="input-recheck info" placeholder="비밀번호를 한번 더 입력해주세요." required>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="button-wrapper">
+                <button class="next-button" onclick="window.location.href='#'">작성완료</button>
+            </div>
+        </form>
+
+    </main>
+    <script src="/static/js/teacherInfo.js"></script>
+</body>
+
+</html>
