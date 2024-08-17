@@ -3,6 +3,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 88px 300px 0px 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
 }
 
 .mypage {
