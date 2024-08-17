@@ -48,6 +48,7 @@ main {
 
 #setting-container {
     display: flex;
+    gap: 40px;
 }
 
 #setting-text {
@@ -58,19 +59,18 @@ main {
     font-weight: 600;
 }
 
-#setting-container {
-    gap: 40px;
-}
-
 #setting-container>div {
     display: flex;
     padding: 20px 10px;
-    justify-content: center;
-    align-items: center;
+    color: #AAB2C8;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 #setting-container>:first-child {
     border-bottom: 2px #0047FF solid;
+    color: #002;
+    font-size: 20px;
 }
 
 /* 비밀번호 */
@@ -106,6 +106,7 @@ input {
     border: none;
     outline: none;
     margin-top: 10px;
+    padding-left: 30px;
 }
 
 .button {
