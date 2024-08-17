@@ -1,0 +1,49 @@
+.button-wrapper {
+    margin: 122px 0 91px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-button {
+    width: 21.875rem;
+    height: 3.375rem;
+    border: none;
+    border-radius: 0.625rem;
+    background: var(--color2);
+    box-shadow: var(--shadow2);
+    text-align: center;
+    color: #FFF;
+    font-size: var(--font-size4);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.finish-button {
+    width: 100%;
+    max-width: 20.75rem;
+    height: 2.5rem;
+
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+    background: #1F64FF;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.btn1{
+    margin: 136.44px 0 72px 0;
+}
+.btn2{
+    margin: 34px 0 61px 0;
+}
