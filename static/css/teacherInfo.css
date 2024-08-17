@@ -1,0 +1,91 @@
+body {
+    background: #F5F6FA;
+
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin: 12.03rem 0 6.47rem 0;
+}
+
+.joinus-title {
+    color: #000;
+    font-size: 3.05419rem;
+    font-weight: 800;
+}
+.first-table{
+    margin-bottom: 2.19rem;
+}
+.table {
+    justify-content: center;
+    border-collapse: collapse;
+    width: 53.125rem;
+    height: 10.625rem;
+    border-radius: 0.625rem;
+    background: #FFF;
+    box-shadow: var(--shadow3);
+}
+
+td {
+    border-bottom: 1px solid #eaeaed;
+}
+
+.td {
+    color: var(--color5);
+    font-size: var(--font-size5);
+    font-weight: 200;
+    padding-left: 3.88rem;
+}
+
+.info {
+    width: 38rem;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 1.45rem;
+}
+.input-name, .input-school{
+    margin-left: 5rem;
+}
+.input-password, .input-recheck{
+    margin-left: 2.44rem;
+}
+input::placeholder {
+    height: 20rem;
+    width: 20rem;
+    color: #AAB2C8;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5.25rem 0 7.87rem 0;
+
+}
+
+.next-button {
+    width: 21.875rem;
+    height: 3.375rem;
+    border: none;
+    border-radius: 0.625rem;
+    background: var(--color2);
+    box-shadow: var(--shadow2);
+    text-align: center;
+    color: #FFF;
+    font-size: var(--font-size4);
+    font-weight: 600;
+    cursor: pointer;
+}
