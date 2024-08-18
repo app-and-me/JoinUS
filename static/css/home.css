@@ -110,7 +110,7 @@ main {
 
 
 /* 아티클 임시 */
-.article1, .article {
+/* .article {
     border-radius: 10px;
     background: #F5F6FA;
 
@@ -118,7 +118,7 @@ main {
     width: 1290px;
     height: 110px;
     padding: 28px 50px 28px 20px;
-}
+} */
 
 .club-list {
     max-height: 585px;
@@ -140,4 +140,111 @@ main {
 .club-list::-webkit-scrollbar-thumb {
     background-color: #E1E2E9;
     border-radius: 10px;
+}
+
+
+
+/* 아티클 내용 */
+.article {
+    border-radius: 10px;
+    background: #F5F6FA;
+    display: flex;
+    width: 1290px;
+    height: 110px;
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.container1 img {
+    height: 24px;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.club-title {
+    font-size: 22px;
+    color: #002;
+    font-weight: 700;
+}
+
+.teacher {
+    color: #AAB2C8;
+    font-weight: 500;
+}
+
+.apply {
+    width: 70px;
+    height: 20px;
+    color: #15D6B3;
+    font-weight: 600;
+    background-color: rgba(21, 214, 179, 0.2);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    font-size: 20px;
+    color: #AAB2C8;
+    width: 595px;
+    font-weight: 400;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+}
+
+.clubmember {
+    font-size: 10px;
+    color: #AAB2C8;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.clubmember img {
+    width: 29px;
+    height: 24px;
+}
+
+button {
+    border: none;
+    display: inline-flex;
+    padding: 6px 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #1F64FF;
+    color: #FFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    /* background-color: #; */
 }
