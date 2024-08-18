@@ -1,0 +1,146 @@
+* {
+    margin: none;
+    padding: none;
+}
+
+body>header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    /* box-shadow: var(--shadow1); */
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+.nav {
+    width: 100%;
+    max-width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mypage {
+    width: 34px;
+    height: 34px;
+    background-color: var(--color1);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin-top: 26vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav img {
+    cursor: pointer;
+}
+
+.section-club {
+    width: 100%;
+    max-width: 1320px;
+    border-bottom: 2px solid #F1F1F1;
+}
+
+#club-container {
+    display: flex;
+    column-gap: 50px;
+}
+
+#club-text {
+    margin-bottom: 50px;
+    color: var(--color5);
+    font-size: var(--font-size6);
+    font-weight: 600;
+}
+
+.club {
+    color: #AAB2C8;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.option1 {
+    padding-bottom: 19px;
+    color: #000;
+    border-bottom: 2px solid #0047FF;
+    margin-bottom: -2px;
+}
+
+input {
+    width: 100%;
+    max-width: 43.25rem;
+    height: 2.5rem;
+    display: block;
+    padding-left: 34.8px;
+    font-size: var(--font-size3);
+}
+
+#teacherInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1022px;
+    height: 1132px;
+    border-radius: 0.625rem;
+    background: #F5F6FA;
+    margin: 50px 0 173px 0;
+}
+
+.title {
+    color: var(--color5);
+    font-size: var(--font-size5);
+    font-weight: 700;
+}
+
+.profile-text {
+    margin: 69px 0 15px 0;
+}
+
+.change {
+    color: rgba(0, 0, 34, 0.50);
+    font-size: 1rem;
+}
+
+.info {
+    border-radius: 5px;
+    background: #FFF;
+    outline: none;
+    border: none;
+}
+
+.infos {
+    margin: 2.19rem 0 0.68rem 0;
+}
+
+input::placeholder {
+    color: #AAB2C8;
+    font-size: var(--font-size3);
+    font-weight: 600;
+}
+
+.t {
+    margin-top: 34px;
+}
+
+.ctn {
+    padding-left: 164px;
+}
+
+hr {
+    width: 100%;
+    max-width: 821px;
+    height: 0px;
+    margin: 0 auto;
+}

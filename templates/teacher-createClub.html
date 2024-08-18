@@ -4,19 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/static/css/style.css">
+ 
     <link rel="stylesheet" href="/static/css/create_club.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+     
     <link href="/static/images/logo.png" rel="shortcut icon" type="image/x-icon">
     <title>JoinUS!</title>
 </head>
 
 <body>
+    <div id="all-container">
     <header>
         <nav class="nav">
             <div><img src="/static/images/logo-title.png" alt=""></div>
-            <div class="mypage"><a href="#"><img class="mypage-img" src="/static/images/mypagelogo.png" alt="mypage"></a></div>
+            <div class="mypage"><a href="#"><img class="mypage-img" src="/static/images/mypages.png" alt="mypage"></a></div>
         </nav>
     </header>
-
+ 
     <main>
         <section class="section-club">
             <div id="club-text">동아리</div>
@@ -29,7 +33,7 @@
             <div class="line"></div>
         </section> 
 
-        <div id="all-container">
+        
         <div id="situation-container">
             <img src="/static/images/current.png" alt="" class="current">
             <img src="/static/images/situationCircle.png" alt="" class="nextCircle">
@@ -72,11 +76,21 @@
             </div>
 
         </form>
-       
-    </div>
-
     </main>
-    <script src="/static/js/create_club.js"></script>
+</div>
+<footer id="footer">
+    <div class="footerinfo"> 
+        <img src="/static/images/logo-title.png" alt="JoinUS" class="JoinUS-logo">
+        <p class="footer-info tell">문의전화 : 010-0000-0000</p>
+        <p class="footer-info email">이메일 : ssss@e-mirim.hs.kr</p>
+    </div>
+    <hr>
+    <p class="copy">©Team App&Me</p>
+</footer>
+
+
+ 
+    <script src="/static/js/create-club.js"></script>
 </body>
 
 </html>

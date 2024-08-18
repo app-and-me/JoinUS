@@ -19,7 +19,7 @@ document.getElementById('password-form').addEventListener('submit', function(eve
     }
 
     // 검증 성공 시 페이지 이동
-    window.location.href = 'studentInfo.html';
+    window.location.href = 'student-Info.html';
 });
 
  

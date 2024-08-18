@@ -1,41 +1,46 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 88px 300px 0px 300px;
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-
-    background-color: #fff;
-}
-
-.mypage {
-    width: 34px;
-    height: 34px;
-    background-color: var(--color1);
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main {
-    margin-top: 268px;
+#all-container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    /* box-shadow: var(--shadow1); */
+    padding-top: 90px;
+    padding-bottom: 40px;
+    
+}
+.nav {
+    width: 100%;
+    max-width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mypage-img {
+    width: 34px;
+    height: 34px;
+}
+
+main {
+    margin-top: 26vh;
+}
 
 .section-club {
-    width: 68%;
-    /* 임시 */
-    min-width: 800px;
+    width: 100%;
+    max-width: 1317.007px;
+    height: 0px;
     height: 8.5625rem;
-    border-bottom: 2px solid #F1F1F1;
+    border-bottom: 2px #F1F1F1 solid;
 }
 
 #club-container {
@@ -63,16 +68,19 @@ main {
 }
 
 #situation-container {
-    column-gap: 5.12px;
+    display: flex;
+    column-gap: 10px;
     margin: 61px 0 32px 0;
 }
 
-.current{
+.current {
     box-shadow: var(--shadow2);
 }
 
 .nextCircle {
-    margin-bottom: 15px;
+    width: 15.658px;
+    height: 3.5px;
+    margin-top: 17px;
 }
 
 .text {
@@ -149,7 +157,6 @@ textarea::placeholder {
     height: 3.125rem;
     padding-top: 0.8rem;
 }
-
 
 .button-wrapper {
     margin: 122px 0 91px 0;
