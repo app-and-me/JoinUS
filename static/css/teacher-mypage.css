@@ -1,8 +1,4 @@
-* {
-    margin: none;
-    padding: none;
-}
-
+ 
 body>header {
     width: 100%;
     background-color: #fff;
@@ -25,18 +21,8 @@ body>header {
     align-items: center;
 }
 
-.mypage {
-    width: 34px;
-    height: 34px;
-    background-color: var(--color1);
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 main {
-    margin-top: 26vh;
+    margin-top: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
