@@ -1,18 +1,27 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 88px 300px 0px 300px;
-
+*{
+    margin: none;
+    padding: none;
+}
+header {
+    width: 100%;
+    background-color: #fff;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
     z-index: 1000;
-
-    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
 }
 
+.nav {
+    width: 100%;
+    max-width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .mypage {
     width: 34px;
     height: 34px;
@@ -24,7 +33,7 @@ nav {
 }
 
 main {
-    margin-top: 268px;
+    margin-top: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,10 +42,8 @@ main {
     cursor: pointer;
 }
 .section-club {
-    width: 68%;
-    /* 임시 */
-    min-width: 800px;
-    height: 8.5625rem;
+    width: 100%;
+    max-width: 1320px;
     border-bottom: 2px solid #F1F1F1;
 }
 
@@ -62,6 +69,7 @@ main {
     padding-bottom: 19px;
     color: #000;
     border-bottom: 2px solid #0047FF;
+    margin-bottom: -2px;
 }
 
 input {
@@ -128,7 +136,6 @@ input::placeholder {
 hr {
     width: 100%;  
     max-width: 821px;
-    height: 1.5px;
+    height: 0px;
     margin: 0 auto;
 }
-
