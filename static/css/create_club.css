@@ -13,8 +13,9 @@ header {
     z-index: 1000;
     display: flex;
     justify-content: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px 0;
+    /* box-shadow: var(--shadow1); */
+    padding-top: 90px;
+    padding-bottom: 40px;
     
 }
 .nav {
@@ -31,7 +32,7 @@ header {
 }
 
 main {
-    margin-top: 20vh;
+    margin-top: 26vh;
 }
 
 .section-club {
