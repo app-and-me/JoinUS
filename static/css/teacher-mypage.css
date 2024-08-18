@@ -1,8 +1,9 @@
-*{
+* {
     margin: none;
     padding: none;
 }
-header {
+
+body>header {
     width: 100%;
     background-color: #fff;
     position: fixed;
@@ -11,8 +12,9 @@ header {
     z-index: 1000;
     display: flex;
     justify-content: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px 0;
+    /* box-shadow: var(--shadow1); */
+    padding-top: 90px;
+    padding-bottom: 40px;
 }
 
 .nav {
@@ -22,6 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 .mypage {
     width: 34px;
     height: 34px;
@@ -33,14 +36,16 @@ header {
 }
 
 main {
-    margin-top: 20vh;
+    margin-top: 26vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.nav img{
+
+.nav img {
     cursor: pointer;
 }
+
 .section-club {
     width: 100%;
     max-width: 1320px;
@@ -134,7 +139,7 @@ input::placeholder {
 }
 
 hr {
-    width: 100%;  
+    width: 100%;
     max-width: 821px;
     height: 0px;
     margin: 0 auto;
