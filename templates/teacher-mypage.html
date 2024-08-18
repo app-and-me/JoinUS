@@ -6,15 +6,17 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/teacher-mypage.css">
     <link rel="stylesheet" href="/static/css/button.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
     <link href="/static/images/logo.png" rel="shortcut icon" type="image/x-icon">
     <title>JoinUS!</title>
 </head>
 
 <body>
+     
     <header>
         <nav class="nav">
             <div><img id="logo-title" src="/static/images/logo-title.png" alt=""></div>
-            <div class="mypage"><a href="#"><img class="mypage-img" src="/static/images/mypagelogo.png" alt="mypage"></a></div>
+            <div class="mypage"><a href="#"><img class="mypage-img" src="/static/images/mypages.png" alt="mypage"></a></div>
         </nav>
     </header>
 
@@ -24,48 +26,55 @@
             <div id="club-container">
                 <div class="option1 club">마이페이지</div>
             </div>
-            <div class="line"></div>
-        </section> 
+        </section>
+    
 
         <form action="#" id="teacherInfo">
             <section class="profile-section">
                 <div class="profile-container ctn">
-                <div class="profile-text title">프로필</div>
-                <div class="change">기본 설정 변경하기</div>
-                <input type="text" class="input-school info infos" placeholder="*학교" required>
-                <input type="text" class="input-teacher info" placeholder="*선생님 이름" required>
-            </div>
+                    <div class="profile-text title">프로필</div>
+                    <div class="change">기본 설정 변경하기</div>
+                    <input type="text" class="input-school info infos" placeholder="*학교" required>
+                    <input type="text" class="input-teacher info" placeholder="*선생님 이름" required>
+                </div>
                 <div class="btn-wrapper">
                     <button class="finish-button btn1">수정 완료하기</button>
                 </div>
             </section>
             <hr>
-
             <section id="changeID-section">
-                <div class="changeid-container ctn"> 
-                <div class="changeId-text title t">아이디 변경</div>
-                <input type="text" class="beforeID info infos" placeholder="이전 아이디" required>
-                <input type="text" class="newID info" placeholder="새로운 아이디" required>
-            </div>
+                <div class="changeid-container ctn">
+                    <div class="changeId-text title t">아이디 변경</div>
+                    <input type="text" class="beforeID info infos" placeholder="이전 아이디" required>
+                    <input type="text" class="newID info" placeholder="새로운 아이디" required>
+                </div>
                 <div class="btn-wrapper">
                     <button class="finish-button btn2">수정 완료하기</button>
                 </div>
             </section>
             <hr>
-
             <section id="changePW-section">
                 <div class="changePw-container ctn">
-                <div class="changePw-text title t">비밀번호 변경</div>
-                <input type="password" class="beforePW info infos" placeholder="이전 비밀번호" required>
-                <input type="password" class="newPW info" placeholder="새로운 비밀번호" required>
-            </div>
+                    <div class="changePw-text title t">비밀번호 변경</div>
+                    <input type="password" class="beforePW info infos" placeholder="이전 비밀번호" required>
+                    <input type="password" class="newPW info" placeholder="새로운 비밀번호" required>
+                </div>
                 <div class="btn-wrapper">
                     <button class="finish-button btn2">수정 완료하기</button>
                 </div>
-             
             </section>
         </form>
     </main>
+ 
+    <footer id="footer">
+        <div class="footerinfo"> 
+            <img src="/static/images/logo-title.png" alt="JoinUS" class="JoinUS-logo">
+            <p class="footer-info tell">문의전화 : 010-0000-0000</p>
+            <p class="footer-info email">이메일 : ssss@e-mirim.hs.kr</p>
+        </div>
+        <hr>
+        <p class="copy">©Team App&Me</p>
+    </footer>
     <script src="/static/js/teacher-mypage.js"></script>
 </body>
 
