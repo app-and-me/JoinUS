@@ -4,92 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/static/css/style.css">
- 
+
     <link rel="stylesheet" href="/static/css/create_club.css">
     <link rel="stylesheet" href="/static/css/footer.css">
-     
+    <link rel="stylesheet" href="/static/css/popup.css">
     <link href="/static/images/logo.png" rel="shortcut icon" type="image/x-icon">
     <title>JoinUS!</title>
 </head>
 
 <body>
     <div id="all-container">
-    <header>
-        <nav class="nav">
-            <div><img src="/static/images/logo-title.png" alt=""></div>
-            <div class="mypage"><a href="#"><img class="mypage-img" src="/static/images/mypages.png" alt="mypage"></a></div>
-        </nav>
-    </header>
- 
-    <main>
-        <section class="section-club">
-            <div id="club-text">동아리</div>
+        <header>
+            <nav class="nav">
+                <div><img src="/static/images/logo-title.png" alt=""></div>
+                <div class="mypage"><a href="#"><img class="mypage-img" src="/static/images/mypages.png"
+                            alt="mypage"></a></div>
+            </nav>
+        </header>
 
-            <div id="club-container">
-                <a href="#"><div class="option1 club">모든 동아리</div></a>
-                <a href="#"><div class="option2 club">담당 동아리</div></a>
-                <div class="option3 club">동아리 생성하기</div>
-            </div>
-            <div class="line"></div>
-        </section> 
+        <main>
+            <section class="section-club">
+                <div id="club-text">동아리</div>
 
-        
-        <div id="situation-container">
-            <img src="/static/images/current.png" alt="" class="current">
-            <img src="/static/images/situationCircle.png" alt="" class="nextCircle">
-            <img src="/static/images/preview.png" alt="" class="preview">
-        </div>
-       
-        <form action="#" id="create-club">
-            <section id="clubName-container">
-                <div class="clubName-text text">동아리명</div>
-                <textarea name="club_name" id="clubName" class="club_name clubInfo" placeholder="동아리명을 작성해 주세요." required></textarea>
-            </section>
-
-            <section id="simpleIntroduce-container">
-                <div class="simpleIntroduce-text text">프리뷰(한 줄 소개)</div>
-                <textarea name="simple_introduce_name" id="simpleIntroduce" class="simple_introduce clubInfo" maxlength="40" placeholder="동아리 소개를 자유롭게 작성해 주세요.(최대 40자)" required></textarea>
-                 
-            </section>
-
-            <section id="introduce-container">
-                <div class="introduce-text text">동아리 소개</div>
-                <textarea name="club_introduce" id="clubIntroduce" class="club_introduce clubInfo" maxlength="400" placeholder="동아리 소개를 자유롭게 작성해 주세요.(최대 400자)" required></textarea>
-            </section>
-           
-            <section id="clubMember-container">
-                <div class="clubMember-text text">동아리 인원</div>
-                <div class="number-container">
-                    <input type="text" id="clubMemberNumber" class="member-number" required autocomplete="off">
-                    <div class="number">명</div>
+                <div id="club-container">
+                    <a href="#">
+                        <div class="option1 club">모든 동아리</div>
+                    </a>
+                    <a href="#">
+                        <div class="option2 club">담당 동아리</div>
+                    </a>
+                    <div class="option3 club">동아리 생성하기</div>
                 </div>
-               
+                <div class="line"></div>
             </section>
 
-            <section id="clubImgUrl-container">
-                <div class="clubImgUrl-text text">동아리 사진 등록</div>
-                <textarea name="club_img_url" id="clubImgUrl" class="club_img_url clubInfo" placeholder="URL입력" required></textarea>
-            </section>
 
-            <div class="button-wrapper">
-                <button class="next-button">동아리 생성</button>
+            <div id="situation-container">
+                <img src="/static/images/current.png" alt="" class="current">
+                <img src="/static/images/situationCircle.png" alt="" class="nextCircle">
+                <img src="/static/images/preview.png" alt="" class="preview">
             </div>
 
-        </form>
-    </main>
- 
-<footer id="footer">
-    <div class="footerinfo"> 
-        <img src="/static/images/logo-title.png" alt="JoinUS" class="JoinUS-logo">
-        <p class="footer-info tell">문의전화 : 010-0000-0000</p>
-        <p class="footer-info email">이메일 : ssss@e-mirim.hs.kr</p>
-    </div>
-    <hr>
-    <p class="copy">©Team App&Me</p>
-</footer>
-</div>
+            <form action="#" id="create-club">
+                <section id="clubName-container">
+                    <div class="clubName-text text">동아리명</div>
+                    <textarea name="club_name" id="clubName" class="club_name clubInfo" placeholder="동아리명을 작성해 주세요."
+                        required></textarea>
+                </section>
 
- 
+                <section id="simpleIntroduce-container">
+                    <div class="simpleIntroduce-text text">프리뷰(한 줄 소개)</div>
+                    <textarea name="simple_introduce_name" id="simpleIntroduce" class="simple_introduce clubInfo"
+                        maxlength="40" placeholder="동아리 소개를 자유롭게 작성해 주세요.(최대 40자)" required></textarea>
+
+                </section>
+
+                <section id="introduce-container">
+                    <div class="introduce-text text">동아리 소개</div>
+                    <textarea name="club_introduce" id="clubIntroduce" class="club_introduce clubInfo" maxlength="400"
+                        placeholder="동아리 소개를 자유롭게 작성해 주세요.(최대 400자)" required></textarea>
+                </section>
+
+                <section id="clubMember-container">
+                    <div class="clubMember-text text">동아리 인원</div>
+                    <div class="number-container">
+                        <input type="text" id="clubMemberNumber" class="member-number" required autocomplete="off">
+                        <div class="number">명</div>
+                    </div>
+
+                </section>
+
+                <section id="clubImgUrl-container">
+                    <div class="clubImgUrl-text text">동아리 사진 등록</div>
+                    <textarea name="club_img_url" id="clubImgUrl" class="club_img_url clubInfo" placeholder="URL입력"
+                        required></textarea>
+                </section>
+
+                <div class="button-wrapper">
+                    <button class="next-button">동아리 생성</button>
+                </div>
+
+            </form>
+
+            <!-- popup -->
+            <div id="overlay"></div>
+            <div id="popup">
+                <div class="message">성공적으로 동아리 신청이 &nbsp;<p class="accent">완료</p>&nbsp; 됐습니다.</div>
+                <div class="club-name">
+                    <div>다양한 공부 동아리</div>
+                </div>
+                <button id="close-btn">확인</button>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <div class="footerinfo">
+                <img src="/static/images/logo-title.png" alt="JoinUS" class="JoinUS-logo">
+                <p class="footer-info tell">문의전화 : 010-0000-0000</p>
+                <p class="footer-info email">이메일 : ssss@e-mirim.hs.kr</p>
+            </div>
+            <hr>
+            <p class="copy">©Team App&Me</p>
+        </footer>
+    </div>
     <script src="/static/js/create-club.js"></script>
 </body>
 
