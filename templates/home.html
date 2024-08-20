@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
     <link href="/static/images/logo.png" rel="shortcut icon" type="image/x-icon">
     <title>HOME</title>
 </head>
@@ -19,40 +20,69 @@
     </header>
 
     <main>
+
+        
         <section class="section-club">
             <div id="club-text">동아리</div>
-
+            
             <div id="club-container">
                 <div>모든 동아리</div>
                 <div>신청 동아리</div>
             </div>
         </section>
-
+        
         <section class="search-container">
             <img src="/static/images/search-bar.png" alt="">
             <input type="text" id="search-bar" placeholder="동아리를 검색해 주세요.">
         </section>
+        
+        <!-- 신청 완료 팝업창 -->
+        <div id="overlay"></div>
+        <div id="popup">
+            <div class="message">성공적으로 동아리 신청이 완료 됐습니다.</div>
+            <div class="club-name">
+                <div>다양한 공부 동아리</div>
+            </div>
+            <button id="close-btn">확인</button>
+        </div>
 
         <section class="club-list">
-            <article class="article1">동아리1</article>
-            <article class="article">동아리1</article>
-            <article class="article">동아리1</article>
-            <article class="article">동아리1</article>
-            <article class="article">동아리1</article>
-            <article class="article">동아리1</article>
-            <article class="article">동아리1</article>
-            <article class="article">동아리1</article>
-            <article class="article">동아리1</article>
-            <article class="article">동아리1</article>
-            <article class="article">동아리1</article>
-            <article class="article">동아리1</article>
+            <article class="article">
+                <div class="container1">
+                    <img src="\static\images\star.png" alt="">
+                    <div class="article-container">
+                        <div class="title-container">
+                            <div class="club-title">${club.clubName}</div>
+                            <div class="teacher">${}</div>
+                            <div class="apply">지원가능</div>
+                        </div>
+                        <div class="content">${simpleIntroduce}</div>
+                    </div>
+                </div>
+                <div class="container2">
+                    <div class="clubmember">
+                        <img src="\static\images\personnel.png" alt="">
+                        <div>0/10</div>
+                    </div>
+                    <button class="bnt-apply">신청하기</button>
+                </div>
+            </article>
+
 
         </section>
     </main>
 
-    <footer>
-        푸터 내용
+    <footer id="footer">
+        <div class="footerinfo"> 
+            <img src="/static/images/logo-title.png" alt="JoinUS" class="JoinUS-logo">
+            <p class="footer-info tell">문의전화 : 010-0000-0000</p>
+            <p class="footer-info email">이메일 : ssss@e-mirim.hs.kr</p>
+        </div>
+        <hr>
+        <p class="copy">©Team App&Me</p>
     </footer>
+    </div>
+    <script src="/static/js/home.js"></script>
 </body>
 
 </html>

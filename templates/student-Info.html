@@ -1,0 +1,67 @@
+<!-- {% load i18n %} -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoinUS!</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/studentInfo.css">
+    <link href="/static/images/logo.png" rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+    <main id="main">
+
+        <div class="title-container">
+            <img src="/static/images/logo.png" alt="joius-logo" class="joinus-logo">
+
+            <div class="joinus-title">JoinUS!</div>
+            </a>
+        </div>
+
+        <div class="progress-container">
+            <div class="first-progress progress">1</div>
+            <img src="/static/images/circles.png" alt="" class="circle">
+            <div class="second-progress progress">2</div>
+        </div>
+
+        <form action="#" id="info-form">
+            <table id="table">
+                <tr>
+                    <td class="td">이름</td>
+                    <td><input type="text" class="input-name info" placeholder="*이름" required></td>
+                </tr>
+
+                <tr>
+                    <td class="td">학교</td>
+                    <td><input type="text" class="input-school info" placeholder="*학교" required></td>
+                </tr>
+
+                <tr>
+                    <td class="td">학년</td>
+                    <td><input type="text" class="input-grade info" placeholder="*학년" required></td>
+                </tr>
+
+                <tr>
+                    <td class="td">반</td>
+                    <td><input type="text" class="input-class info" placeholder="*반" required></td>
+                </tr>
+
+                <tr>
+                    <td class="td">번호</td>
+                    <td><input type="text" class="input-number info" placeholder="*번호" required></td>
+                </tr>
+            </table>
+            <div class="button-wrapper">
+                <button class="next-button">작성완료</button>
+            </div>
+        </form>
+
+
+    </main>
+    <script src="/static/js/student-Info.js"></script>
+</body>
+
+</html>

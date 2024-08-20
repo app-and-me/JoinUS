@@ -1,0 +1,180 @@
+
+#all-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    /* box-shadow: var(--shadow1); */
+    padding-top: 90px;
+    padding-bottom: 40px;
+    
+}
+.nav {
+    width: 100%;
+    max-width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mypage-img {
+    width: 34px;
+    height: 34px;
+}
+
+main {
+    margin-top: 250px;
+}
+
+.section-club {
+    width: 100%;
+    max-width: 1317.007px;
+    height: 0px;
+    height: 8.5625rem;
+    border-bottom: 2px #F1F1F1 solid;
+}
+
+#club-container {
+    display: flex;
+    column-gap: 50px;
+}
+
+#club-text {
+    margin-bottom: 50px;
+    color: var(--color5);
+    font-size: var(--font-size6);
+    font-weight: 600;
+}
+
+.club {
+    color: #AAB2C8;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.option3 {
+    padding-bottom: 19px;
+    color: #000;
+    border-bottom: 2px solid #0047FF;
+}
+
+#situation-container {
+    display: flex;
+    column-gap: 10px;
+    margin: 61px 0 32px 0;
+}
+
+.current {
+    box-shadow: var(--shadow2);
+}
+
+.nextCircle {
+    width: 15.658px;
+    height: 3.5px;
+    margin-top: 17px;
+}
+
+.text {
+    margin-bottom: 15px;
+    color: var(--color5);
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.clubInfo {
+    font-size: 1.25rem;
+    border-radius: 0.3125rem;
+    background: #F5F6FA;
+    resize: none;
+    outline: none;
+    border: none;
+    margin-bottom: 2.5rem;
+    padding: 1rem 0 0 1.25rem;
+}
+
+textarea::placeholder {
+    color: #AAB2C8;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.club_img_url {
+    width: 82.5rem;
+    height: 2.5rem;
+    padding-top: 0.5rem;
+}
+
+.number-container {
+    display: flex;
+    width: 9.6875rem;
+    height: 2.5rem;
+    border-radius: 0.3125rem;
+    background: #F5F6FA;
+    column-gap: 4.81rem;
+    margin-bottom: 2.19rem;
+    padding-left: 1rem;
+    padding-top: 0.4rem;
+}
+
+.member-number {
+    text-align: center;
+    width: 1.8rem;
+    height: 1.7rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: 1px solid #AAB2C8;
+    border-radius: 5px;
+    background-color: #F5F6FA;
+}
+
+.number {
+    color: #AAB2C8;
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.club_introduce {
+    width: 82.5rem;
+    height: 18.375rem;
+}
+
+.simple_introduce {
+    width: 82.5rem;
+    height: 6.625rem;
+}
+
+.club_name {
+    width: 42.125rem;
+    height: 3.125rem;
+    padding-top: 0.8rem;
+}
+
+.button-wrapper {
+    margin: 122px 0 91px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-button {
+    width: 21.875rem;
+    height: 3.375rem;
+    border: none;
+    border-radius: 0.625rem;
+    background: var(--color2);
+    box-shadow: var(--shadow2);
+    text-align: center;
+    color: #FFF;
+    font-size: var(--font-size4);
+    font-weight: 600;
+    cursor: pointer;
+}
