@@ -1,12 +1,16 @@
-    window.addEventListener('DOMContentLoaded', (event) => {
-        // 로컬 스토리지에서 동아리 목록 가져오기
-        const clubs = JSON.parse(localStorage.getItem('clubs')) || [];
+window.addEventListener('DOMContentLoaded', (event) => {
 
-        // 동아리 리스트 컨테이너
-        const clubListContainer = document.querySelector('.club-list');
+    const clubs = JSON.parse(localStorage.getItem('clubs')) || [];
+    const clubListContainer = document.querySelector('.club-list');
 
-        // 동아리 목록을 화면에 동적으로 추가
-        clubs.forEach(club => {
+    // 검색 바
+    const searchBar = document.getElementById('search-bar');
+
+    // 동아리 추가
+    function displayClubs(filteredClubs) {
+        clubListContainer.innerHTML = '';                            // 기존 내용을 지움
+
+        filteredClubs.forEach(club => {
             const article = document.createElement('article');
             article.className = 'article';
 
@@ -30,32 +34,34 @@
                     <button class="bnt-apply">신청하기</button>
                 </div>
             `;
-
             clubListContainer.appendChild(article);
-
-            
-            //     localStorage.removeItem('clubs');
-
-            // // 동아리 목록을 비우기
-            // clubListSection.innerHTML = '';
-
         });
+    }
+
+    // 동아리 표시
+    displayClubs(clubs);
+
+    // 검색 바 입력 시 필터링
+    searchBar.addEventListener('input', () => {
+        const searchTerm = searchBar.value.toLowerCase();
+        const filteredClubs = clubs.filter(club => 
+            club.clubName.toLowerCase().includes(searchTerm) || 
+            club.simpleIntroduce.toLowerCase().includes(searchTerm)
+        );
+        displayClubs(filteredClubs);
     });
 
-    // 팝업 열기 버튼
-    const openPopupBtns = document.querySelectorAll('.bnt-apply');
+    // 팝업
     const popup = document.getElementById('popup');
     const overlay = document.getElementById('overlay');
-
-    // 닫기 버튼
     const closeBtn = document.getElementById('close-btn');
 
-    // 버튼 클릭했을 때
-    openPopupBtns.forEach(button => {
-        button.addEventListener('click', () => {
+    // 팝업 열기
+    clubListContainer.addEventListener('click', (event) => {
+        if (event.target.classList.contains('bnt-apply')) {
             popup.style.display = 'block';
             overlay.style.display = 'block';
-        });
+        }
     });
 
     // 팝업 닫기
@@ -64,28 +70,9 @@
         overlay.style.display = 'none';
     });
 
-        // 배경 클릭 시 팝업 닫기
-        overlay.addEventListener('click', () => {
-            popup.style.display = 'none';
-            overlay.style.display = 'none';
-        });
-
-// 검색 기능
-document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('search-bar');
-    const articles = document.querySelectorAll('.article');
-
-    searchInput.addEventListener('input', function() {
-        const searchTerm = searchInput.value.toLowerCase();
-
-        articles.forEach(article => {
-            const clubName = article.querySelector('.club-title').textContent.toLowerCase();
-
-            if (clubName.includes(searchTerm)) {
-                article.style.display = '';
-            } else {
-                article.style.display = 'none';
-            }
-        });
+    // 배경 클릭 시 팝업 닫기
+    overlay.addEventListener('click', () => {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
     });
 });
