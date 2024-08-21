@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/static/css/style.css">
 
     <link rel="stylesheet" href="/static/css/create_club.css">
+    <link rel="stylesheet" href="/static/css/button.css">
     <link rel="stylesheet" href="/static/css/footer.css">
     <link rel="stylesheet" href="/static/css/popup.css">
     <link href="/static/images/logo.png" rel="shortcut icon" type="image/x-icon">
@@ -35,10 +36,10 @@
                     </a>
                     <div class="option3 club">동아리 생성하기</div>
                 </div>
-                <div class="line"></div>
+                 
             </section>
 
-
+            <p>관리자 권한 *</p>
             <div id="situation-container">
                 <img src="/static/images/current.png" alt="" class="current">
                 <img src="/static/images/situationCircle.png" alt="" class="nextCircle">
@@ -47,9 +48,8 @@
 
             <form action="#" id="create-club">
                 <section id="clubName-container">
-                    <div class="clubName-text text">동아리명</div>
-                    <textarea name="club_name" id="clubName" class="club_name clubInfo" placeholder="동아리명을 작성해 주세요."
-                        required></textarea>
+                    <div class="clubName-text text">동아리명 &nbsp;<div>*</div></div>
+                    <textarea name="club_name" id="clubName" class="club_name clubInfo" placeholder="동아리명을 작성해 주세요." readonly></textarea>
                 </section>
 
                 <section id="simpleIntroduce-container">
@@ -66,10 +66,25 @@
                 </section>
 
                 <section id="clubMember-container">
-                    <div class="clubMember-text text">동아리 인원</div>
+                    <div class="clubMember-text text">동아리 인원&nbsp;<div>*</div></div>
                     <div class="number-container">
-                        <input type="text" id="clubMemberNumber" class="member-number" required autocomplete="off">
-                        <div class="number">명</div>
+                        <div class="grade">1학년</div>
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="0" class="1st-grade input-number" readonly>
+                            <div>명</div>
+                        </div>
+
+                        <div class="grade">2학년</div>
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="0" class="2nd-grade input-number" readonly>
+                            <div>명</div>
+                        </div>
+                       
+                        <div class="grade">3학년</div>
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="0" class="3rd-grade input-number" readonly>
+                            <div>명</div>
+                        </div>
                     </div>
 
                 </section>
@@ -89,7 +104,7 @@
             <!-- popup -->
             <div id="overlay"></div>
             <div id="popup">
-                <div class="message">성공적으로 동아리가 &nbsp;<p class="accent">생성</p>&nbsp; 됐습니다.</div>
+                <div class="message">성공적으로 동아리가 &nbsp;<span class="accent">생성</span>&nbsp;됐습니다.</div>
                 <div class="club-name">
                     <div>다양한 공부 동아리</div>
                 </div>
