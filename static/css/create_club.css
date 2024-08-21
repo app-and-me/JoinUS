@@ -13,10 +13,7 @@ header {
     z-index: 1000;
     display: flex;
     justify-content: center;
-    /* box-shadow: var(--shadow1); */
-    padding-top: 90px;
-    padding-bottom: 40px;
-    
+    padding: 42px 0 42px 0;
 }
 .nav {
     width: 100%;
