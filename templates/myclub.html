@@ -30,6 +30,16 @@
             </div>
         </section>
 
+        <!-- 신청 취소 팝업창 -->
+        <div id="overlay"></div>
+        <div id="popup">
+            <div class="message">성공적으로 동아리 신청이 &nbsp;<p class="accent">취소</p>&nbsp; 됐습니다.</div>
+            <div class="club-name">
+                <div>다양한 공부 동아리</div>
+            </div>
+            <button id="close-btn">확인</button>
+        </div>
+
         <section class="club-list">
             <article class="article">
                 <div class="container1">
@@ -48,7 +58,7 @@
                         <img src="\static\images\personnel.png" alt="">
                         <div>10/10</div>
                     </div>
-                    <button>신청 취소</button>
+                    <button class="delete-button">신청 취소</button>
                 </div>
             </article>
         </section>
@@ -63,6 +73,7 @@
         <hr>
         <p class="copy">©Team App&Me</p>
     </footer>
+    <script src="/static/js/myclub.js"></script>
 </body>
 
 </html>
