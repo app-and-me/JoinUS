@@ -1,36 +1,32 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 88px 300px 0px 300px;
+body>header {
+    width: 100%;
+    background-color: #fff;
     position: fixed;
     top: 0;
-    right: 0;
     left: 0;
-    z-index: 10;
-    background-color: #FFF;
-}
-
-.mypage {
-    width: 34px;
-    height: 34px;
-    background-color: #0047FF;
-    border-radius: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: center;
+    padding: 42px 0;
+}
+
+.nav {
+    width: 100%;
+    max-width: 1320px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .mypage-img {
-    height: 22px;
-    width: 22px;
+    width: 34px;
+    height: 34px;
 }
 
 
 /* 메인 */
 main {
-    margin-top: 268px;
-
+    margin-top: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,23 +36,19 @@ main {
 
 /* 동아리 */
 .section-club {
-    width: 68%;
-    /* 임시 */
-    min-width: 800px;
-    height: 8.5625rem;
+    width: 100%;
+    max-width: 1317.007px;
     border-bottom: 2px #F1F1F1 solid;
 }
 
 #club-container {
     display: flex;
-
 }
 
 #club-text {
-    /* 수정 필요 */
-    margin-bottom: 33px;
-    color: #002;
-    font-size: 36px;
+    margin-bottom: 50px;
+    color: var(--color5);
+    font-size: var(--font-size6);
     font-weight: 600;
 }
 
@@ -64,7 +56,7 @@ main {
     gap: 40px;
 }
 
-#club-container>div {
+.club {
     display: flex;
     padding: 20px 10px;
     color: #AAB2C8;
@@ -72,10 +64,11 @@ main {
     font-weight: 700;
 }
 
-#club-container>:last-child {
-    border-bottom: 2px #0047FF solid;
-    color: #002;
-    font-size: 20px;
+.option3 {
+    padding-bottom: 19px;
+    color: #000;
+    border-bottom: 2px solid #0047FF;
+    margin-bottom: -2px;
 }
 
 .club-list {

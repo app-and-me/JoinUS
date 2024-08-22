@@ -1,7 +1,3 @@
-body {
-    /* overflow: hidden; */
-}
-
 body>header {
     width: 100%;
     background-color: #fff;
@@ -11,9 +7,8 @@ body>header {
     z-index: 1000;
     display: flex;
     justify-content: center;
-    padding: 42px 0 42px 0;
+    padding: 42px 0;
 }
-
 
 .nav {
     width: 100%;
@@ -31,8 +26,7 @@ body>header {
 
 /* 메인 */
 main {
-    margin-top: 268px;
-
+    margin-top: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,25 +39,22 @@ main {
     width: 100%;
     /* 임시 */
     max-width: 1317.007px;
-    height: 0px;
-    height: 8.5625rem;
     border-bottom: 2px #F1F1F1 solid;
 }
 
 #club-container {
     display: flex;
-    gap: 40px;
+    column-gap: 40px;
 }
 
 #club-text {
-    /* 수정 필요 */
-    margin-bottom: 33px;
-    color: #002;
-    font-size: 36px;
+    margin-bottom: 50px;
+    color: var(--color5);
+    font-size: var(--font-size6);
     font-weight: 600;
 }
 
-#club-container>div {
+.club {
     display: flex;
     padding: 20px 10px;
     color: #AAB2C8;
