@@ -10,3 +10,18 @@
     window.location.href='student-password.html';
 });
 
+document.addEventListener('DOMContentLoaded', function(){
+    const koreanButton = document.getElementById('korean');
+    const englishButton = document.getElementById('english');
+
+    koreanButton.addEventListener('click', function(){
+        koreanButton.classList.add('active');
+        englishButton.classList.remove('active');
+    });
+
+    englishButton.addEventListener('click', function(){
+       englishButton.classList.add('active');
+       koreanButton.classList.remove('active'); 
+    });
+});
+
