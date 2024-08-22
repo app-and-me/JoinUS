@@ -14,27 +14,28 @@
     <header>
         <nav class="nav">
             <div><img src="/static/images/logo-title.png" alt=""></div>
-            <div class="mypage"><a href="#"><img class="mypage-img" src="/static/images/mypages.png"alt="mypage"></a></div>
+            <div class="mypage"><a href="#"><img class="mypage-img" src="/static/images/mypages.png" alt="mypage"></a>
+            </div>
         </nav>
     </header>
 
     <main>
-
-        
         <section class="section-club">
             <div id="club-text">동아리</div>
-            
+
             <div id="club-container">
-                <div>모든 동아리</div>
-                <div>신청 동아리</div>
+                <div class="option2 club">모든 동아리</div>
+                <a href="myclub.html">
+                    <div class="option3 club">신청 동아리</div>
+                </a>
             </div>
         </section>
-        
+
         <section class="search-container">
             <img src="/static/images/search-bar.png" alt="">
             <input type="text" id="search-bar" placeholder="동아리를 검색해 주세요.">
         </section>
-        
+
         <!-- 신청 완료 팝업창 -->
         <div id="overlay"></div>
         <div id="popup">
@@ -48,7 +49,8 @@
         <section class="club-list">
             <article class="article">
                 <div class="container1">
-                    <img src="\static\images\star.png" alt="">
+                    <img src="\static\images\star.png" class="star-icon" alt="">
+
                     <div class="article-container">
                         <div class="title-container">
                             <div class="club-title">${club.clubName}</div>
@@ -72,7 +74,7 @@
     </main>
 
     <footer id="footer">
-        <div class="footerinfo"> 
+        <div class="footerinfo">
             <img src="/static/images/logo-title.png" alt="JoinUS" class="JoinUS-logo">
             <p class="footer-info tell">문의전화 : 010-0000-0000</p>
             <p class="footer-info email">이메일 : ssss@e-mirim.hs.kr</p>
