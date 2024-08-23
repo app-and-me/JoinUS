@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/static/css/detail/style.css">
-    <link rel="stylesheet" href="/static/css/myclub.css">
+    <link rel="stylesheet" href="/static/css/student/home.css">
     <link rel="stylesheet" href="/static/css/detail/footer.css">
-    <title>JOINUS</title>
+    <link href="/static/images/logo.png" rel="shortcut icon" type="image/x-icon">
+    <title>HOME</title>
 </head>
 
 <body>
     <header>
         <nav class="nav">
             <div><img src="/static/images/logo-title.png" alt=""></div>
-
-            <div class="mypage"><img class="mypage-img" src="/static/images/mypages.png" alt=""></div>
+            <div class="mypage"><a href="#"><img class="mypage-img" src="/static/images/mypages.png" alt="mypage"></a>
+            </div>
         </nav>
     </header>
 
@@ -23,17 +24,22 @@
             <div id="club-text">동아리</div>
 
             <div id="club-container">
-                <a href="home.html">
-                    <div class="option2 club">모든 동아리</div>
+                <div class="option2 club">모든 동아리</div>
+                <a href="myclub.html">
+                    <div class="option3 club">신청 동아리</div>
                 </a>
-                <div class="option3 club">신청 동아리</div>
             </div>
         </section>
 
-        <!-- 신청 취소 팝업창 -->
+        <section class="search-container">
+            <img src="/static/images/search-bar.png" alt="">
+            <input type="text" id="search-bar" placeholder="동아리를 검색해 주세요.">
+        </section>
+
+        <!-- 신청 완료 팝업창 -->
         <div id="overlay"></div>
         <div id="popup">
-            <div class="message">성공적으로 동아리 신청이 &nbsp;<p class="accent">취소</p>&nbsp; 됐습니다.</div>
+            <div class="message">성공적으로 동아리 신청이 &nbsp;<p class="accent">완료</p>&nbsp; 됐습니다.</div>
             <div class="club-name">
                 <div>다양한 공부 동아리</div>
             </div>
@@ -43,24 +49,27 @@
         <section class="club-list">
             <article class="article">
                 <div class="container1">
-                    <img src="\static\images\yellostar.png" alt="">
+                    <img src="\static\images\star.png" class="star-icon" alt="">
+
                     <div class="article-container">
                         <div class="title-container">
-                            <div class="club-title">다양한 공부 동아리</div>
-                            <div class="teacher">우호식선생님</div>
+                            <div class="club-title">${club.clubName}</div>
+                            <div class="teacher">${}</div>
                             <div class="apply">지원가능</div>
                         </div>
-                        <div class="content">다양한 공부 지원 많아서 공부 열심히 하고 싶은 학생들 이것 저것 다 도와줌...</div>
+                        <div class="content">${simpleIntroduce}</div>
                     </div>
                 </div>
                 <div class="container2">
                     <div class="clubmember">
                         <img src="\static\images\personnel.png" alt="">
-                        <div>10/10</div>
+                        <div>0/10</div>
                     </div>
-                    <button class="delete-button">신청 취소</button>
+                    <button class="bnt-apply">신청하기</button>
                 </div>
             </article>
+
+
         </section>
     </main>
 
@@ -73,7 +82,7 @@
         <hr>
         <p class="copy">©Team App&Me</p>
     </footer>
-    <script src="/static/js/myclub.js"></script>
+    <script src="/static/js/student/home.js"></script>
 </body>
 
 </html>
