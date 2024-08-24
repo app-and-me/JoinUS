@@ -1,0 +1,216 @@
+body>header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 42px 0;
+}
+
+.nav {
+    width: 100%;
+    max-width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mypage-img {
+    width: 34px;
+    height: 34px;
+}
+
+
+/* 메인 */
+main {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    height: 1050px;
+}
+
+/* 동아리 */
+.section-club {
+    width: 100%;
+    /* 임시 */
+    max-width: 1317.007px;
+    border-bottom: 2px #F1F1F1 solid;
+}
+
+#club-container {
+    display: flex;
+    column-gap: 40px;
+}
+
+#club-text {
+    margin-bottom: 50px;
+    color: var(--color5);
+    font-size: var(--font-size6);
+    font-weight: 600;
+}
+
+.club {
+    display: flex;
+    padding: 20px 10px;
+    color: #AAB2C8;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#club-container>:first-child {
+    border-bottom: 2px #0047FF solid;
+    color: #002;
+    font-size: 20px;
+}
+
+/* 검색바 */
+.search-container {
+    align-self: flex-start;
+    background-color: #F5F6FA;
+    padding: 13px 17px;
+    border-radius: 10px;
+    /* 반응형 */
+    min-width: 400px;
+    width: 100%;
+    max-width: 679px;
+    display: flex;
+    /* align-items: center; */
+    box-sizing: border-box;
+    column-gap: 17px;
+    margin-left: 16%;
+}
+
+.search-container>img {
+    width: 16px;
+    height: 16.014px;
+}
+
+
+#search-bar {
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.club-list {
+    max-height: 585px;
+    /* 고정된 높이 설정 */
+    overflow-y: auto;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.club-list::-webkit-scrollbar {
+    border-radius: 10px;
+    background: #F5F6FA;
+    width: 11px;
+    height: 692px;
+}
+
+.club-list::-webkit-scrollbar-thumb {
+    background-color: #E1E2E9;
+    border-radius: 10px;
+}
+
+
+
+/* 아티클 내용 */
+.article {
+    border-radius: 10px;
+    background: #F5F6FA;
+    display: flex;
+    width: 1290px;
+    height: 110px;
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.container1 img {
+    height: 24px;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.club-title {
+    font-size: 22px;
+    color: #002;
+    font-weight: 700;
+}
+
+.teacher {
+    color: #AAB2C8;
+    font-weight: 500;
+}
+
+.apply {
+    width: 70px;
+    height: 20px;
+    color: #15D6B3;
+    font-weight: 600;
+    background-color: rgba(21, 214, 179, 0.2);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    font-size: 20px;
+    color: #AAB2C8;
+    width: 595px;
+    font-weight: 400;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+}
+
+.clubmember {
+    font-size: 10px;
+    color: #AAB2C8;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.clubmember img {
+    width: 29px;
+    height: 24px;
+}
+
+button:hover {
+    /* background-color: #; */
+}
+
