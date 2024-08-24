@@ -1,0 +1,258 @@
+body>header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 42px 0;
+}
+
+.nav {
+    width: 100%;
+    max-width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mypage-img {
+    width: 34px;
+    height: 34px;
+}
+
+
+/* 메인 */
+main {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    height: 1050px;
+}
+
+/* 동아리 */
+.section-club {
+    width: 100%;
+    max-width: 1317.007px;
+    border-bottom: 2px #F1F1F1 solid;
+}
+
+#club-container {
+    display: flex;
+}
+
+#club-text {
+    margin-bottom: 50px;
+    color: var(--color5);
+    font-size: var(--font-size6);
+    font-weight: 600;
+}
+
+#club-container {
+    gap: 40px;
+}
+
+.club {
+    display: flex;
+    padding: 20px 10px;
+    color: #AAB2C8;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.option3 {
+    border-bottom: 2px #0047FF solid;
+    color: #002;
+    font-size: 20px;
+}
+
+.club-list {
+    max-height: 585px;
+    /* 고정된 높이 설정 */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 아티클 내용 */
+.article {
+    border-radius: 10px;
+    background: #F5F6FA;
+    display: flex;
+    width: 1290px;
+    height: 110px;
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.container1 img {
+    height: 24px;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.club-title {
+    font-size: 22px;
+    color: #002;
+    font-weight: 700;
+}
+
+.teacher {
+    color: #AAB2C8;
+    font-weight: 500;
+}
+
+.apply {
+    width: 70px;
+    height: 20px;
+    color: #15D6B3;
+    font-weight: 600;
+    background-color: rgba(21, 214, 179, 0.2);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    font-size: 20px;
+    color: #AAB2C8;
+    width: 595px;
+    font-weight: 400;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+}
+
+.clubmember {
+    font-size: 10px;
+    color: #AAB2C8;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.clubmember img {
+    width: 29px;
+    height: 24px;
+}
+
+button {
+    border-radius: 5px;
+    border: 1px #B0B0B0 solid;
+    padding: 6px 18px;
+    justify-content: center;
+    align-items: center;
+    background: #F5F6FA;
+    color: #AFAFAF;
+    font-size: 14px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+button:hover {
+    /* background-color: #; */
+}
+
+/* 신청 취소 버튼 팝업창 */
+#popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 737px;
+    height: 451px;
+    padding: 60px 50px 40px 50px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 1px 5px 20px 0px #AAB2C8;
+    z-index: 1000;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(170, 178, 200, 0.50);
+    z-index: 999;
+}
+
+#close-btn {
+    display: block;
+    margin: 20px auto 0;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    background: #1F64FF;
+    color: #FFF;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+/* #close-btn:hover {
+    background-color: ;
+} */
+
+.club-name {
+    width: 634px;
+    height: 221px;
+    background-color: #F5F6FA;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33px;
+    margin-bottom: 25px;
+}
+
+.club-name>div {
+    color: #DA4948;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.message {
+    color: #002;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accent{
+    color: #DA4948;
+}
