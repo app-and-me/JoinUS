@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/detail/style.css">
     <link rel="stylesheet" href="/static/css/detail/button.css">
     <link rel="stylesheet" href="/static/css/detail/footer.css">
@@ -13,16 +13,21 @@
 </head>
 
 <body>
-    <div id="all-container">
+    
         <header>
             <nav class="nav">
                 <div><img src="/static/images/logo-title.png" alt=""></div>
                 <div class="mypage"><a href="#"><img class="mypage-img" src="/static/images/mypages.png"
                             alt="mypage"></a></div>
             </nav>
+
+            <div id="add-container">
+                <a href=""><img src="/static/images/backButton.png" alt="" class="back-img"></a>
+                <span class="add"> 동아리 추가</span>
+            </div>
         </header>
 
-        <main>
+        <main id="main">
             <section class="section-club">
                 <div id="club-text">동아리</div>
     
@@ -41,14 +46,15 @@
                 </div>
             </section>
 
-            <p>관리자 권한 *</p>
+             
+
+            <form action="#" id="create-club">
+                <p>관리자 권한 *</p>
             <div id="situation-container">
                 <img src="/static/images/current.png" alt="" class="current">
                 <img src="/static/images/situationCircle.png" alt="" class="nextCircle">
                 <img src="/static/images/preview.png" alt="" class="preview">
             </div>
-
-            <form action="#" id="create-club">
                 <section id="clubName-container">
                     <div class="clubName-text text">동아리명 &nbsp;<div>*</div></div>
                     <textarea name="club_name" id="clubName" class="club_name clubInfo" placeholder="동아리명을 작성해 주세요." readonly></textarea>
@@ -123,7 +129,7 @@
             <hr>
             <p class="copy">©Team App&Me</p>
         </footer>
-    </div>
+     
     <script src="/static/js/teacher/create-club.js"></script>
 </body>
 
