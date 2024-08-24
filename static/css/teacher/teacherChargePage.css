@@ -64,7 +64,8 @@ main {
     font-weight: 700;
 }
 
-.option3 {
+.option2 {
+    margin-bottom: -2px;
     border-bottom: 2px #0047FF solid;
     color: #002;
     font-size: 20px;
