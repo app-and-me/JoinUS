@@ -76,7 +76,7 @@
     max-width: 1317.007px;
 }
 
-p {
+.adminRight {
     color: #0047FF;
     margin-top: 29px;
     font-size: 16px;
@@ -171,7 +171,7 @@ textarea::placeholder {
 
 /* mobile */
 @media (max-width:550px) {
-    .nav, .section-club, p, #situation-container {
+    .nav, .section-club, .adminRight, #situation-container {
         display: none;
     }
      
