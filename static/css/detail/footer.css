@@ -47,3 +47,25 @@ hr {
     font-weight: 400;
     margin-top: 30px;
 }
+
+
+
+@media (max-width: 550px) {
+     #footer{
+        padding: 20px 30px;
+     }
+
+     .JoinUS-logo{
+       height: 50px;
+     }
+
+     .footerinfo, hr{
+        width: 100%;
+        max-width: 400px;
+        padding: 20px 30px;
+     }
+
+     .copy{
+        margin-top: -10px;
+     }
+}
