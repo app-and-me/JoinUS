@@ -141,56 +141,6 @@ textarea::placeholder {
     padding-top: 0.5rem;
 }
 
-.number-container {
-    display: flex;
-    margin: 25px 0 41px 0;
-    flex-wrap: wrap;
-}
-
-.grade {
-    color: #1F64FF;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin: 10px 17px 0 0;
-}
-
-.input-wrapper {
-    display: flex;
-}
-
-.input-wrapper>div {
-    position: absolute;
-    right: 60px;
-    font-size: 1.25rem;
-    color: #AAB2C8;
-    font-weight: 600;
-}
-
-.input-wrapper {
-    position: relative;
-    margin-right: 2.5rem;
-    /* 오른쪽 여백 */
-    display: flex;
-    align-items: center;
-    /* 수직 중앙 정렬 */
-}
-
-.input-number {
-    width: 9.6875rem;
-    height: 2.5rem;
-    background-color: #F5F6FA;
-    margin-right: 2.5rem;
-    font-size: 1.25rem;
-    border-radius: 0.3125rem;
-
-    outline: none;
-    border: none;
-    text-align: center;
-    padding-right: 3rem;
-    /* '명' 텍스트와의 여백 */
-    text-align: end;
-}
-
 .club_introduce {
     width: 100%;
     max-width: 82.5rem;
@@ -217,7 +167,7 @@ textarea::placeholder {
 
 /* mobile */
 @media (max-width:550px) {
-    .nav, .section-club, p, #situation-container,#clubMember-container {
+    .nav, .section-club, p, #situation-container {
         display: none;
     }
      
