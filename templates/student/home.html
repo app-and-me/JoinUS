@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/static/css/detail/style.css">
     <link rel="stylesheet" href="/static/css/student/home.css">
     <link rel="stylesheet" href="/static/css/detail/footer.css">
+    <link rel="stylesheet" href="/static/css/detail/popup.css">
     <link href="/static/images/logo.png" rel="shortcut icon" type="image/x-icon">
     <title>HOME</title>
 </head>
@@ -20,24 +21,21 @@
         </nav>
     </header>
 
-    <main>
-        <section class="section-club">
-            <div id="club-text">동아리</div>
-
-            <div id="club-container">
-                <div class="option2 club">모든 동아리</div>
-                <a href="myclub.html">
-                    <div class="option3 club">신청 동아리</div>
-                </a>
-            </div>
-        </section>
-
-        <section class="search-container">
-            <img src="/static/images/search-bar.png" alt="">
-            <input type="text" id="search-bar" placeholder="동아리를 검색해 주세요.">
-        </section>
-
-        <!-- 신청 완료 팝업창 -->
+    <main id="main">
+       
+        <div id="adjust-container">
+            <section class="section-club">
+                <div id="club-text">동아리</div>
+    
+                <div id="club-container">
+                    
+                        <div class="option2 club"> <a href="home.html"></a>모든 동아리</a></div>
+                     
+                    <div class="option3 club"><a href="/templates/student/myclub.html">신청 동아리</div></a>
+                </div>
+            </section>
+    
+             <!-- 신청 완료 팝업창 -->
         <div id="overlay"></div>
         <div id="popup">
             <div class="message">성공적으로 동아리 신청이 &nbsp;<p class="accent">완료</p>&nbsp; 됐습니다.</div>
@@ -46,32 +44,37 @@
             </div>
             <button id="close-btn">확인</button>
         </div>
-
-        <section class="club-list">
-            <article class="article">
-                <div class="container1">
-                    <img src="\static\images\star.png" class="star-icon" alt="">
-
-                    <div class="article-container">
-                        <div class="title-container">
-                            <div class="club-title">${club.clubName}</div>
-                            <div class="teacher">${}</div>
-                            <div class="apply">지원가능</div>
+    
+            <!-- 검색바 -->
+            
+            <section class="search-container">
+                <img src="/static/images/search-bar.png" alt="">
+                <input type="text" id="search-bar" placeholder="동아리를 검색해 주세요.">
+            </section>
+    
+            <section class="club-list">
+                <article class="article">
+                    <div class="container1">
+                        <img src="\static\images\yellostar.png" alt="">
+                        <div class="article-container">
+                            <div class="title-container">
+                                <div class="club-title">다양한 공부 동아리</div>
+                                <div class="teacher">우호식선생님</div>
+                                <div class="apply">지원가능</div>
+                            </div>
+                            <div class="content">다양한 공부 지원 많아서 공부 열심히 하고 싶은 학생들 이것 저것 다 도와줌...</div>
                         </div>
-                        <div class="content">${simpleIntroduce}</div>
                     </div>
-                </div>
-                <div class="container2">
-                    <div class="clubmember">
-                        <img src="\static\images\personnel.png" alt="">
-                        <div>0/10</div>
+                    <div class="container2">
+                        <div class="clubmember">
+                            <img src="\static\images\personnel.png" alt="">
+                            <div>10/10</div>
+                        </div>
+                        <button class="delete-button">신청 취소</button>
                     </div>
-                    <button class="bnt-apply">신청하기</button>
-                </div>
-            </article>
-
-
-        </section>
+                </article>
+            </section>
+        </div>
     </main>
 
     <footer id="footer">

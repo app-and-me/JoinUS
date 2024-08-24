@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/static/css/detail/style.css">
     <link rel="stylesheet" href="/static/css/student/myclub.css">
     <link rel="stylesheet" href="/static/css/detail/footer.css">
+    <link rel="stylesheet" href="/static/css/detail/popup.css">
     <title>JOINUS</title>
 </head>
 
@@ -19,7 +20,8 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main">
+        <div id="adjust-container">
         <section class="section-club">
             <div id="club-text">동아리</div>
 
@@ -34,12 +36,19 @@
         <!-- 신청 취소 팝업창 -->
         <div id="overlay"></div>
         <div id="popup">
-            <div class="message">성공적으로 동아리 신청이 &nbsp;<p class="accent">취소</p>&nbsp; 됐습니다.</div>
+            <div class="message">성공적으로 동아리 신청이 &nbsp;<p class="delete-accent">취소</p>&nbsp; 됐습니다.</div>
             <div class="club-name">
-                <div>다양한 공부 동아리</div>
+                <div class="clubTitle">다양한 공부 동아리</div>
             </div>
             <button id="close-btn">확인</button>
         </div>
+
+        <!-- 검색바 -->
+        
+        <section class="search-container">
+            <img src="/static/images/search-bar.png" alt="">
+            <input type="text" id="search-bar" placeholder="동아리를 검색해 주세요.">
+        </section>
 
         <section class="club-list">
             <article class="article">
@@ -63,6 +72,7 @@
                 </div>
             </article>
         </section>
+    </div>
     </main>
 
     <footer id="footer">
