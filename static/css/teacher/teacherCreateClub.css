@@ -153,13 +153,17 @@ textarea::placeholder {
     height: 6.625rem;
 }
 
-.club_name {
+#club_name {
     width: 100%;
     max-width: 42.125rem;
     height: 3.125rem;
     padding-top: 0.8rem;
+    background-color: gray;
 }
-
+.club_name {
+    padding: 10px;  
+    font-size: 1.2rem;
+}
 #add-container {
     display: none;
 }

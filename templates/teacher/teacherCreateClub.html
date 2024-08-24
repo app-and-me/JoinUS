@@ -52,12 +52,16 @@
                 <p>관리자 권한 *</p>
             <div id="situation-container">
                 <img src="/static/images/current.png" alt="" class="current">
-                <img src="/static/images/situationCircle.png" alt="" class="nextCircle">
-                <img src="/static/images/preview.png" alt="" class="preview">
             </div>
+
                 <section id="clubName-container">
                     <div class="clubName-text text">동아리명 &nbsp;<div>*</div></div>
-                    <textarea name="club_name" id="clubName" class="club_name clubInfo" placeholder="동아리명을 작성해 주세요." readonly></textarea>
+                   
+                    <select name="clubSelect" class="club_name clubInfo">
+                        <option value="" disabled selected>동아리 선택</option>
+                        <option value="choose{$}">축구부</option>   <!-- 임시 -->
+                        <option value="">배드민턴부</option>
+                    </select>
                 </section>
 
                 <section id="simpleIntroduce-container">
