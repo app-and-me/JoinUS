@@ -36,14 +36,11 @@ main {
 .section-club {
     width: 100%;
     max-width: 1317.007px;
-    height: 0px;
-    height: 8.5625rem;
     border-bottom: 2px #F1F1F1 solid;
 }
 
 #club-container {
     display: flex;
-    column-gap: 50px;
 }
 
 #club-text {
@@ -53,17 +50,25 @@ main {
     font-weight: 600;
 }
 
+#club-container {
+    gap: 40px;
+}
+
 .club {
+    display: flex;
+    padding: 20px 10px;
     color: #AAB2C8;
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 700;
 }
 
 .option3 {
-    padding-bottom: 19px;
-    color: #000;
-    border-bottom: 2px solid #0047FF;
+    margin-bottom: -2px;
+    border-bottom: 2px #0047FF solid;
+    color: #002;
+    font-size: 20px;
 }
+
 
 p {
     color: #0047FF;

@@ -63,6 +63,7 @@ main {
 }
 
 #club-container>:first-child {
+    margin-bottom: -2px;
     border-bottom: 2px #0047FF solid;
     color: #002;
     font-size: 20px;
