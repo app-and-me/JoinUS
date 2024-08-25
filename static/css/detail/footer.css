@@ -49,7 +49,7 @@ hr {
 }
 
 
-
+/* mobile */
 @media (max-width: 550px) {
      #footer{
         padding: 20px 30px;
@@ -69,3 +69,5 @@ hr {
         margin-top: -10px;
      }
 }
+
+/* tablet */
