@@ -34,12 +34,14 @@ body>header {
     height: 1050px;
 }
 
-#adjust-container{
+#adjust-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     row-gap: 40px;
-     
+    width: 100%;
+    max-width: 1317.007px;
+
 }
 
 /* 동아리 */
@@ -82,13 +84,13 @@ body>header {
 
 /* 검색바 */
 .search-container {
-    
+
     /* align-self: flex-start; */
     background-color: #F5F6FA;
     padding: 13px 17px;
     border-radius: 10px;
     /* 반응형 */
-     
+
     width: 100%;
     max-width: 679px;
     display: flex;
@@ -183,6 +185,7 @@ body>header {
     color: #AAB2C8;
     width: 595px;
     font-weight: 400;
+    flex-wrap: wrap;
 }
 
 .container2 {
@@ -223,10 +226,97 @@ button:hover {
     /* background-color: #; */
 }
 
- 
+.search-container2,
+#clubMobile-container {
+    display: none;
+}
 
- 
- 
+/* mobile */
+@media (max-width:550px) {
 
- 
- 
+    .search-container2,
+    #clubMobile-container {
+        display: block;
+
+    }
+
+    .search-container,
+    .section-club {
+        display: none;
+    }
+
+    .search-container2 {
+        display: flex;
+        padding: 14px 25px 14px 22px;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 96px;
+        border-radius: 9999px;
+        background: #fff;
+    }
+    
+    input::placeholder {
+        color: #CCC;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .nav {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 312px;
+    }
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo-title {
+        width: 110px;
+        height: 38px;
+    }
+
+    .student-mypage {
+        width: 28px;
+        height: 28px;
+    }
+
+    #adjust-container {
+        width: 100%;
+        max-width: 312px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #clubMobile-container {
+        display: flex;
+        column-gap: 4px;
+    }
+
+    .title,
+    .title>a {
+        color: rgba(31, 100, 255, 0.25);
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .titles {
+        color: #0047FF;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    .article {
+        width: 100%;
+        max-width: 312px;
+    }
+
+    #adjust-container {
+        /* width: 100%; */
+
+    }
+}
