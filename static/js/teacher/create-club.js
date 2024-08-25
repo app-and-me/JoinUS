@@ -5,20 +5,20 @@ document.getElementById('create-club').addEventListener('submit', function (even
     const overlay = document.getElementById('overlay');
     const closeBtn = document.getElementById('close-btn');
 
-    const clubName = document.getElementById('clubName').value;
+    // const clubName = document.getElementById('clubName').value;
     const simpleIntroduce = document.getElementById('simpleIntroduce').value;
     const clubIntroduce = document.getElementById('clubIntroduce').value;
     const clubImgUrl = document.getElementById('clubImgUrl').value;
 
     // 모든 필드가 채워졌는지 확인
     if (simpleIntroduce && clubIntroduce && clubImgUrl) {
-        document.querySelector('.club-name div').innerHTML = clubName;
+        // document.querySelector('.club-name div').innerHTML = clubName;
 
         // 기존 동아리 데이터를 로컬 스토리지에서 가져오기
         let clubs = JSON.parse(localStorage.getItem('clubs')) || [];
 
         const newClub = {
-            clubName,
+            // clubName,
             simpleIntroduce,
             clubIntroduce,
             clubImgUrl
@@ -37,7 +37,7 @@ document.getElementById('create-club').addEventListener('submit', function (even
         closeBtn.addEventListener('click', () => {
             popup.style.display = 'none';
             overlay.style.display = 'none';
-            window.location.href = 'home.html';
+            window.location.href = '/home.html';
         });
     }  
 });

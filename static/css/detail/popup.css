@@ -37,9 +37,7 @@
     cursor: pointer;
 }
 
-/* #close-btn:hover {
-    background-color: ;
-} */
+ 
 
 .club-name {
     width: 634px;
@@ -58,6 +56,12 @@
     font-weight: 700;
 }
 
+.club-name>.clubTitle{
+    color: #DA4948;
+    font-size: 24px;
+    font-weight: 700;
+}
+
 .message {
     color: #002;
     font-size: 22px;
@@ -70,4 +74,8 @@
 .accent{
     color: #0047FF;
     font-size: 1.375rem;
+}
+
+.delete-accent{
+    color: #DA4948;
 }
