@@ -130,7 +130,8 @@ main {
     display: flex;
     width: 1290px;
     height: 110px;
-    padding: 28px;
+    padding-left: 80px;
+    padding-right: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -215,3 +216,117 @@ button:hover {
     /* background-color: #; */
 }
 
+/* 동아리 신청학생 명단 팝업창 */
+#popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 737px;
+    height: 592px;
+    padding: 50px 50px 18px 50px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 1px 5px 20px 0px #AAB2C8;
+    z-index: 1000;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(170, 178, 200, 0.50);
+    z-index: 1000;
+}
+
+#close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.popup-title {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.popup-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-bottom: 6px;
+    color: #8B8B8B;
+}
+
+.accent{
+    color: #0047FF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.student-count {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.download {
+    font-size: 12px;
+}
+
+.student-list {
+    width: 634px;
+    height: 448px;
+    background-color: #F5F6FA;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.student {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.student img {
+    width: 34px;
+    height: 34px;
+    /* border-radius: 50%; */
+    margin-right: 20px;
+}
+
+.student-info {
+    display: flex;
+    font-size: 18px;
+    color: #8B8B8B;
+    font-weight: 500;
+}
+
+.student-name {
+    color: #002;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+
+/* 팝업창 스크롤바 */
+.student-list::-webkit-scrollbar {
+    border-radius: 5px;
+    background: #FFF;
+    width: 10px;
+    height: 400px;
+}
+
+.student-list::-webkit-scrollbar-thumb {
+    background-color: #1F64FF;
+    border-radius: 5px;
+}
