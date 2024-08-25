@@ -169,3 +169,53 @@ input::placeholder {
     height: 1.125rem;
     margin-top: 2px;
 }
+
+@media (max-width: 550px) {
+    body {
+        background-color: #FFF;
+    }
+
+    .all-container {
+        box-shadow: none;
+    }
+    .line{
+        background: #ECECEC;
+        max-width: 70px;
+        height: 0.1125rem;
+    }
+
+    input::placeholder{
+        font-size: 12px;
+    }
+
+    .field {
+        width: 21rem;
+        height: 3rem;
+    }
+    .language-container{
+        width: 21rem;
+    }
+    .google-login{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:300px) and (max-width: 380px){
+    .field {
+        width: 18rem;
+        height: 2.7rem;
+    }
+    .language-container{
+        width: 18rem;
+    }
+    .login-button{
+        width: 10rem !important;
+        height: 2.6rem !important;
+        font-size: 0.9rem;
+    }
+    .joinus-logo{
+        width: 160px !important;
+        height: 50px !important; 
+
+}
+}
