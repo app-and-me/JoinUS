@@ -38,13 +38,15 @@ body {
     column-gap: 10.5px;
     margin: 3.06rem 0 0.94rem 0;
 }
-.lgg{
+
+.lgg {
     width: 100%;
     max-width: 145px;
     background-color: transparent;
     border: none;
     height: 22px;
 }
+
 .language {
     color: #0047FF;
     font-size: 12px;
@@ -57,7 +59,7 @@ body {
     height: 22px;
     background-color: #FFF;
     border-radius: 3px;
-   
+
 }
 
 #korean {
@@ -178,44 +180,55 @@ input::placeholder {
     .all-container {
         box-shadow: none;
     }
-    .line{
+
+    .line {
         background: #ECECEC;
         max-width: 70px;
         height: 0.1125rem;
     }
 
-    input::placeholder{
+    input::placeholder {
         font-size: 12px;
     }
 
     .field {
-        width: 21rem;
+        width: 19rem;
         height: 3rem;
     }
-    .language-container{
-        width: 21rem;
+
+    .language-container {
+        width: 19rem;
     }
-    .google-login{
+
+    .google-login {
         font-size: 1rem;
+    }
+
+    .googlelogin-container {
+        width: 19rem !important;
+        height: 3.25rem;
     }
 }
 
-@media (min-width:300px) and (max-width: 380px){
+@media (min-width:300px) and (max-width: 380px) {
     .field {
-        width: 18rem;
+        width: 16rem;
         height: 2.7rem;
     }
-    .language-container{
-        width: 18rem;
+
+    .language-container {
+        width: 16rem;
     }
-    .login-button{
+
+    .login-button {
         width: 10rem !important;
         height: 2.6rem !important;
         font-size: 0.9rem;
     }
-    .joinus-logo{
-        width: 160px !important;
-        height: 50px !important; 
 
-}
+    .joinus-logo {
+        width: 160px !important;
+        height: 50px !important;
+
+    }
 }
