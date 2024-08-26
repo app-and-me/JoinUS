@@ -1,5 +1,6 @@
 .my-div {
     position: relative;
+    cursor: pointer;
 }
 
 .popup-mypage {
