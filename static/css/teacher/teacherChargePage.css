@@ -80,6 +80,7 @@ main {
 
 /* 아티클 내용 */
 .article {
+    position: relative;
     border-radius: 10px;
     background: #F5F6FA;
     display: flex;
@@ -178,6 +179,38 @@ button {
     font-size: 14px;
     font-weight: 550;
     cursor: pointer;
+}
+
+.dot {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    width: 5px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* dot 눌렀을 때 삭제 */
+.popup-div {
+    display: none;
+    position: absolute;
+    right: -85px;
+    top: 0px;
+    width: 74px;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: 1px 4px 10px 0px rgba(170, 178, 200, 0.40);
+    border-radius: 10px;
+    z-index: 10;
+    color: #DA4948;
+    font-size: 12px;
+    font-weight: 600;
+    /* padding: 13px 21px 13px 15px; */
+}
+
+.popup-div img {
+    /* width: 12px;
+    height: 13px; */
 }
 
 button:hover {
