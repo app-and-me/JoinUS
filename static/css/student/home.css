@@ -35,8 +35,7 @@ body>header {
 }
 
 /* 동아리 */
-.section-club {
-     
+.section-club {   
     width: 100%;
     /* 임시 */
     max-width: 1317.007px;
@@ -49,7 +48,7 @@ body>header {
 }
 
 #club-text {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: var(--color5);
     font-size: var(--font-size6);
     font-weight: 600;

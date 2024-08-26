@@ -1,5 +1,5 @@
 
- .section-club {
+.section-club {
      width: 100%;
      max-width: 1317.007px;
      border-bottom: 2px #F1F1F1 solid;
@@ -106,39 +106,29 @@
 
  .choose-club {
      width: 542px;
-     height: 50px;
-     padding: 12px 20px;
-     justify-content: center;
-     align-items: center;
      margin-bottom: 35px;
-     gap: 10px;
+ }
+ .teacher-name{
+    display: flex;
+    width: 172px;
+ }
+ .choose-club, .teacher-name{
+    height: 50px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
      border-radius: 5px;
      background: #F5F6FA;
      color: #0047FF;
-     font-size: 20px;
      font-weight: 600;
+     font-size: 20px;
  }
 
  .club_name {
      display: flex;
      column-gap: 19px;
-
      font-size: 1.2rem;
- }
-
- .teacher-name {
-     display: flex;
-     width: 172px;
-     height: 50px;
-     padding: 12px 20px;
-     justify-content: center;
-     align-items: center;
-     gap: 10px;
-     border-radius: 5px;
-     background: #F5F6FA;
-     color: #0047FF;
-     font-weight: 600;
-     font-size: 20px;
  }
 
  .circleimg {
@@ -146,7 +136,52 @@
      height: 5px;
      margin-top: 20px;
  }
+ .number-container {
+    display: flex;
+    margin: 25px 0 41px 0;
+    flex-wrap: wrap;
+}
 
+.grade {
+    color: #1F64FF;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 10px 17px 0 0;
+}
+
+.input-wrapper {
+    display: flex;
+}
+
+.input-wrapper>div {
+    position: absolute;
+    right: 60px;
+    font-size: 1.25rem;
+    color: #AAB2C8;
+    font-weight: 600;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-right: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.input-number {
+    width: 9.6875rem;
+    height: 2.5rem;
+    background-color: #F5F6FA;
+    margin-right: 2.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.3125rem;
+
+    outline: none;
+    border: none;
+    text-align: center;
+    padding-right: 3rem;
+    text-align: end;
+}
  #add-container {
      display: none;
  }
