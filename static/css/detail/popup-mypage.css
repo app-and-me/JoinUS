@@ -1,0 +1,16 @@
+.mypage {
+    position: relative;
+}
+
+.popup-mypage {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    width: 136px;
+    height: 62.486px;
+    border-radius: 10px;
+    box-shadow: 1px 4px 10px 0px rgba(170, 178, 200, 0.40);
+    top: 110px;
+    right: 290px;
+
+}
