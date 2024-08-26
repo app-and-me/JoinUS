@@ -1,4 +1,4 @@
-.mypage {
+.my-div {
     position: relative;
 }
 
@@ -7,10 +7,21 @@
     position: absolute;
     background-color: #FFF;
     width: 136px;
-    height: 62.486px;
+    height: 68px;
     border-radius: 10px;
     box-shadow: 1px 4px 10px 0px rgba(170, 178, 200, 0.40);
-    top: 110px;
-    right: 290px;
+    top: 50px;
+    right: 5px;
+    padding: 13px 58px 11px 10px;
+}
 
+.setting {
+    width: 47px;
+    height: 15px;
+    margin-bottom: 7px;
+}
+
+.logout {
+    width: 66px;
+    height: 14px;
 }
