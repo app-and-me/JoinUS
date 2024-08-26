@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/static/css/detail/footer.css">
     <!-- <link rel="stylesheet" href="/static/css/detail/popup.css"> -->
     <link href="/static/images/logo.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/detail/popup-mypage.css">
     <title>JoinUS!</title>
 </head>
 
@@ -16,7 +17,14 @@
     <header>
         <nav class="nav">
             <div><img src="/static/images/logo-title.png" alt=""></div>
-            <div class="mypage"><a href="#"><img class="mypage-img" src="/static/images/mypages.png" alt="mypage"></a>
+            <div class="my-div">
+                <div class="mypage"><img class="mypage-img" src="/static/images/mypages.png"
+                            alt="mypage"></div>
+                <!-- 마이페이지 팝업 -->
+                <div class="popup-mypage">
+                    <div><img class="setting" src="/static/images/setting.png" alt=""></div>
+                    <img class="logout" src="/static/images/logout.png" alt="">
+                </div>
             </div>
         </nav>
     </header>
@@ -145,6 +153,7 @@
         <p class="copy">©Team App&Me</p>
     </footer>
     <script src="/static/js/teacher/teacher-home.js"></script>
+    <script src="/static/js/mypage/popup-mypage.js"></script>
 </body>
 
 </html>
