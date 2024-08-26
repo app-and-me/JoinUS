@@ -6,7 +6,6 @@ from joinus.views import home, index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('clubs/', include('clubs.urls')),
     path('', index),
     path('home/', home),
 ]
