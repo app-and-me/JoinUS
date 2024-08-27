@@ -8,6 +8,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
     path('home/', home),
+    path('api/user/', include('user.urls'))
 ]
 
 urlpatterns += i18n_patterns(
