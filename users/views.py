@@ -4,7 +4,7 @@ from users.models import User
 from .firebase_auth import create_custom_token, verify_firebase_token
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from users.permissions import HasAPIKey
+from joinus.permissions import HasAPIKey
 from .serializers import UserSerializer
 
 class UserCreate(APIView):
