@@ -13,7 +13,7 @@
     z-index: 1000;
 }
 
-#overlay {
+.overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -37,7 +37,7 @@
     cursor: pointer;
 }
 
- 
+
 
 .club-name {
     width: 634px;
@@ -56,7 +56,7 @@
     font-weight: 700;
 }
 
-.club-name>.clubTitle{
+.club-name>.clubTitle {
     color: #DA4948;
     font-size: 24px;
     font-weight: 700;
@@ -71,11 +71,133 @@
     align-items: center;
 }
 
-.accent{
+.accent {
     color: #0047FF;
     font-size: 1.375rem;
 }
 
-.delete-accent{
+.delete-accent {
     color: #DA4948;
+}
+
+/* 관리자 시간 설정 팝업 */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(170, 178, 200, 0.50);
+    z-index: 1000;
+}
+
+#time-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 5px 20px 0px #AAB2C8;
+    z-index: 1001;
+    width: 737px;
+    height: 451px;
+    text-align: center;
+}
+
+.popup-titleTime {
+    color: #002;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 28px;
+}
+
+.info-container {
+    margin-top: 43px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputTime-container {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    gap: 19px;
+}
+
+.popup-title {
+    color: #0047FF;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    align-self: flex-start;
+}
+
+
+.inputNumber input {
+    width: 50px;
+    padding: 5px;
+    margin-right: 5px;
+    outline: none;
+    border: none;
+    background: #F5F6FA;
+}
+
+
+.inputNumber {
+    display: flex;
+    width: 135px;
+    height: 40px;
+    padding: 7px 20px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #F5F6FA;
+}
+
+.inputHour {
+    display: flex;
+    width: 210px;
+    height: 40px;
+    padding: 7px 17px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #F5F6FA;
+}
+
+.infos {
+    display: inline-block;
+    color: #1F64FF;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+}
+
+
+.setting-btn {
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: var(--, #1F64FF);
+    color: #FFF;
+    font-size: 18px;
+    width: 135px;
+    height: 45px;
+    margin-top: 40px;
 }

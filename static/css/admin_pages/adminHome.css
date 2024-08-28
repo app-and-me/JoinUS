@@ -94,8 +94,9 @@
     align-items: center;
     gap: 15px;
     position: absolute;
-    top: -82px;
-    right: 40px;
+    /* 임시 */
+    top: 0px;
+    left: 1000px;
 }
 
 
@@ -252,14 +253,16 @@ button {
 .popup-div {
     display: none;
     position: absolute;
-    right: -120px;
-    top: 0px;
+
+    right: 25px; 
+    top: 40px; 
+    
     width: 103px;
     height: 62px;
     background-color: #fff;
     box-shadow: 1px 4px 10px 0px rgba(170, 178, 200, 0.40);
     border-radius: 10px;
-    z-index: 10;
+    z-index: 1000;
     color: #DA4948;
     font-size: 12px;
     font-weight: 600;
