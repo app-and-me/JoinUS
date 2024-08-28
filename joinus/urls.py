@@ -8,7 +8,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
     path('home/', home),
-    path('api/users/', include('users.urls'))
+    path('api/users/', include('users.urls')),
+    path('api/clubs/', include('clubs.urls'))
 ]
 
 urlpatterns += i18n_patterns(
