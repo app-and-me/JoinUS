@@ -67,7 +67,6 @@
     height: 45px;
     display: flex;
     align-items: center;
-
     column-gap: 17px;
 }
 
@@ -124,15 +123,7 @@
     background: rgba(66, 133, 244, 0.10);
 }
 
-#infoAll-container {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    margin-top: 30px;
-}
-
-.info-container {
-    display: flex;
+.info-box {
     display: flex;
     flex-direction: column;
     gap: 35px;
