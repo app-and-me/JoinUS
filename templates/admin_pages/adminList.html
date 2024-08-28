@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/detail/style.css">
+    <link rel="stylesheet" href="/static/css/admin_pages/adminList.css">
+    <link rel="stylesheet" href="/static/css/detail/header.css">
+    <link rel="stylesheet" href="/static/css/detail/footer.css">
+    <link rel="stylesheet" href="/static/css/detail/popup.css">
+    <link rel="stylesheet" href="/static/css/detail/popup-mypage.css">
+    <link href="/static/images/logo.png" rel="shortcut icon" type="image/x-icon">
+    <title>JoinUS!</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div><img src="/static/images/logo-title.png" alt=""></div>
+            <div class="my-div">
+                <div class="mypage"><img class="mypage-img" src="/static/images/mypages.png"
+                            alt="mypage"></div>
+                <!-- 마이페이지 팝업 -->
+                <div class="popup-mypage">
+                    <div><img class="setting" src="/static/images/setting.png" alt=""></div>
+                    <img class="logout" src="/static/images/logout.png" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+ <div id="adjust-container">
+     
+        <section class="section-club">
+            <div id="club-text">선생님 명단</div>
+
+            <div id="club-container">
+                <a href="home.html">
+                    <div class="option2 club">모든 동아리</div>
+                </a>
+                <div class="option3 club">명단관리</div>
+            </div>
+        </section>
+
+        <!-- 신청 취소 팝업창 -->
+        <div id="overlay"></div>
+        <div id="popup">
+            <div class="message">성공적으로 동아리 신청이 &nbsp;<p class="delete-accent">취소</p>&nbsp; 됐습니다.</div>
+            <div class="club-name">
+                <div class="clubTitle">다양한 공부 동아리</div>
+            </div>
+            <button id="close-btn">확인</button>
+        </div>
+
+        <!-- 검색바 -->
+        <section class="clubsearch-container">
+            <div class="search-container">
+            <img src="/static/images/search-bar.png" alt="">
+            <input type="text" id="search-bar" placeholder="사용자, 동아리를 검색해 주세요.">
+        </div>
+            <div class="userButton-container">
+                <img src="/static/images/allUpdate.png" alt="" class="userupdate updatebtn">
+                <a href="/templates/admin_pages/adminCreateClub.html"><img src="/static/images/userAddButton.png" alt="" class="addUser userbtn"></a>
+                <img src="/static/images/userDeleteButton.png" alt="" class="userdelete userbtn">
+            </div>
+        </section>
+
+
+        <section id="info-list">
+            <!-- 명단 내용 전체 묶음 -->
+           <div class="listDetail-container">
+           
+            <!-- 이름, 이메일, 선생님 명단 전체 묶음 -->
+            <div class="infoTitle-container">
+                <div class="namebox">
+                    <input type="checkbox" id="name" name="" class="nameCheck">
+                    <label for="name" class="name-title titles">이름</label>
+                </div>
+
+                <div class="email-title titles">이메일</div>
+
+                <div class="roster">
+                    <a href="#"><img src="/static/images/btn-prev.png" alt="prev" class="btn-prev btn"></a>
+                    <div class="teacher-roster">선생님 명단</div>
+                    <a href="#"><img src="/static/images/btn-next.png" alt="next" class="btn-next btn"></a>
+                </div>
+            </div>
+
+                 <!-- 이름, 이메일, 수정/삭제 버튼 -->
+                  
+                     <div class="info-container">
+                        <div class="namebox">
+                        <input type="checkbox" id="name" name="">
+                        <!-- <img src="/static/images/teacher-logo.png" alt="" class="teacher-logo"> -->
+                        <label for="name" class="userName">우호식</label>
+                        <div class="info-email">d2325@e-mirim.hs.kr</div>
+                        <img src="/static/images/dotdotdot.png" alt="" class="edit-button">
+                    </div>
+
+                    
+                    <div class="namebox">
+                        <input type="checkbox" id="name" name="">
+                        <!-- <img src="/static/images/teacher-logo.png" alt="" class="teacher-logo"> -->
+                        <label for="name" class="userName">신혜영</label>
+                        <div class="info-email">d2325@e-mirim.hs.kr</div>
+                    <img src="/static/images/dotdotdot.png" alt="" class="edit-button">
+                    </div>
+        </div>
+    </div>
+    <!-- 다음 페이지로 넘어가는 버튼 -->
+        <div id="listBtn-container">
+            <img src="/static/images/blueBtn1.png" alt="teacher" class="button1 button">
+            <a href="#"><img src="/static/images/Btn2.png" alt="student" class="button2 button"></a>
+            <a href="#"><img src="/static/images/Btn3.png" alt="clubRoster" class="button3 button"></a>
+        </div>
+        </section>
+        
+    </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footerinfo">
+            <img src="/static/images/logo-title.png" alt="JoinUS" class="JoinUS-logo">
+            <p class="footer-info tell">문의전화 : 010-0000-0000</p>
+            <p class="footer-info email">이메일 : ssss@e-mirim.hs.kr</p>
+        </div>
+        <hr>
+        <p class="copy">©Team App&Me</p>
+    </footer>
+    <script src="/static/js/student/myclub.js"></script>
+    <script src="/static/js/mypage/popup-mypage.js"></script>
+</body>
+
+</html>

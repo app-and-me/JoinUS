@@ -1,0 +1,260 @@
+#main {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+#adjust-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 40px;
+    width: 100%;
+    max-width: 1317.007px;
+    margin-bottom: 70px;
+    flex-grow: 1;
+}
+
+/* 동아리 */
+.section-club {
+    width: 100%;
+    max-width: 1317.007px;
+    border-bottom: 2px #F1F1F1 solid;
+}
+
+#club-container {
+    display: flex;
+    gap: 40px;
+}
+
+#club-text {
+    margin-bottom: 30px;
+    color: var(--color5);
+    font-size: var(--font-size6);
+    font-weight: 600;
+}
+
+.club {
+    display: flex;
+    padding: 20px 10px;
+    color: #AAB2C8;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.option3 {
+    padding-bottom: 19px;
+    color: #000;
+    border-bottom: 2px solid #0047FF;
+    margin-bottom: -2px;
+}
+
+/* 검색바 */
+.clubsearch-container {
+    display: flex;
+    column-gap: 87px;
+}
+
+.search-container {
+    background-color: #F5F6FA;
+    padding: 13px 17px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 679px;
+    min-width: 679px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+
+    column-gap: 17px;
+}
+
+.search-container>img {
+    width: 16px;
+    height: 16.014px;
+}
+
+.userButton-container {
+    display: flex;
+    column-gap: 17px;
+    cursor: pointer;
+}
+
+.userbtn {
+    width: 100%;
+    max-width: 150px;
+    height: 42px;
+}
+
+.updatebtn {
+    width: 100%;
+    max-width: 220px;
+    height: 42px;
+}
+
+#search-bar {
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    flex-grow: 1;
+}
+
+/* #info-list {
+    
+} */
+.listDetail-container {
+    width: 100%;
+    max-width: 1320px;
+    min-width: 1320px;
+    height: 915px;
+    border-radius: 5px;
+    background: #F5F6FA;
+    margin-bottom: 100px;
+    overflow-y: auto; /*스크롤바*/
+    box-sizing: border-box;
+}
+
+.infoTitle-container {
+    display: flex;
+    height: 55px;
+    border-radius: 5px 5px 0px 0px;
+    background: rgba(66, 133, 244, 0.10);
+}
+
+#infoAll-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 30px;
+}
+
+.info-container {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 30px;
+}
+
+input#name {
+    margin-left: 40px;
+    width: 22px;
+    height: 22px;
+}
+
+.titles {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.namebox {
+    display: flex;
+    column-gap: 45px;
+}
+
+.roster,
+.email-title,
+.nameCheck {
+    margin-top: 17px;
+}
+
+.name-title {
+    margin: 17px 319px 0 0;
+}
+
+.email-title {
+    margin-right: 595px;
+}
+
+.roster {
+    display: flex;
+    gap: 18px;
+}
+
+.teacher-roster {
+    color: #AAB2C8;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.teacher-logo {
+    width: 34px;
+    height: 34px;
+}
+
+.btn {
+    width: 19px;
+    height: 19px;
+}
+
+.edit-button {
+    width: 5px;
+    height: 20px;
+}
+
+.userName {
+    color: #0047FF;
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 247px;
+}
+
+.info-email {
+    color: #8B8B8B;
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 126px;
+}
+
+.button {
+    width: 100%;
+    max-width: 38px;
+    height: 38px;
+}
+
+#listBtn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+/* mobile */
+@media (max-width:550px) {
+
+    input::placeholder {
+        color: #CCC;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .nav {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 312px;
+    }
+
+    .logo-title {
+        width: 110px;
+        height: 38px;
+    }
+
+    #adjust-container {
+        width: 100%;
+        max-width: 312px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #adjust-container {
+        /* width: 100%; */
+    }
+}
