@@ -43,147 +43,195 @@
                 </div>
             </section>
 
-            <!-- 시간 설정 팝업창 -->
-            <div id="overlay"></div>
-            <div id="popup">
-                <div class="message">시간 설정 하기</div>
-
-                <button id="close-btn">설정 완료</button>
-            </div>
-
-            <!-- 검색바 -->
-            <section class="search-container">
-                <img src="/static/images/search-bar.png" alt="">
-                <input type="text" id="search-bar" placeholder="동아리를 검색해 주세요.">
-            </section>
 
             <div class="button-container">
+                <!-- 검색바 -->
+                <section class="search-container">
+                    <img src="/static/images/search-bar.png" alt="">
+                    <input type="text" id="search-bar" placeholder="동아리를 검색해 주세요.">
+                </section>
 
+                <!-- 색깔 버튼 -->
                 <div class="button-div">
                     <button class="add"><img src="/static/images/add.png" alt=""></button>
                     <button class="settingTime">시간 설정 하기</button>
                 </div>
-
-                <section class="club-list">
-                    <article class="article">
-                        <div class="container1">
-                            <div class="article-container">
-                                <div class="title-container">
-                                    <div class="club-title">다양한 공부 동아리</div>
-                                    <div class="teacher">우호식선생님</div>
-                                </div>
-                                <div class="content">다양한 공부 지원 많아서 공부 열심히 하고 싶은 학생들 이것 저것 다 도와줌...</div>
-                            </div>
-                        </div>
-                        <div class="container2">
-                            <div class="clubmember">
-                                <img src="\static\images\personnel.png" alt="">
-                                <div>10/10</div>
-                            </div>
-                        </div>
-                        <img class="dot" src="/static/images/dotdotdot.png" alt="">
-                        <!-- 팝업-삭제, 수정 -->
-                        <div class="popup-div">
-                            <img class="del" src="/static/images/del.png" alt="">
-                            <img class="change" src="/static/images/change.png" alt="">
-                        </div>
-                    </article>
-                    <article class="article">
-                        <div class="container1">
-                            <div class="article-container">
-                                <div class="title-container">
-                                    <div class="club-title">다양한 공부 동아리</div>
-                                    <div class="teacher">우호식선생님</div>
-                                </div>
-                                <div class="content">다양한 공부 지원 많아서 공부 열심히 하고 싶은 학생들 이것 저것 다 도와줌...</div>
-                            </div>
-                        </div>
-                        <div class="container2">
-                            <div class="clubmember">
-                                <img src="\static\images\personnel.png" alt="">
-                                <div>10/10</div>
-                            </div>
-                        </div>
-                        <img class="dot" src="/static/images/dotdotdot.png" alt="">
-                        <!-- 팝업-삭제, 수정 -->
-                        <div class="popup-div">
-                            <img class="del" src="/static/images/del.png" alt="">
-                            <img class="change" src="/static/images/change.png" alt="">
-                        </div>
-                    </article>
-                    <article class="article">
-                        <div class="container1">
-                            <div class="article-container">
-                                <div class="title-container">
-                                    <div class="club-title">다양한 공부 동아리</div>
-                                    <div class="teacher">우호식선생님</div>
-                                </div>
-                                <div class="content">다양한 공부 지원 많아서 공부 열심히 하고 싶은 학생들 이것 저것 다 도와줌...</div>
-                            </div>
-                        </div>
-                        <div class="container2">
-                            <div class="clubmember">
-                                <img src="\static\images\personnel.png" alt="">
-                                <div>10/10</div>
-                            </div>
-                        </div>
-                        <img class="dot" src="/static/images/dotdotdot.png" alt="">
-                        <!-- 팝업-삭제, 수정 -->
-                        <div class="popup-div">
-                            <img class="del" src="/static/images/del.png" alt="">
-                            <img class="change" src="/static/images/change.png" alt="">
-                        </div>
-                    </article>
-                    <article class="article">
-                        <div class="container1">
-                            <div class="article-container">
-                                <div class="title-container">
-                                    <div class="club-title">다양한 공부 동아리</div>
-                                    <div class="teacher">우호식선생님</div>
-                                </div>
-                                <div class="content">다양한 공부 지원 많아서 공부 열심히 하고 싶은 학생들 이것 저것 다 도와줌...</div>
-                            </div>
-                        </div>
-                        <div class="container2">
-                            <div class="clubmember">
-                                <img src="\static\images\personnel.png" alt="">
-                                <div>10/10</div>
-                            </div>
-                        </div>
-                        <img class="dot" src="/static/images/dotdotdot.png" alt="">
-                        <!-- 팝업-삭제, 수정 -->
-                        <div class="popup-div">
-                            <img class="del" src="/static/images/del.png" alt="">
-                            <img class="change" src="/static/images/change.png" alt="">
-                        </div>
-                    </article>
-                    <article class="article">
-                        <div class="container1">
-                            <div class="article-container">
-                                <div class="title-container">
-                                    <div class="club-title">다양한 공부 동아리</div>
-                                    <div class="teacher">우호식선생님</div>
-                                </div>
-                                <div class="content">다양한 공부 지원 많아서 공부 열심히 하고 싶은 학생들 이것 저것 다 도와줌...</div>
-                            </div>
-                        </div>
-                        <div class="container2">
-                            <div class="clubmember">
-                                <img src="\static\images\personnel.png" alt="">
-                                <div>10/10</div>
-                            </div>
-                        </div>
-                        <img class="dot" src="/static/images/dotdotdot.png" alt="">
-                        <!-- 팝업-삭제, 수정 -->
-                        <div class="popup-div">
-                            <img class="del" src="/static/images/del.png" alt="">
-                            <img class="change" src="/static/images/change.png" alt="">
-                        </div>
-                    </article>
-
-
-                </section>
             </div>
+
+            <!-- 시간 설정 팝업창 -->
+            <div id="overlayTime" class="overlay"></div>
+            <div id="time-popup">
+                <img id="close-btnTime" class="close-btn" src="/static/images/x.png" alt="close">
+                <div class="popup-titleTime">시간 설정 하기</div>
+
+                <div class="settingTime-conteiner">
+                    <!-- 오픈 시간 설정 -->
+                    <div class="info-container">
+                        <div class="open popup-title">동아리 오픈 시간</div>
+                        <div class="inputTime-container">
+                            <div class="inputNumber">
+                                <input type="text" class="infos">
+                                <div class="infos">월</div>
+                            </div>
+                            <div class="inputNumber">
+                                <input type="text" class="infos">
+                                <div class="infos">일</div>
+                            </div>
+                            <div class="inputNumber inputHour">
+                                <input type="text" class="infos">
+                                <div class="infos">시</div>
+                                <input type="text" class="infos">
+                                <div class="infos">분</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 마감 시간 설정 -->
+                    <div class="info-container">
+                        <div class="close popup-title">동아리 마감 시간</div>
+                        <div class="inputTime-container">
+                            <div class="inputNumber">
+                                <input type="text" class="infos">
+                                <div class="infos">월</div>
+                            </div>
+                            <div class="inputNumber">
+                                <input type="text" class="infos">
+                                <div class="infos">일</div>
+                            </div>
+                            <div class="inputNumber inputHour">
+                                <input type="text" class="infos">
+                                <div class="infos">시</div>
+                                <input type="text" class="infos">
+                                <div class="infos">분</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="setting-btn">설정 완료</button>
+            </div>
+
+
+
+
+            <section class="club-list">
+                <article class="article">
+                    <div class="container1">
+                        <div class="article-container">
+                            <div class="title-container">
+                                <div class="club-title">다양한 공부 동아리</div>
+                                <div class="teacher">우호식선생님</div>
+                            </div>
+                            <div class="content">다양한 공부 지원 많아서 공부 열심히 하고 싶은 학생들 이것 저것 다 도와줌...</div>
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="clubmember">
+                            <img src="\static\images\personnel.png" alt="">
+                            <div>10/10</div>
+                        </div>
+                    </div>
+                    <img class="dot" src="/static/images/dotdotdot.png" alt="">
+                    <!-- 팝업-삭제, 수정 -->
+                    <div class="popup-div">
+                        <img class="del" src="/static/images/del.png" alt="">
+                        <img class="change" src="/static/images/change.png" alt="">
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="container1">
+                        <div class="article-container">
+                            <div class="title-container">
+                                <div class="club-title">다양한 공부 동아리</div>
+                                <div class="teacher">우호식선생님</div>
+                            </div>
+                            <div class="content">다양한 공부 지원 많아서 공부 열심히 하고 싶은 학생들 이것 저것 다 도와줌...</div>
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="clubmember">
+                            <img src="\static\images\personnel.png" alt="">
+                            <div>10/10</div>
+                        </div>
+                    </div>
+                    <img class="dot" src="/static/images/dotdotdot.png" alt="">
+                    <!-- 팝업-삭제, 수정 -->
+                    <div class="popup-div">
+                        <img class="del" src="/static/images/del.png" alt="">
+                        <img class="change" src="/static/images/change.png" alt="">
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="container1">
+                        <div class="article-container">
+                            <div class="title-container">
+                                <div class="club-title">다양한 공부 동아리</div>
+                                <div class="teacher">우호식선생님</div>
+                            </div>
+                            <div class="content">다양한 공부 지원 많아서 공부 열심히 하고 싶은 학생들 이것 저것 다 도와줌...</div>
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="clubmember">
+                            <img src="\static\images\personnel.png" alt="">
+                            <div>10/10</div>
+                        </div>
+                    </div>
+                    <img class="dot" src="/static/images/dotdotdot.png" alt="">
+                    <!-- 팝업-삭제, 수정 -->
+                    <div class="popup-div">
+                        <img class="del" src="/static/images/del.png" alt="">
+                        <img class="change" src="/static/images/change.png" alt="">
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="container1">
+                        <div class="article-container">
+                            <div class="title-container">
+                                <div class="club-title">다양한 공부 동아리</div>
+                                <div class="teacher">우호식선생님</div>
+                            </div>
+                            <div class="content">다양한 공부 지원 많아서 공부 열심히 하고 싶은 학생들 이것 저것 다 도와줌...</div>
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="clubmember">
+                            <img src="\static\images\personnel.png" alt="">
+                            <div>10/10</div>
+                        </div>
+                    </div>
+                    <img class="dot" src="/static/images/dotdotdot.png" alt="">
+                    <!-- 팝업-삭제, 수정 -->
+                    <div class="popup-div">
+                        <img class="del" src="/static/images/del.png" alt="">
+                        <img class="change" src="/static/images/change.png" alt="">
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="container1">
+                        <div class="article-container">
+                            <div class="title-container">
+                                <div class="club-title">다양한 공부 동아리</div>
+                                <div class="teacher">우호식선생님</div>
+                            </div>
+                            <div class="content">다양한 공부 지원 많아서 공부 열심히 하고 싶은 학생들 이것 저것 다 도와줌...</div>
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="clubmember">
+                            <img src="\static\images\personnel.png" alt="">
+                            <div>10/10</div>
+                        </div>
+                    </div>
+                    <img class="dot" src="/static/images/dotdotdot.png" alt="">
+                    <!-- 팝업-삭제, 수정 -->
+                    <div class="popup-div">
+                        <img class="del" src="/static/images/del.png" alt="">
+                        <img class="change" src="/static/images/change.png" alt="">
+                    </div>
+                </article>
+
+
+            </section>
+        </div>
         </div>
     </main>
 
