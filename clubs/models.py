@@ -22,10 +22,4 @@ class ClubApplication(models.Model):
     status = models.CharField(max_length=20, choices=[('applied', '신청'), ('canceled', '취소')], default='applied')
     applied_at = models.DateTimeField(auto_now_add=True)
     canceled_at = models.DateTimeField(null=True, blank=True)
-
-
-class ClubContent(models.Model):
-    content_id = models.AutoField(primary_key=True)
-    club = models.ForeignKey(Club, on_delete=models.CASCADE, related_name='contents')
-    content_type = models.CharField(max_length=20, choices=[('photo', '사진'), ('video', '동영상')])
     url = models.URLField(blank=True)

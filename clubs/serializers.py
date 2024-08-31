@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Club, ClubApplication, ClubContent
+from .models import Club, ClubApplication
 
 class ClubSerializer(serializers.ModelSerializer):
     class Meta:
@@ -13,8 +13,3 @@ class ClubApplicationSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             'status': {'read_only' : True}
         }
-
-class ClubContentSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = ClubContent
-        fields = '__all__'
