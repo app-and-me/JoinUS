@@ -68,3 +68,20 @@
     white-space: nowrap;  
     cursor: pointer;
 }
+
+#receiveLink-btn{
+    width: 100%;
+    min-width: 83px;
+    height: 27px;
+    font-size: 10px;
+    padding: 5px;
+    text-align: center;
+    border: 1.4px solid #1F64FF;
+    border-radius: 33px;
+    background:  #FFF;
+    color: #1F64FF;
+    font-weight: 700;
+    white-space: nowrap;  
+    cursor: pointer;
+    margin: 17px 0 60px 0;
+}

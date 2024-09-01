@@ -1,6 +1,5 @@
 body {
     background: #F5F6FA;
-
 }
 
 #main {
@@ -8,37 +7,41 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
+    
+}
+
+.container {
+    position: relative;  
 }
 
 .title-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    position: relative;  
     margin: 12.03rem 0 3.97rem 0;
 }
+
+.before-arrow  {
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    left: 0;  
+    top: 50%;  
+    transform: translateY(-50%);  
+}
+ 
 
 .progress-container {
     display: flex;
     column-gap: 10px;
+    justify-content: center;
 }
 
 .progress {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 13px;
-    font-size: 1.25rem;
-    width: 2.32719rem;
-    height: 2.3125rem;
-    border-radius: 5.1875rem;
-    background: #1F64FF;
-    text-align: center;
-}
-
-.second-progress {
-    color: #fff;
-}
-
-.first-progress {
-    color: var(--color1);
-    background-color: #fff;
+    width: 37.235px;
+    height: 37px;
 }
 
 .circle {
@@ -51,7 +54,7 @@ body {
 #table {
     border-collapse: collapse;
     width: 100%;
-    max-width: 850px;
+    min-width: 850px;
     height: 425px;
     border-radius: 0.625rem;
     background: #FFF;
@@ -76,6 +79,7 @@ td {
     outline: none;
     padding: 8px;
     font-size: 1.45rem;
+    padding-left: 80px;
 }
 
 input::placeholder {
@@ -108,41 +112,49 @@ input::placeholder {
     font-weight: 600;
     cursor: pointer;
 }
- 
+
 @media (max-width: 600px) {
     #table {
         margin: 0 auto;
-        width: 350px; /* 모바일 화면에서의 너비 */
-        height: 316px; /* 모바일 화면에서의 높이 */
+        width: 350px;
+        /* 모바일 화면에서의 너비 */
+        height: 316px;
+        /* 모바일 화면에서의 높이 */
         padding: 20px;
     }
 
     .info {
-        width: 100%; /* 모바일 화면에서의 입력 필드 너비 조정 */
-        max-width:304px;
-        font-size: 1rem; /* 모바일 화면에서의 글씨 크기 조정 */
+        width: 100%;
+        /* 모바일 화면에서의 입력 필드 너비 조정 */
+        max-width: 304px;
+        font-size: 1rem;
+        /* 모바일 화면에서의 글씨 크기 조정 */
     }
 
     .td {
-        font-size: 1rem; /* 모바일 화면에서의 텍스트 크기 조정 */
-        padding-left: 1rem; /* 모바일 화면에서의 패딩 조정 */
+        font-size: 1rem;
+        /* 모바일 화면에서의 텍스트 크기 조정 */
+        padding-left: 1rem;
+        /* 모바일 화면에서의 패딩 조정 */
     }
 
     .joinus-title {
-        font-size: 2rem; /* 모바일 화면에서의 제목 글씨 크기 조정 */
+        font-size: 2rem;
+        /* 모바일 화면에서의 제목 글씨 크기 조정 */
     }
-    .before-arrow { 
+
+    .before-arrow {
         position: absolute;
         top: 0;
         left: 0;
         margin: 20px 0 0 20px;
     }
-    
+
 }
 
-@media (min-width:300px) and (max-width: 380px){
-     #info-form{
+@media (min-width:300px) and (max-width: 380px) {
+    #info-form {
         padding: 50px;
         margin: 0 auto;
-     }
+    }
 }
