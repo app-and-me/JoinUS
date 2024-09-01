@@ -7,7 +7,7 @@
     if(!userId || !userPassword){
         return;
     }
-    window.location.href='student-password.html';
+    window.location.href='/templates/student/student-password.html';
 });
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -23,5 +23,8 @@ document.addEventListener('DOMContentLoaded', function(){
        englishButton.classList.add('active');
        koreanButton.classList.remove('active'); 
     });
+    
+    
 });
 
+ 
