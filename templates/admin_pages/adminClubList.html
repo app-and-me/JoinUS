@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/detail/style.css">
     <link rel="stylesheet" href="/static/css/admin_pages/adminList.css">
+    <link rel="stylesheet" href="/static/css/admin_pages/adminClubList.css">
     <link rel="stylesheet" href="/static/css/detail/header.css">
     <link rel="stylesheet" href="/static/css/detail/footer.css">
     <link rel="stylesheet" href="/static/css/detail/popup.css">
@@ -34,12 +35,10 @@
  <div id="adjust-container">
      
         <section class="section-club">
-            <div id="club-text">선생님 명단</div>
+            <div id="club-text">담당 동아리 명단</div>
 
             <div id="club-container">
-                <a href="home.html">
-                    <div class="option2 club">모든 동아리</div>
-                </a>
+                <a href="adminHome.html" class="option2 club" >모든 동아리</a>
                 <div class="option3 club">명단관리</div>
             </div>
         </section>
@@ -76,15 +75,15 @@
             <div class="infoTitle-container">
                 <div class="namebox">
                     <input type="checkbox" id="name" name="" class="nameCheck">
-                    <label for="name" class="name-title titles">이름</label>
+                    <label for="name" class="teacher titles">담당 선생님</label>
                 </div>
 
-                <div class="email-title titles">이메일</div>
+                <div class="club-text titles">담당 동아리</div>
 
                 <div class="roster">
-                    <a href="#"><img src="/static/images/btn-prev.png" alt="prev" class="btn-prev btn"></a>
-                    <div class="teacher-roster">선생님 명단</div>
-                    <a href="#"><img src="/static/images/btn-next.png" alt="next" class="btn-next btn"></a>
+                    <a href="adminStudentList.html"><img src="/static/images/btn-prev.png" alt="prev" class="btn-prev btn"></a>
+                    <div class="teacher-roster">담당 동아리 명단</div>
+                    <a href="adminTeacherList.html"><img src="/static/images/btn-next.png" alt="next" class="btn-next btn"></a>
                 </div>
             </div>
 
@@ -92,18 +91,16 @@
                   
                      <div class="info-box">
                         <div class="namebox">
-                        <input type="checkbox" id="name" name="">
-                        <!-- <img src="/static/images/teacher-logo.png" alt="" class="teacher-logo"> -->
-                        <label for="name" class="userName">우호식</label>
+                        <input type="checkbox" id="checkbox" name="">
+                        <label for="checkbox" class="userName">우호식</label>
                         <div class="info-email">d2325@e-mirim.hs.kr</div>
                         <img src="/static/images/dotdotdot.png" alt="" class="edit-button">
                     </div>
 
                     
                     <div class="namebox">
-                        <input type="checkbox" id="name" name="">
-                        <!-- <img src="/static/images/teacher-logo.png" alt="" class="teacher-logo"> -->
-                        <label for="name" class="userName">신혜영</label>
+                        <input type="checkbox" id="checkbox" name="">
+                        <label for="checkbox" class="userName">신혜영</label>
                         <div class="info-email">d2325@e-mirim.hs.kr</div>
                     <img src="/static/images/dotdotdot.png" alt="" class="edit-button">
                     </div>
@@ -111,9 +108,9 @@
     </div>
     <!-- 다음 페이지로 넘어가는 버튼 -->
         <div id="listBtn-container">
-            <img src="/static/images/blueBtn1.png" alt="teacher" class="button1 button">
-            <a href="#"><img src="/static/images/Btn2.png" alt="student" class="button2 button"></a>
-            <a href="#"><img src="/static/images/Btn3.png" alt="clubRoster" class="button3 button"></a>
+            <a href="adminTeacherList.html"><img src="/static/images/Btn1.png" alt="teacher" class="button1 button"></a>
+            <a href="adminStudentList.html"><img src="/static/images/Btn2.png" alt="student" class="button2 button"></a>
+            <a href="adminClubList.html"><img src="/static/images/blueBtn3.png" alt="clubRoster" class="button3 button"></a>
         </div>
         </section>
         
@@ -129,8 +126,9 @@
         <hr>
         <p class="copy">©Team App&Me</p>
     </footer>
-    <script src="/static/js/student/myclub.js"></script>
+     <script src="/static/js/admin_pages/adminList.js"></script>
     <script src="/static/js/mypage/popup-mypage.js"></script>
+    <script src="/static/js/admin_pages/checkbox.js"></script>
 </body>
 
 </html>
