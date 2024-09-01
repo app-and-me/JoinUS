@@ -11,6 +11,10 @@ from users.models import User
 from clubs.models import ClubApplication
 from clubs.models import Club
 
+# 유저 권한 체크
+def is_admin_user(user):
+    return user.role == 'admin'
+
 # 동아리 정보 수정
 @api_view(['PATCH'])
 def update_club_info(request, club_id):
@@ -20,7 +24,7 @@ def update_club_info(request, club_id):
     if uid:
         try:
             user = get_object_or_404(User, user_uid=uid)
-            if user.role == 'admin':
+            if is_admin_user():
                 club = get_object_or_404(Club, pk=club_id)
 
                 # 요청 본문(body)에서 수정할 값을 가져옴
@@ -57,7 +61,7 @@ def delete_club(request, club_id):
         try:
             user = get_object_or_404(User, user_uid=uid)
 
-            if user.role == 'admin':
+            if is_admin_user():
                 club = get_object_or_404(Club, pk=club_id)
 
                 # 동아리 삭제
@@ -83,7 +87,7 @@ def create_club_contents(request, club_id):
         try:
             user = get_object_or_404(User, user_uid=uid)
 
-            if user.role == 'admin':
+            if is_admin_user():
                 url = request.data.get('url')
 
                 # url이 포함되지 않았을 경우
@@ -95,7 +99,6 @@ def create_club_contents(request, club_id):
                 # 새로운 ClubApplication 설정
                 application = ClubApplication(
                     club=club,
-                    student=user,
                     url=url
                 )
 
