@@ -19,8 +19,7 @@
         <nav class="nav">
             <div><img src="/static/images/logo-title.png" alt=""></div>
             <div class="my-div">
-                <div class="mypage"><img class="mypage-img" src="/static/images/mypages.png"
-                            alt="mypage"></div>
+                <div class="mypage"><img class="mypage-img" src="/static/images/mypages.png" alt="mypage"></div>
                 <!-- 마이페이지 팝업 -->
                 <div class="popup-mypage">
                     <div><img class="setting" src="/static/images/setting.png" alt=""></div>
@@ -31,134 +30,143 @@
     </header>
 
     <main id="main">
- <div id="adjust-container">
-     
-        <section class="section-club">
-            <div id="club-text">선생님 명단</div>
+        <div id="adjust-container">
 
-            <div id="club-container">
-                <a href="adminHome.html" class="option2 club" >모든 동아리</a>
-                <div class="option3 club">명단관리</div>
-            </div>
-        </section>
+            <section class="section-club">
+                <div id="club-text">선생님 명단</div>
 
-        <!-- 검색바 -->
-        <section class="clubsearch-container">
-            <div class="search-container">
-                <img src="/static/images/search-bar.png" alt="">
-                <input type="text" id="search-bar" placeholder="사용자, 동아리를 검색해 주세요.">
-            </div>
-            <div class="userButton-container">
-                <img src="/static/images/allUpdate.png" alt="" class="userupdate updatebtn">
-                <a href="/templates/admin_pages/adminCreateClub.html"><img src="/static/images/userAddButton.png" alt="" class="addUser userbtn"></a>
-                <img src="/static/images/userDeleteButton.png" alt="" class="userdelete userbtn">
-            </div>
-        </section>
-        
-        
-        <!-- 사용자 일괄 업데이트 -->
-        <div id="overlayupdate" class="overlay"></div>
-        <div id="update-popup">
-            <img id="close-btnupdate" class="close-btn" src="/static/images/x.png" alt="close">
-            <div class="popup-update">사용자 일괄 업데이트</div>
-            <div class="content-section">
-                <div class="image-section">
-                    <img class="num1" src="/static/images/num1.jpg" alt="">
-                    <img class="num2" src="/static/images/num2.jpg" alt="">
-                    <img src="/static/images/num3.jpg" alt="">
+                <div id="club-container">
+                    <a href="adminHome.html" class="option2 club">모든 동아리</a>
+                    <div class="option3 club">명단관리</div>
                 </div>
+            </section>
 
-                <div class="info-section">
-                    <div class="csv-download">
-                        <div class="section-title">CSV 파일 다운로드</div>
-                        <div class="csv-icons">
-                            <div><img src="/static/images/informationCSV.png" alt=""></div>
-                            <div><img src="/static/images/emptyCSV.png" alt=""></div>
+            <!-- 검색바 -->
+            <section class="clubsearch-container">
+                <div class="search-container">
+                    <img src="/static/images/search-bar.png" alt="">
+                    <input type="text" id="search-bar" placeholder="사용자, 동아리를 검색해 주세요.">
+                </div>
+                <div class="userButton-container">
+                    <img src="/static/images/allUpdate.png" alt="" class="userupdate updatebtn">
+                    <a href="/templates/admin_pages/adminCreateClub.html"><img src="/static/images/userAddButton.png"
+                            alt="" class="addUser userbtn"></a>
+                    <img src="/static/images/userDeleteButton.png" alt="" class="userdelete userbtn">
+                </div>
+            </section>
+
+            <section id="info-list">
+                <!-- 명단 내용 전체 묶음 -->
+                <div class="listDetail-container">
+
+                    <!-- 이름, 이메일, 선생님 명단 전체 묶음 -->
+                    <div class="infoTitle-container">
+                        <div class="namebox">
+                            <input type="checkbox" id="name" name="" class="nameCheck">
+                            <label for="name" class="name-title titles">이름</label>
+                        </div>
+
+                        <div class="email-title titles">이메일</div>
+
+                        <div class="roster">
+                            <a href="adminClubList.html"><img src="/static/images/btn-prev.png" alt="prev"
+                                    class="btn-prev btn"></a>
+                            <div class="teacher-roster">선생님 명단</div>
+                            <a href="adminStudentList.html"><img src="/static/images/btn-next.png" alt="next"
+                                    class="btn-next btn"></a>
                         </div>
                     </div>
 
-                    <div class="csv-instructions">
-                        <div class="section-title">CSV 템플릿에 사용자 정보 추가 또는 수정</div>
-                        <div class="essential">이름, 이메일 주소 경로는 필수 입력란입니다.</div>
-                    </div>
+                    <!-- 이름, 이메일, 수정/삭제 버튼 -->
 
-                    <table class="csv-table">
-                        <tr>
-                            <th>A</th>
-                            <th>B</th>
-                        </tr>
-                        <tr>
-                            <td>name</td>
-                            <td>Email address</td>
-                        </tr>
-                        <tr>
-                            <td>홍길동</td>
-                            <td>Gildong@gmail.com</td>
-                        </tr>
-                    </table>
-
-                    <div class="csv-upload">
-                        <div class="section-title">CSV 파일 다운로드</div>
-                        <button class="upload-button">CSV 파일 첨부</button>
-                    </div>
-
-                    <div>
-                        <Button id="cancel-button">취소</Button>
-                        <button id="upload-button">업로드</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <section id="info-list">
-            <!-- 명단 내용 전체 묶음 -->
-           <div class="listDetail-container">
-           
-            <!-- 이름, 이메일, 선생님 명단 전체 묶음 -->
-            <div class="infoTitle-container">
-                <div class="namebox">
-                    <input type="checkbox" id="name" name="" class="nameCheck">
-                    <label for="name" class="name-title titles">이름</label>
-                </div>
-
-                <div class="email-title titles">이메일</div>
-
-                <div class="roster">
-                    <a href="adminClubList.html"><img src="/static/images/btn-prev.png" alt="prev" class="btn-prev btn"></a>
-                    <div class="teacher-roster">선생님 명단</div>
-                    <a href="adminStudentList.html"><img src="/static/images/btn-next.png" alt="next" class="btn-next btn"></a>
-                </div>
-            </div>
-
-                 <!-- 이름, 이메일, 수정/삭제 버튼 -->
-                  
-                     <div class="info-box">
+                    <div class="info-box">
                         <div class="namebox">
-                        <input type="checkbox" id="checkbox" name="">
-                        <label for="checkbox" class="userName">우호식</label>
-                        <div class="info-email">d2325@e-mirim.hs.kr</div>
-                        <img src="/static/images/dotdotdot.png" alt="" class="edit-button">
-                    </div>
+                            <input type="checkbox" id="checkbox" name="">
+                            <label for="checkbox" class="userName">우호식</label>
+                            <div class="info-email">d2325@e-mirim.hs.kr</div>
+                            <img src="/static/images/dotdotdot.png" alt="" class="edit-button">
+                        </div>
 
-                    
-                    <div class="namebox">
-                        <input type="checkbox" id="checkbox" name="">
-                        <label for="checkbox" class="userName">신혜영</label>
-                        <div class="info-email">d2325@e-mirim.hs.kr</div>
-                    <img src="/static/images/dotdotdot.png" alt="" class="edit-button">
+
+                        <div class="namebox">
+                            <input type="checkbox" id="checkbox" name="">
+                            <label for="checkbox" class="userName">신혜영</label>
+                            <div class="info-email">d2325@e-mirim.hs.kr</div>
+                            <img src="/static/images/dotdotdot.png" alt="" class="edit-button">
+                        </div>
                     </div>
+                </div>
+
+
+                <!-- 사용자 일괄 업데이트 -->
+                <div id="overlayupdate" id="overlay"></div>
+                <div id="update-popup">
+                    <img id="close-btnupdate" class="close-btn" src="/static/images/x.png" alt="close">
+                    <div class="popup-update">사용자 일괄 업데이트</div>
+                    <div class="content-section">
+                        <div class="image-section">
+                            <img class="num1" src="/static/images/num1.jpg" alt="">
+                            <img class="num2" src="/static/images/num2.jpg" alt="">
+                            <img src="/static/images/num3.jpg" alt="">
+                        </div>
+
+                        <div class="info-section">
+                            <div class="csv-download">
+                                <div class="section-title">CSV 파일 다운로드</div>
+                                <div class="csv-icons">
+                                    <div><img src="/static/images/informationCSV.png" alt=""></div>
+                                    <div><img src="/static/images/emptyCSV.png" alt=""></div>
+                                </div>
+                            </div>
+
+                            <div class="csv-instructions">
+                                <div class="section-title">CSV 템플릿에 사용자 정보 추가 또는 수정</div>
+                                <div class="essential">이름, 이메일 주소 경로는 필수 입력란입니다.</div>
+                            </div>
+
+                            <table class="csv-table">
+                                <tr>
+                                    <th>A</th>
+                                    <th>B</th>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>Email address</td>
+                                </tr>
+                                <tr>
+                                    <td>홍길동</td>
+                                    <td>Gildong@gmail.com</td>
+                                </tr>
+                            </table>
+
+                            <div class="csv-upload">
+                                <div class="section-title">CSV 파일 다운로드</div>
+                                <button class="upload-button">CSV 파일 첨부</button>
+                            </div>
+
+                            <div>
+                                <Button id="cancel-button">취소</Button>
+                                <button id="upload-button">업로드</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- 다음 페이지로 넘어가는 버튼 -->
+                <div id="listBtn-container">
+                    <a href="adminTeacherList.html"><img src="/static/images/blueBtn1.png" alt="teacher"
+                            class="button1 button"></a>
+                    <a href="adminStudentList.html"><img src="/static/images/Btn2.png" alt="student"
+                            class="button2 button"></a>
+                    <a href="adminClubList.html"><img src="/static/images/Btn3.png" alt="clubRoster"
+                            class="button3 button"></a>
+                </div>
+            </section>
+
         </div>
-    </div>
-    <!-- 다음 페이지로 넘어가는 버튼 -->
-        <div id="listBtn-container">
-            <a href="adminTeacherList.html"><img src="/static/images/blueBtn1.png" alt="teacher" class="button1 button"></a>
-            <a href="adminStudentList.html"><img src="/static/images/Btn2.png" alt="student" class="button2 button"></a>
-            <a href="adminClubList.html"><img src="/static/images/Btn3.png" alt="clubRoster" class="button3 button"></a>
-        </div>
-        </section>
-        
-    </div>
     </main>
 
     <footer id="footer">
@@ -170,7 +178,7 @@
         <hr>
         <p class="copy">©Team App&Me</p>
     </footer>
-     <script src="/static/js/admin_pages/adminTeacherList.js"></script>
+    <script src="/static/js/admin_pages/adminTeacherList.js"></script>
     <script src="/static/js/mypage/popup-mypage.js"></script>
     <script src="/static/js/admin_pages/checkbox.js"></script>
 </body>
