@@ -37,7 +37,7 @@ document.getElementById('create-club').addEventListener('submit', function (even
         closeBtn.addEventListener('click', () => {
             popup.style.display = 'none';
             overlay.style.display = 'none';
-            window.location.href = '/home.html';
+            window.location.href = '/templates/student/home.html';
         });
     }  
 });
