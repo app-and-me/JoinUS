@@ -6,6 +6,10 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from joinus.permissions import HasAPIKey
 from .serializers import UserSerializer
+from rest_framework.permissions import IsAuthenticated
+
+from clubs.serializers import ClubApplicationSerializer
+from clubs.models import Club, ClubApplication
 
 class UserCreate(APIView):
     permission_classes = [HasAPIKey]
@@ -104,3 +108,21 @@ def get_user_info(request):
             return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
     else:
         return Response({'error': 'Invalid token'}, status=status.HTTP_401_UNAUTHORIZED)
+
+# Get user's applications
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_user_applications(request):
+    applications = ClubApplication.objects.filter(
+        student=request.user
+    ).order_by('-applied_at')
+
+    class ClubApplicationSerializer(serializer.ModelSerializer):
+        club_name = serializers.CharField(source='club.name')
+
+        class Meta:
+            model = ClubApplication
+            fields = ['application_id', 'club_id', 'club_name', 'status', 'applied_at', 'canceled_at']
+    
+    serializer = ClubApplicationSerializer(applications, many=True)
+    return Response(serializer.data, status=status.HTTP_200_OK)
