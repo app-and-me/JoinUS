@@ -1,6 +1,6 @@
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
-from .models import Club, ClubApplication
+from .models import Club
 from joinus.permissions import HasAPIKey
 from rest_framework.decorators import permission_classes, api_view
 from django.http import HttpResponseForbidden, JsonResponse
@@ -11,10 +11,6 @@ from users.views import get_token
 from users.models import User
 from clubs.models import ClubApplication
 from clubs.models import Club
-
-from .serializers import ClubApplicationSerializer, ClubSerializer
-from rest_framework.response import Response
-from rest_framework import status
 
 @api_view(['GET'])
 @permission_classes([HasAPIKey])
@@ -131,45 +127,3 @@ def get_club_student(request, club_id):
             return JsonResponse({'error': str(e)}, status=500)
     else:
         return JsonResponse({"error": "Invalid token"}, status=401)
-        
-# Club application
-@api_view(['POST'])
-@permission_classes([IsAuthenticated])
-def create_club_application(request, club_id):
-    club = Club.objects.get(pk=club_id)
-
-    # Check the number of club applicants
-    if club.capacity <= ClubApplication.objects.filter(club=club, status="application").count():
-        return Response({'message': 'The club is full'}, status=status.HTTP_400_BAD_REQUEST)
-
-    serializer = ClubApplicationSerializer(data=request.data)
-    if not serializer.is_valid():
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-    application = serializer.save(
-        club=club,
-        student=request.user,
-        status="applied"
-    )
-
-    return Response({'message': 'Application success'})
-
-# Club cancellation
-@api_view(['PATCH'])
-@permission_classes([IsAuthenticated])
-def cancel_club_application(request, club_id):
-    try:
-        application = ClubApplication.objects.get(
-            club_id=club_id,
-            student=request.user,
-            status="applied"
-        )
-    except ClubApplication.DoesNotExist:
-        return Response({'message': 'There is no application history'}, status=status.HTTP_404_NOT_FOUND)
-    
-    application.status = "canceled"
-    application.canceled_at = datetime.datetime.now()
-    application.save()
-
-    return Response({'message': 'application has been cancelled'}, status=status.HTTP_200_OK)
-

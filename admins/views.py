@@ -10,7 +10,6 @@ from rest_framework.decorators import api_view
 from users.models import User
 from clubs.models import ClubApplication
 from clubs.models import Club
-from clubs.serializers import ClubSerializer
 
 # 유저 권한 체크
 def is_admin_user(user):
@@ -113,28 +112,3 @@ def create_club_contents(request, club_id):
             return JsonResponse({'error': str(e)}, status=500)
     else:
         return JsonResponse({"error": "Invalid token"}, status=401)
-
-@api_view(['POST'])
-def creat_club(request):
-    token = get_token(request)
-    uid = verify_firebase_token(token)
-
-    if uid:
-        try:
-            user = get_object_or_404(User, user_uid=uid)
-
-            if is_admin_user():
-                serializer = ClubSerializer(data=request.data)
-                if not serializer.is_valid():
-                    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-                # 동아리 생성
-                club = serializer.save()
-
-                return Response({'message': 'Club created successfully'}, status=status.HTTP_201_CREATED)
-            else:
-                return Response({'message': 'You do not have permission to update'}, status=status.HTTP_403_FORBIDDEN)
-        except Exception as e:
-            return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-    else:
-        return Response({'error': 'Invalid token'}, status=status.HTTP_401_UNAUTHORIZED)
