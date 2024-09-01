@@ -3,6 +3,14 @@ from django.shortcuts import get_object_or_404
 from .models import Club
 from joinus.permissions import HasAPIKey
 from rest_framework.decorators import permission_classes, api_view
+from django.http import HttpResponseForbidden, JsonResponse
+from users.firebase_auth import verify_firebase_token
+from users.views import get_token
+
+# 전에 정의한 model을 import
+from users.models import User
+from clubs.models import ClubApplication
+from clubs.models import Club
 
 @api_view(['GET'])
 @permission_classes([HasAPIKey])
@@ -53,3 +61,69 @@ def get_club_detail(request, club_id):
     }
 
     return JsonResponse(club_detail)
+
+# 동아리 컨텐츠(url) 수정
+@api_view(['PATCH'])
+def update_club_contents(request, club_id, application_id):
+    token = get_token(request)
+    uid = verify_firebase_token(token)
+
+    if uid:
+        try:
+            user = get_object_or_404(User, user_uid=uid)
+            if user.role == 'teacher':
+                club = get_object_or_404(Club, pk=club_id)
+                
+                 # 위의 club과, application_id에 해당하는 동아리 신청을 가져옴
+                application = get_object_or_404(ClubApplication, pk=application_id, club=club)
+
+                # 요청 본문(body)에서 수정할 값을 가져옴
+                url = request.data.get('url')
+
+                # 전달된 값이 있으면 수정
+                if url:
+                    application.url = url
+                    application.save()
+
+                    return JsonResponse({'message':'Updated club contents successfully.'}, status=200)
+                
+                else:
+                    return JsonResponse({'error': 'No contents provided to update.'}, status=400)
+
+            else: 
+                # status 403 : 권한이 없을때
+                return HttpResponseForbidden({'message':'You do not have permission to update.'})
+        except Exception as e:
+            return JsonResponse({'error': str(e)}, status=500)
+    else:
+        return JsonResponse({"error": "Invalid token"}, status=401)
+
+# 신청한 학생 확인
+@api_view(['GET'])
+def get_club_student(request, club_id):
+    token = get_token(request)
+    uid = verify_firebase_token(token)
+
+    if uid:
+        try:
+            user = get_object_or_404(User, user_uid=uid)
+
+            if user.role == 'teacher':
+                club = get_object_or_404(Club, pk=club_id)
+
+                # 해당 동아리에 신청한 학생을 가져옴
+                applications = ClubApplication.objects.filter(club=club)
+                students = [app.student for app in applications]
+
+                # 학생 정보를 JSON 형태로 변환
+                student_data = [{"id": stu.id, "name": stu.name} for stu in students]
+                
+                return JsonResponse({"students": student_data})
+
+            else:
+                return HttpResponseForbidden({"message": "You do not have permission to get."})
+
+        except Exception as e:
+            return JsonResponse({'error': str(e)}, status=500)
+    else:
+        return JsonResponse({"error": "Invalid token"}, status=401)
