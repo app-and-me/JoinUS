@@ -11,7 +11,7 @@ document.getElementById('info-form').addEventListener('submit', function(event){
     }
 
     if(allFields){
-        window.location.href = 'home.html'
+        window.location.href = '/templates/student/home.html'
     }
      
 });
