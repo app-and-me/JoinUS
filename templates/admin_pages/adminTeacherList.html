@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/detail/style.css">
     <link rel="stylesheet" href="/static/css/admin_pages/adminList.css">
+    <link rel="stylesheet" href="/templates/admin_pages/popup2.css">
+    
     <link rel="stylesheet" href="/static/css/detail/header.css">
     <link rel="stylesheet" href="/static/css/detail/footer.css">
     <link rel="stylesheet" href="/static/css/detail/popup.css">
@@ -49,8 +51,7 @@
                 </div>
                 <div class="userButton-container">
                     <img src="/static/images/allUpdate.png" alt="" class="userupdate updatebtn">
-                    <a href="/templates/admin_pages/adminCreateClub.html"><img src="/static/images/userAddButton.png"
-                            alt="" class="addUser userbtn"></a>
+                    <img src="/static/images/userAddButton.png" alt="" class="addUser userbtn">
                     <img src="/static/images/userDeleteButton.png" alt="" class="userdelete userbtn">
                 </div>
             </section>
@@ -106,8 +107,8 @@
                     <div class="content-section">
                         <div class="image-section">
                             <img class="num1" src="/static/images/num1.jpg" alt="">
-                            <img class="num2" src="/static/images/num2.jpg" alt="">
-                            <img src="/static/images/num3.jpg" alt="">
+                            <img class="num2" src="/static/images/blueBtn2.png" alt="">
+                            <img src="/static/images/blueBtn3.png" alt="">
                         </div>
 
                         <div class="info-section">
@@ -144,15 +145,54 @@
                                 <button class="upload-button">CSV 파일 첨부</button>
                             </div>
 
-                            <div>
-                                <Button id="cancel-button">취소</Button>
-                                <button id="upload-button">업로드</button>
+                            <div class="popup-button-container">
+                                <Button id="cancel-button" class="popupinner-btn">취소</Button>
+                                <button id="upload-button" class="popupinner-btn">업로드</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
+             <!-- 사용자 추가 -->
+             <div id="overlayupdate2" id="overlay"></div>
+             <div id="update-popup2">
+                <div id="popup-container"> 
+                <img id="close-btnupdate" class="close-btn" src="/static/images/x.png" alt="close">
+                <form action="#" class="adduser-container">
+                     
+                    <div class="main-title">사용자 추가</div>
+                    <table class="csv-table2">
+                        <div class="subtitle">정보 입력 양식</div>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>Email address</td>
+                        </tr>
+                        <tr>
+                            <td>홍길동</td>
+                            <td>Gildong@gmail.com</td>
+                        </tr>
+                    </table>
 
+                    <div class="subtitle update">사용자 업데이트</div>
+                    <div class="input-container">
+                        <input type="text" id="input-name" placeholder="이름을 입력해주세요" class="">
+                        <input type="text" id="input-email" placeholder="이메일을 입력해주세요">
+                    </div>
+                    <div class="popup-button-container2">
+                        <a href="#"><Button id="cancel-button" class="popupinner-btn">취소</Button></a>
+                        <a href="#"><button id="upload-button" class="popupinner-btn">업로드</button></a>
+                    </div>
+                </form>
+
+                     </div>
+                    </div>
+
+                 </div>
+             </div>
 
 
                 <!-- 다음 페이지로 넘어가는 버튼 -->
@@ -178,7 +218,7 @@
         <hr>
         <p class="copy">©Team App&Me</p>
     </footer>
-    <script src="/static/js/admin_pages/adminTeacherList.js"></script>
+    <script src="/static/js/admin_pages/userPopup.js"></script>
     <script src="/static/js/mypage/popup-mypage.js"></script>
     <script src="/static/js/admin_pages/checkbox.js"></script>
 </body>

@@ -36,9 +36,7 @@
     border: none;
     cursor: pointer;
 }
-
-
-
+ 
 .club-name {
     width: 634px;
     height: 221px;
@@ -304,7 +302,6 @@
     background: #F5F6FA;
 }
 
-
 .essential {
     color: #ACACAC;
     font-size: 20px;
@@ -341,10 +338,8 @@
     font-size: 22px;
     font-weight: 600;
 }
-
-
+/*csv 사진 파일 다운로드 버튼*/
 .upload-button {
-    display: flex;
     height: 65px;
     width: 193px;
     justify-content: center;
@@ -354,14 +349,9 @@
     color: #1F64FF;
     font-size: 22px;
     font-weight: 600;
-    outline: none;
     border: none;
 }
-
-#cancel-button {
-    position: absolute;
-    bottom: 80px;
-    right: 176px;
+.popupinner-btn{
     display: flex;
     width: 100px;
     height: 45px;
@@ -372,24 +362,18 @@
     background: #FFF;
     color: #1F64FF;
     font-size: 18px;
-    font-weight: 700;
-    outline: none;
+    font-weight: 700; 
+
+    position: absolute;
+    bottom: 85px;
+}
+#cancel-button {
+    right: 176px;
 }
 
 #upload-button {
-    position: absolute;
-    bottom: 80px;
     right: 60px;
     display: flex;
-    width: 100px;
-    height: 45px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
     background: #1F64FF;
     color: #FFF;
-    font-size: 18px;
-    font-weight: 700;
-    outline: none;
-    border: none;
 }
