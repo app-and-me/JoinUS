@@ -207,9 +207,9 @@
 #update-popup {
     display: none;
     position: absolute;
-    left: 46%;
-    top: 45%;
-    transform: translate(-50%, -15%);
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
     background-color: #FFF;
     border-radius: 5px;
     width: 1153px;
