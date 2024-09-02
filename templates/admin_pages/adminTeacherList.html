@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/detail/style.css">
     <link rel="stylesheet" href="/static/css/admin_pages/adminList.css">
-    <link rel="stylesheet" href="/templates/admin_pages/useraddPopup.css">
+    <link rel="stylesheet" href="/templates/admin_pages/popup2.css">
+    
     <link rel="stylesheet" href="/static/css/detail/header.css">
     <link rel="stylesheet" href="/static/css/detail/footer.css">
     <link rel="stylesheet" href="/static/css/detail/popup.css">
@@ -152,41 +153,46 @@
                     </div>
                 </div>
 
-                <!-- 사용자 추가 팝업창 -->
-                <div id="overlayupdate2" class="overlay2"></div>
-
-                <div id="popup-container">
+             <!-- 사용자 추가 -->
+             <div id="overlayupdate2" id="overlay"></div>
+             <div id="update-popup2">
+                <div id="popup-container"> 
+                <img id="close-btnupdate" class="close-btn" src="/static/images/x.png" alt="close">
+                <form action="#" class="adduser-container">
                      
-                    <form action="#" class="adduser-container">
-                        <img id="close-btnupdate" class="close-btn2" src="/static/images/x.png" alt="close">
-                        <div class="main-title">사용자 추가</div>
-                        <table class="csv-table2">
-                            <div class="subtitle">정보 입력 양식</div>
-                            <tr>
-                                <th>A</th>
-                                <th>B</th>
-                            </tr>
-                            <tr>
-                                <td>name</td>
-                                <td>Email address</td>
-                            </tr>
-                            <tr>
-                                <td>홍길동</td>
-                                <td>Gildong@gmail.com</td>
-                            </tr>
-                        </table>
+                    <div class="main-title">사용자 추가</div>
+                    <table class="csv-table2">
+                        <div class="subtitle">정보 입력 양식</div>
+                        <tr>
+                            <th>A</th>
+                            <th>B</th>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td>Email address</td>
+                        </tr>
+                        <tr>
+                            <td>홍길동</td>
+                            <td>Gildong@gmail.com</td>
+                        </tr>
+                    </table>
 
-                        <div class="subtitle update">사용자 업데이트</div>
-                        <div class="input-container">
-                            <input type="text" id="input-name" placeholder="이름을 입력해주세요" class="">
-                            <input type="text" id="input-email" placeholder="이메일을 입력해주세요">
-                        </div>
-                        <div class="popup-button-container2">
-                            <a href="#"><Button id="cancel-button" class="popupinner-btn btns">취소</Button></a>
-                            <a href="#"><button id="upload-button" class="popupinner-btn btns">업로드</button></a>
-                        </div>
-                    </form>
-                </div>
+                    <div class="subtitle update">사용자 업데이트</div>
+                    <div class="input-container">
+                        <input type="text" id="input-name" placeholder="이름을 입력해주세요" class="">
+                        <input type="text" id="input-email" placeholder="이메일을 입력해주세요">
+                    </div>
+                    <div class="popup-button-container2">
+                        <a href="#"><Button id="cancel-button" class="popupinner-btn">취소</Button></a>
+                        <a href="#"><button id="upload-button" class="popupinner-btn">업로드</button></a>
+                    </div>
+                </form>
+
+                     </div>
+                    </div>
+
+                 </div>
+             </div>
 
 
                 <!-- 다음 페이지로 넘어가는 버튼 -->
