@@ -112,6 +112,7 @@ body>header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-right: 23px; 
 }
 
 .club-list::-webkit-scrollbar {
