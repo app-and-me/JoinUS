@@ -5,12 +5,17 @@ import firebase_admin
 from firebase_admin import credentials, auth
 import os
 from django.conf import settings
+import json
 
 load_dotenv()
 
 BASE_DIR = settings.BASE_DIR
 cred = credentials.Certificate(os.path.join(BASE_DIR, 'users', 'firebase.json'))
 firebase_admin.initialize_app(cred)
+
+# 파일을 열 때 인코딩을 명시적으로 지정
+with open(os.path.join(BASE_DIR, 'users', 'firebase.json'), 'r', encoding='utf-8') as json_file:
+    json_data = json.load(json_file)
 
 def create_custom_token(uid):
     try:

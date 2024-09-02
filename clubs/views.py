@@ -1,3 +1,4 @@
+from datetime import datetime
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from .models import Club, ClubApplication
@@ -6,6 +7,7 @@ from rest_framework.decorators import permission_classes, api_view
 from django.http import HttpResponseForbidden, JsonResponse
 from users.firebase_auth import verify_firebase_token
 from users.views import get_token
+from rest_framework.permissions import IsAuthenticated
 
 # 전에 정의한 model을 import
 from users.models import User
