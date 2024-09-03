@@ -178,6 +178,12 @@
     font-weight: 600;
 }
 
+.timeinput {
+    color: #AAB2C8;
+    font-size: 22px;
+    font-weight: 600;
+}
+
 
 .close-btn {
     position: absolute;
