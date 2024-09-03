@@ -6,11 +6,11 @@ from joinus.views import home, index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
-    path('home/', home),
+    # path('', index),
+    # path('home/', home),
     path('api/users/', include('users.urls')),
     path('api/clubs/', include('clubs.urls')),
-    path('api/admin/', include('admin.urls'))
+    path('api/admin/', include('admins.urls'))
 ]
 
 urlpatterns += i18n_patterns(

@@ -105,6 +105,60 @@
                     </div>
         </div>
     </div>
+
+    <!-- 사용자 일괄 업데이트 -->
+    <div id="overlayupdate" id="overlay"></div>
+    <div id="update-popup">
+        <img id="close-btnupdate" class="close-btn" src="/static/images/x.png" alt="close">
+        <div class="popup-update">사용자 일괄 업데이트</div>
+        <div class="content-section">
+            <div class="image-section">
+                <img class="num1" src="/static/images/num1.jpg" alt="">
+                <img class="num2" src="/static/images/blueBtn2.png" alt="">
+                <img src="/static/images/blueBtn3.png" alt="">
+            </div>
+
+            <div class="info-section">
+                <div class="csv-download">
+                    <div class="section-title">CSV 파일 다운로드</div>
+                    <div class="csv-icons">
+                        <div><img src="/static/images/informationCSV.png" alt=""></div>
+                        <div><img src="/static/images/emptyCSV.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="csv-instructions">
+                    <div class="section-title">CSV 템플릿에 사용자 정보 추가 또는 수정</div>
+                    <div class="essential">이름, 이메일 주소 경로는 필수 입력란입니다.</div>
+                </div>
+
+                <table class="csv-table">
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>Email address</td>
+                    </tr>
+                    <tr>
+                        <td>홍길동</td>
+                        <td>Gildong@gmail.com</td>
+                    </tr>
+                </table>
+
+                <div class="csv-upload">
+                    <div class="section-title">CSV 파일 다운로드</div>
+                    <button class="upload-button">CSV 파일 첨부</button>
+                </div>
+
+                <div class="popup-button-container">
+                    <Button id="cancel-button" class="popupinner-btn">취소</Button>
+                    <button id="upload-button" class="popupinner-btn">업로드</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- 다음 페이지로 넘어가는 버튼 -->
         <div id="listBtn-container">
             <a href="adminTeacherList.html"><img src="/static/images/Btn1.png" alt="teacher" class="button1 button"></a>
@@ -125,6 +179,7 @@
         <hr>
         <p class="copy">©Team App&Me</p>
     </footer>
+    <script src="/static/js/admin_pages/userPopup.js"></script>
      <script src="/static/js/admin_pages/adminList.js"></script>
     <script src="/static/js/mypage/popup-mypage.js"></script>
     <script src="/static/js/admin_pages/checkbox.js"></script>
