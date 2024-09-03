@@ -205,17 +205,10 @@ body>header {
     height: 24px;
 }
 
-button {
-    border-radius: 5px;
-    border: 1px #B0B0B0 solid;
-    padding: 6px 18px;
-    justify-content: center;
-    align-items: center;
-    background: #F5F6FA;
-    color: #AFAFAF;
-    font-size: 14px;
-    font-weight: 550;
+.delete-button {
     cursor: pointer;
+    width: 88px;
+    height: 29px;
 }
 
 button:hover {
