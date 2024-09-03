@@ -1,12 +1,3 @@
-// .dot 클릭 시 작은 div 표시
-document.querySelectorAll('.dot').forEach(dot => {
-    dot.addEventListener('click', function () {
-        const popupDiv = this.nextElementSibling;
-        popupDiv.style.display = popupDiv.style.display === 'block' ? 'none' : 'block';
-    });
-});
-
-
 // 시간 설정 팝업 열고 닫기
 document.addEventListener("DOMContentLoaded", function () {
     const overlayTime = document.getElementById("overlayTime");
@@ -14,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const settingTimeBtn = document.querySelector(".settingTime");
     const closeBtnTime = document.getElementById("close-btnTime");
     const settingBtn = document.querySelector(".setting-btn");
+
+    const timeInputs = document.querySelectorAll(".timeinput");
 
     function showPopup() {
         overlayTime.style.display = "block";
@@ -23,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function hidePopup() {
         overlayTime.style.display = "none";
         timePopup.style.display = "none";
+
+        // 입력 필드 값 초기화
+        timeInputs.forEach(input => input.value = "");
     }
 
     settingTimeBtn.addEventListener("click", showPopup);
