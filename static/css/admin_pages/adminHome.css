@@ -273,11 +273,13 @@ button {
     width: 45px;
     height: 14px;
     margin-bottom: 6px;
+    cursor: pointer;
 }
 
 .change {
     width: 71px;
     height: 17px;
+    cursor: pointer;
 }
 
 button:hover {

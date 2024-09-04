@@ -56,6 +56,7 @@
     display: flex;
     column-gap: 87px;
     margin: 40px 0;
+    
 }
 
 .search-container {
@@ -68,6 +69,7 @@
     height: 45px;
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 .search-container>img {
@@ -186,6 +188,7 @@ input {
 .edit-button {
     width: 5px;
     height: 20px;
+    cursor: pointer;
 }
 
 .userName {
