@@ -136,7 +136,7 @@ def get_club_student(request, club_id):
         
 # Club application
 @api_view(['POST'])
-@permission_classes([IsAuthenticated])
+@permission_classes([HasAPIKey])
 def create_club_application(request, club_id):
     club = Club.objects.get(pk=club_id)
 
@@ -158,7 +158,7 @@ def create_club_application(request, club_id):
 
 # Club cancellation
 @api_view(['PATCH'])
-@permission_classes([IsAuthenticated])
+@permission_classes([HasAPIKey])
 def cancel_club_application(request, club_id):
     try:
         application = ClubApplication.objects.get(
