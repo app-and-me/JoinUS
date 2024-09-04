@@ -18,3 +18,11 @@
      popup.style.display = 'none';
      overlay.style.display = 'none';
  });
+
+ // 클릭 시 검색 바에 포커스
+ const searchContainer = document.getElementById('search-container');
+ const searchBar = document.getElementById('search-bar');
+
+ searchContainer.addEventListener('click', () => {
+     searchBar.focus();
+ });
