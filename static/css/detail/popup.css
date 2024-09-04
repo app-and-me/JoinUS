@@ -383,6 +383,7 @@
 
     position: absolute;
     bottom: 85px;
+    cursor: pointer;
 }
 #cancel-button {
     right: 176px;
