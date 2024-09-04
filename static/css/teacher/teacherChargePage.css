@@ -53,13 +53,14 @@ main {
     flex-direction: column;
 }
 
-/* 아티클 내용 */
+/* 아티클 내용   */
 .article {
     position: relative;
     border-radius: 10px;
     background: #F5F6FA;
     display: flex;
-    width: 1290px;
+    width: 100%;
+    min-width: 1300px;
     height: 110px;
     padding-left: 80px;
     padding-right: 50px;
