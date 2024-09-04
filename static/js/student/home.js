@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     <div class="article-container">
                         <div class="title-container">
                             <div class="club-title">${club.clubName}</div>
-                            <div class="teacher">선생님 이름</div>
+                            <div class="teacher">${club.clubTeacher}</div>
                             <div class="apply">지원가능</div>
                         </div>
                         <div class="content">${club.simpleIntroduce}</div>
@@ -64,6 +64,8 @@ window.addEventListener('DOMContentLoaded', () => {
     clubListContainer.addEventListener('click', (event) => {
         if (event.target.classList.contains('bnt-apply')) {
             openPopup();
+            // 클릭된 동아리의 이름을 팝업에 반영
+            document.getElementById('popup-club-title').innerHTML = document.querySelector('.club-title').textContent;
         } else if (event.target.classList.contains('star-icon')) {
             const starIcon = event.target;
             const article = starIcon.closest('.article');

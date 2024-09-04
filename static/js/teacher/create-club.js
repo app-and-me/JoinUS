@@ -5,23 +5,32 @@ document.getElementById('create-club').addEventListener('submit', function (even
     const overlay = document.getElementById('overlay');
     const closeBtn = document.getElementById('close-btn');
 
-    // const clubName = document.getElementById('clubName').value;
+    const clubName = document.getElementById('club-select').options[document.getElementById('club-select').selectedIndex].text;
+    const clubTeacher = document.getElementById('club-select').value;
     const simpleIntroduce = document.getElementById('simpleIntroduce').value;
     const clubIntroduce = document.getElementById('clubIntroduce').value;
     const clubImgUrl = document.getElementById('clubImgUrl').value;
 
     // 모든 필드가 채워졌는지 확인
     if (simpleIntroduce && clubIntroduce && clubImgUrl) {
-        // document.querySelector('.club-name div').innerHTML = clubName;
-
-        // 기존 동아리 데이터를 로컬 스토리지에서 가져오기
+        // 선택된 동아리 이름을 팝업에 반영
+        document.getElementById('popup-club-title').innerHTML = clubName;
         let clubs = JSON.parse(localStorage.getItem('clubs')) || [];
 
+        const firstGrade = parseInt(document.getElementById('first-grade').value) || 0;
+        const secondGrade = parseInt(document.getElementById('second-grade').value) || 0;
+        const thirdGrade = parseInt(document.getElementById('third-grade').value) || 0;
+
+        // 총 인원수 계산
+        const clubMemberNumber = firstGrade + secondGrade + thirdGrade;
+
         const newClub = {
-            // clubName,
+            clubName,
+            clubTeacher,
             simpleIntroduce,
             clubIntroduce,
-            clubImgUrl
+            clubImgUrl,
+            clubMemberNumber,
         };
 
         clubs.push(newClub);
@@ -40,4 +49,10 @@ document.getElementById('create-club').addEventListener('submit', function (even
             window.location.href = '/templates/student/home.html';
         });
     }  
+});
+
+// 드롭다운 메뉴에서 선택할 때마다 선생님 이름 업데이트
+document.getElementById('club-select').addEventListener('change', function() {
+    const selectedClub = this.options[this.selectedIndex].value;
+    document.getElementById('teacher-name').innerHTML = selectedClub;
 });

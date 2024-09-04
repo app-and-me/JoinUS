@@ -105,14 +105,27 @@
  }
 
  .choose-club {
-     width: 542px;
-     margin-bottom: 35px;
- }
+    width: 542px;
+    margin-bottom: 35px;
+    border: none;
+    padding: 12px 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #F5F6FA url('/static/images/selectBtn.png') no-repeat right 20px center;
+    background-size: 24px;
+    border-radius: 5px;
+    color: #0047FF;
+    font-weight: 600;
+    font-size: 20px;
+    height: 50px;
+}
+ 
  .teacher-name{
     display: flex;
     width: 172px;
  }
- .choose-club, .teacher-name{
+ .teacher-name{
     height: 50px;
     padding: 12px 20px;
     justify-content: center;
