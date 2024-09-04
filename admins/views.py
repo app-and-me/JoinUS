@@ -25,7 +25,7 @@ def update_club_info(request, club_id):
     if uid:
         try:
             user = get_object_or_404(User, user_uid=uid)
-            if is_admin_user():
+            if is_admin_user(user):
                 club = get_object_or_404(Club, pk=club_id)
 
                 # 요청 본문(body)에서 수정할 값을 가져옴
@@ -62,7 +62,7 @@ def delete_club(request, club_id):
         try:
             user = get_object_or_404(User, user_uid=uid)
 
-            if is_admin_user():
+            if is_admin_user(user):
                 club = get_object_or_404(Club, pk=club_id)
 
                 # 동아리 삭제
@@ -88,7 +88,7 @@ def create_club_contents(request, club_id):
         try:
             user = get_object_or_404(User, user_uid=uid)
 
-            if is_admin_user():
+            if is_admin_user(user):
                 url = request.data.get('url')
 
                 # url이 포함되지 않았을 경우
@@ -115,7 +115,7 @@ def create_club_contents(request, club_id):
         return JsonResponse({"error": "Invalid token"}, status=401)
 
 @api_view(['POST'])
-def creat_club(request):
+def create_club(request):
     token = get_token(request)
     uid = verify_firebase_token(token)
 
@@ -123,7 +123,9 @@ def creat_club(request):
         try:
             user = get_object_or_404(User, user_uid=uid)
 
-            if is_admin_user():
+            print(user)
+
+            if is_admin_user(user):
                 serializer = ClubSerializer(data=request.data)
                 if not serializer.is_valid():
                     return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
