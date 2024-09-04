@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/detail/style.css">
+    <link rel="stylesheet" href="/static/css/student/clubExplain.css">
+    <link rel="stylesheet" href="/static/css/detail/footer.css">
+    <link rel="stylesheet" href="/static/css/detail/popup.css">
+    <link rel="stylesheet" href="/static/css/detail/popup-mypage.css">
+    <link href="/static/images/logo.png" rel="shortcut icon" type="image/x-icon">
+    <title>JoinUS!</title>
+</head>
+ 
+<body>
+    <header>
+        <nav class="nav">
+            <div><img src="/static/images/logo-title.png" alt=""></div>
+            <div class="my-div">
+                <div class="mypage"><img class="mypage-img" src="/static/images/mypages.png"
+                            alt="mypage"></div>
+                <!-- 마이페이지 팝업 -->
+                <div class="popup-mypage">
+                    <div><img class="setting" src="/static/images/setting.png" alt=""></div>
+                    <img class="logout" src="/static/images/logout.png" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <div id="adjust-container">
+            <section class="section-club">
+                <div id="club-text">동아리</div>
+
+                <div id="club-container">
+
+                    <div class="option2 club"> <a href="home.html"></a>모든 동아리</a></div>
+
+                    <div class="option3 club"><a href="/templates/student/myclub.html">신청 동아리</div></a>
+                </div>
+            </section>
+
+            <!-- 신청 완료 팝업창 -->
+            <div id="overlay"></div>
+            <div id="popup">
+                <div class="message">성공적으로 동아리 신청이 &nbsp;<p class="accent">완료</p>&nbsp; 됐습니다.</div>
+                <div class="club-name">
+                    <div>여기에 해당 동아리 이름을 불러와야 됨</div>
+                </div>
+                <button id="close-btn">확인</button>
+            </div>
+
+            <!-- 동아리 상세 정보 구간 -->
+            <section id="club-list">
+                    <div class="center-container">
+                <!-- 위에 상단 전체 컨테이너 -->
+                <div class="container1">
+                    <div class="container2">
+
+                        <div class="clubinfo-container">
+                            <div class="clubtitle">다양한 공부 동아리</div>
+                            <div class="teacher">우호식 선생님</div>
+                            <img src="/static/images/canApply.png" alt="" class="canApply">
+                        </div>
+                        <span class="content">여기에 한 줄 리뷰 글을 불러 와야 됩니다.여기에 한 줄 리뷰 글을 불러 와야 됩니다. </span>
+                    </div>
+
+                    <div class="container3">
+                        <div>
+                        <img src="/static/images/personnel.png" alt="" class="personnel">
+                        <div class="student-num">0/10</div>
+                    </div>
+                        <img src="/static/images/btn-apply.png" alt="" class="btn-apply"> 
+                    
+                </div>
+                </div>
+
+                <div id="explain-container">
+                    <div class="explain">여기에 전체 동아리 설명 글을 불러옵니다. </div>
+                </div>
+
+              
+                    <img src="/static/images/viewClubImg.png" alt="동아리 이미지 보기" class="viewClubImg">
+                </div>
+            </section>
+
+          
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footerinfo">
+            <img src="/static/images/logo-title.png" alt="JoinUS" class="JoinUS-logo">
+            <p class="footer-info tell">문의전화 : 010-0000-0000</p>
+            <p class="footer-info email">이메일 : ssss@e-mirim.hs.kr</p>
+        </div>
+        <hr>
+        <p class="copy">©Team App&Me</p>
+    </footer>
+    <script src="/static/js/detail/finishPopup.js"></script>
+    <script src="/static/js/mypage/popup-mypage.js"></script>
+</body>
+
+</html>

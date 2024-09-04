@@ -1,0 +1,180 @@
+body>header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 42px 0;
+}
+
+.nav {
+    width: 100%;
+    max-width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mypage-img {
+    width: 34px;
+    height: 34px;
+}
+
+/* 메인 */
+#main {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1050px;
+}
+
+/* 동아리 */
+.section-club {
+    width: 100%;
+    /* 임시 */
+    min-width: 1317.007px;
+    border-bottom: 2px #F1F1F1 solid;
+}
+
+#club-container {
+    display: flex;
+    column-gap: 40px;
+}
+
+#club-text {
+    margin-bottom: 30px;
+    color: var(--color5);
+    font-size: var(--font-size6);
+    font-weight: 600;
+}
+
+.club {
+    display: flex;
+    padding: 20px 10px;
+    color: #AAB2C8;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.option2 {
+    border-bottom: 2px #0047FF solid;
+    color: #002;
+    font-size: 20px;
+    margin-bottom: -2px;
+}
+
+.option2>a {
+    color: #002;
+}
+
+.option3>a {
+    color: #AAB2C8;
+}
+
+#adjust-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.canApply {
+    width: 70px;
+    height: 20px;
+}
+
+.btn-apply {
+    height: 29px;
+    width: 88px;
+    cursor: pointer;
+}
+
+.student-num {
+    color: #AAB2C8;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.viewClubImg {
+    width: 215px;
+    height: 45px;
+    cursor: pointer;
+}
+
+#club-list {
+    display: flex;
+    width: 1323px;
+    height: 479px;
+    padding: 35px 0 0 78px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: #F5F6FA;
+    margin-top: 50px;
+}
+
+.container1,
+.clubinfo-container {
+    display: flex;
+}
+
+.clubinfo-container {
+    gap: 15px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+ 
+#explain-container {
+    display: flex;
+    width: 1179px;
+    height: 210px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 45px 0 35px;
+}
+
+.explain {
+    color: #9EA5B8;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.personnel {
+    width: 29px;
+    height: 24px;
+}
+
+.container3 {
+    display: flex;
+    column-gap: 39px;
+    position: relative;
+    top: 20px;
+    left: 32%;
+}
+
+.clubtitle {
+    color: #002;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.teacher {
+    color: #ACACAC;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.content {
+    color: #AAB2C8;
+    font-size: 20px;
+}
