@@ -7,7 +7,6 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from joinus.permissions import HasAPIKey
 from .serializers import UserSerializer
-from rest_framework.permissions import IsAuthenticated
 
 from clubs.serializers import ClubApplicationSerializer
 from clubs.models import Club, ClubApplication
@@ -112,7 +111,7 @@ def get_user_info(request):
 
 # Get user's applications
 @api_view(['GET'])
-@permission_classes([IsAuthenticated])
+@permission_classes([HasAPIKey])
 def get_user_applications(request):
     applications = ClubApplication.objects.filter(
         student=request.user
