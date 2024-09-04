@@ -1,5 +1,6 @@
 from rest_framework import status
 from rest_framework.decorators import permission_classes, api_view
+from clubs import serializers
 from users.models import User
 from .firebase_auth import create_custom_token, verify_firebase_token
 from rest_framework.response import Response
