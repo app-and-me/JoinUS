@@ -11,135 +11,130 @@
     <link rel="stylesheet" href="/static/css/detail/footer.css">
     <link rel="stylesheet" href="/static/css/detail/popup.css">
     <link rel="stylesheet" href="/static/css/admin_pages/adminCreateClub.css">
-
     <link href="/static/images/logo.png" rel="shortcut icon" type="image/x-icon">
     <title>JoinUS!</title>
 </head>
 
 <body>
-    
-        <header>
-            <nav class="nav">
-                <div><img src="/static/images/logo-title.png" alt=""></div>
-                <div class="my-div">
-                    <div class="mypage"><img class="mypage-img" src="/static/images/mypages.png"
-                                alt="mypage"></div>
-                    <!-- 마이페이지 팝업 -->
-                    <div class="popup-mypage">
-                        <div><img class="setting" src="/static/images/setting.png" alt=""></div>
-                        <img class="logout" src="/static/images/logout.png" alt="">
-                    </div>
+    <header>
+        <nav class="nav">
+            <div><img src="/static/images/logo-title.png" alt=""></div>
+            <div class="my-div">
+                <div class="mypage"><img class="mypage-img" src="/static/images/mypages.png" alt="mypage"></div>
+                <div class="popup-mypage">
+                    <div><img class="setting" src="/static/images/setting.png" alt=""></div>
+                    <img class="logout" src="/static/images/logout.png" alt="">
                 </div>
-            </nav>
-
-            
-            <div id="add-container">
-                <a href=""><img src="/static/images/backButton.png" alt="" class="back-img"></a>
-                <span class="add"> 동아리 추가</span>
             </div>
-        </header>
+        </nav>
+        <div id="add-container">
+            <a href=""><img src="/static/images/backButton.png" alt="" class="back-img"></a>
+            <span class="add"> 동아리 추가</span>
+        </div>
+    </header>
 
-        <main id="main">
-            <section class="section-club">
-                <div id="club-text">동아리</div>
-    
-                <div id="club-container">
-                    <a href="teacherHome.html">
-                        <div class="option1 club">모든 동아리</div>
-                    </a>
-
-                    <a href="teacherChargePage.html">
+    <main id="main">
+        <section class="section-club">
+            <div id="club-text">동아리</div>
+            <div id="club-container">
+                <a href="teacherHome.html">
+                    <div class="option1 club">모든 동아리</div>
+                </a>
+                <a href="teacherChargePage.html">
                     <div class="option2 club">관리자 설정</div>
                 </a>
+            </div>
+        </section>
+
+        <form action="#" id="create-club">
+            <p class="adminRight">관리자 권한 *</p>
+            
+            <!-- 동아리명 -->
+            <section id="clubName-container">
+                <div class="clubName-text text">동아리명 &nbsp;<div>*</div></div>
+                <div class="club_name">
+                    <select class="choose-club" id="club-select">
+                        <option value="우호식 선생님">동아리1</option>
+                        <option value="김영철 선생님">동아리2</option>
+                        <option value="함기훈 선생님">동아리3</option>
+                    </select>
+                    <img src="/static/images/situationCircle2.png" alt="" class="circleimg">
+                    <div class="teacher-name" id="teacher-name">우호식 선생님</div>
                 </div>
             </section>
 
-            <form action="#" id="create-club">
-                <p class="adminRight">관리자 권한 *</p>
-                
-                <!-- 동아리명 -->
-                <section id="clubName-container">
-                    <div class="clubName-text text">동아리명 &nbsp;<div>*</div></div>
-                    <div class="club_name">
-                        <div class="choose-club">동아리 선택</div>
-                        <img src="/static/images/situationCircle2.png" alt="" class="circleimg">
-                        <div class="teacher-name">우호식 선생님</div>
+            <!-- 동아리 한 줄 소개 입력 필드 -->
+            <section id="simpleIntroduce-container">
+                <div class="simpleIntroduce-text text">프리뷰(한 줄 소개)</div>
+                <textarea name="simple_introduce_name" id="simpleIntroduce" class="simple_introduce clubInfo"
+                    maxlength="40" placeholder="동아리 소개를 자유롭게 작성해 주세요.(최대 40자)" required></textarea>
+
+            </section>
+
+            <!-- 동아리 소개 입력 필드 -->
+            <section id="introduce-container">
+                <div class="introduce-text text">동아리 소개</div>
+                <textarea name="club_introduce" id="clubIntroduce" class="club_introduce clubInfo" maxlength="400"
+                    placeholder="동아리 소개를 자유롭게 작성해 주세요.(최대 400자)" required></textarea>
+            </section>
+
+            <!-- 동아리 인원수 필드 -->
+            <section id="clubMember-container">
+                <div class="clubMember-text text">동아리 인원&nbsp;<div>*</div></div>
+                <div class="number-container">
+                    <div class="grade">1학년</div>
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="0" class="1st-grade input-number" id="first-grade">
+                        <div>명</div>
                     </div>
-                </section>
 
-                <!-- 동아리 한 줄 소개 입력 필드 -->
-                <section id="simpleIntroduce-container">
-                    <div class="simpleIntroduce-text text">프리뷰(한 줄 소개)</div>
-                    <textarea name="simple_introduce_name" id="simpleIntroduce" class="simple_introduce clubInfo"
-                        maxlength="40" placeholder="동아리 소개를 자유롭게 작성해 주세요.(최대 40자)" required></textarea>
-
-                </section>
-
-                <!-- 동아리 소개 입력 필드 -->
-                <section id="introduce-container">
-                    <div class="introduce-text text">동아리 소개</div>
-                    <textarea name="club_introduce" id="clubIntroduce" class="club_introduce clubInfo" maxlength="400"
-                        placeholder="동아리 소개를 자유롭게 작성해 주세요.(최대 400자)" required></textarea>
-                </section>
-
-                <!-- 동아리 인원수 필드 -->
-                <section id="clubMember-container">
-                    <div class="clubMember-text text">동아리 인원&nbsp;<div>*</div></div>
-                    <div class="number-container">
-                        <div class="grade">1학년</div>
-                        <div class="input-wrapper">
-                            <input type="text" placeholder="0" class="1st-grade input-number">
-                            <div>명</div>
-                        </div>
-
-                        <div class="grade">2학년</div>
-                        <div class="input-wrapper">
-                            <input type="text" placeholder="0" class="2nd-grade input-number">
-                            <div>명</div>
-                        </div>
-
-                        <div class="grade">3학년</div>
-                        <div class="input-wrapper">
-                            <input type="text" placeholder="0" class="3rd-grade input-number">
-                            <div>명</div>
-                        </div>
+                    <div class="grade">2학년</div>
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="0" class="2nd-grade input-number" id="second-grade">
+                        <div>명</div>
                     </div>
-                </section>
 
-                <!-- 동아리 사진 등록 url 입력창 -->
-                <section id="clubImgUrl-container">
-                    <div class="clubImgUrl-text text">동아리 사진 등록</div>
-                    <textarea name="club_img_url" id="clubImgUrl" class="club_img_url clubInfo" placeholder="URL입력"
-                        required></textarea>
-                </section>
-
-                <div class="button-wrapper">
-                    <button class="next-button">동아리 생성</button>
+                    <div class="grade">3학년</div>
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="0" class="3rd-grade input-number" id="third-grade">
+                        <div>명</div>
+                    </div>
                 </div>
+            </section>
 
-            </form>
+            <!-- 동아리 사진 등록 url 입력창 -->
+            <section id="clubImgUrl-container">
+                <div class="clubImgUrl-text text">동아리 사진 등록</div>
+                <textarea name="club_img_url" id="clubImgUrl" class="club_img_url clubInfo" placeholder="URL입력"
+                    required></textarea>
+            </section>
 
-            <!-- popup -->
-            <div id="overlay"></div>
-            <div id="popup">
-                <div class="message">성공적으로 동아리가 &nbsp;<span class="accent">생성</span>&nbsp;됐습니다.</div>
-                <div class="club-name">
-                    <div>다양한 공부 동아리</div>
-                </div>
-                <button id="close-btn">확인</button>
+            <div class="button-wrapper">
+                <button class="next-button">동아리 생성</button>
             </div>
-        </main>
+        </form>
 
-        <footer id="footer">
-            <div class="footerinfo">
-                <img src="/static/images/logo-title.png" alt="JoinUS" class="JoinUS-logo">
-                <p class="footer-info tell">문의전화 : 010-0000-0000</p>
-                <p class="footer-info email">이메일 : ssss@e-mirim.hs.kr</p>
+        <!-- popup -->
+        <div id="overlay"></div>
+        <div id="popup">
+            <div class="message">성공적으로 동아리가 &nbsp;<span class="accent">생성</span>&nbsp;됐습니다.</div>
+            <div class="club-name">
+                <div id="popup-club-title">다양한 공부 동아리</div>
             </div>
-            <hr>
-            <p class="copy">©Team App&Me</p>
-        </footer>
-     
+            <button id="close-btn">확인</button>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footerinfo">
+            <img src="/static/images/logo-title.png" alt="JoinUS" class="JoinUS-logo">
+            <p class="footer-info tell">문의전화 : 010-0000-0000</p>
+            <p class="footer-info email">이메일 : ssss@e-mirim.hs.kr</p>
+        </div>
+        <hr>
+        <p class="copy">©Team App&Me</p>
+    </footer>
+
     <script src="/static/js/teacher/create-club.js"></script>
     <script src="/static/js/mypage/popup-mypage.js"></script>
 </body>
