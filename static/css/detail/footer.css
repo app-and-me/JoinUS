@@ -71,3 +71,10 @@ hr {
 }
 
 /* tablet */
+@media (max-width:1024px){
+     .JoinUS-logo{
+        width: 140px;
+     }
+}
+
+ 
