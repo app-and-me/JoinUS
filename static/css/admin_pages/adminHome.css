@@ -48,7 +48,6 @@
 
 .option3>a {
     color: #AAB2C8;
-    ;
 }
 
 #adjust-container {
@@ -99,8 +98,6 @@
     left: 980px;
 }
 
-
-
 /* 동아리 추가, 시간 설정 버튼 */
 .add {
     width: 150px;
@@ -119,8 +116,6 @@
     font-size: 20px;
     font-weight: 600;
 }
-
-
 
 /* 동아리 */
 .club-list {
@@ -144,9 +139,6 @@
     background-color: #E1E2E9;
     border-radius: 10px;
 }
-
-
-
 /* 아티클 내용 */
 .article {
     position: relative;
@@ -195,9 +187,6 @@
     color: #AAB2C8;
     font-weight: 500;
 }
-
-
-
 .content {
     font-size: 20px;
     color: #AAB2C8;
@@ -281,7 +270,15 @@ button {
     height: 17px;
     cursor: pointer;
 }
-
-button:hover {
-    /* background-color: #; */
-}
+ 
+ /* tablet */
+ @media(min-width: 1025px) and (max-width: 1550px) {
+    body>header , footer{
+        display: flex;
+        width: 100%;
+        max-width: 1550px;
+        padding: 35px 115px;
+        justify-content: space-between;
+        align-items: center;
+    }
+ }
