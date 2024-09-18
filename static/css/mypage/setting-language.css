@@ -101,14 +101,14 @@
          display: flex;
          width: 100%;
          max-width: 1550px;
-         padding: 35px 115px;
+         padding: 25px 115px;
          justify-content: space-between;
          align-items: center;
      }
 
     #main {
          margin-top: 158px;
-         padding: 35px 115px;
+         padding: 25px 115px;
      }
  }
 
@@ -119,7 +119,7 @@
          display: flex;
          width: 100%;
          max-width: 1024px;
-         padding: 35px 115px;
+         padding: 25px 115px;
          justify-content: space-between;
          align-items: center;
      }
@@ -135,7 +135,7 @@
 
      #main {
          margin-top: 158px;
-         padding: 35px 115px;
+         padding: 25px 115px;
      }
 
      .section-club {
