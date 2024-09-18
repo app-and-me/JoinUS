@@ -31,3 +31,61 @@ body>header {
     width: 100%;
     box-sizing: border-box;
 }
+ /* tablet */
+ @media(min-width: 1025px) and (max-width: 1550px) {
+    body>header , footer{
+        display: flex;
+        width: 100%;
+        max-width: 1550px;
+        padding: 25px 115px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #main{
+       padding: 25px 115px;
+        
+    }
+     
+ }
+
+ @media (max-width:1024px) {
+
+    body>header,
+    footer {
+        display: flex;
+        width: 100%;
+        max-width: 1024px;
+        padding: 25px 115px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-title {
+        height: 34px;
+    }
+
+    .mypage-img {
+        width: 20.503px;
+        height: 20.643px;
+    }
+
+    #main {
+        margin-top: 158px;
+        padding: 25px 115px;
+    }
+
+    .section-club {
+        width: 100%;
+        max-width: 794px;
+    }
+
+    #club-text {
+        font-size: 20px;
+    }
+
+    .club {
+        font-size: 12px;
+    }
+}
+
+/* mobile */
