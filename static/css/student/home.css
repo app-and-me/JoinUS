@@ -34,7 +34,7 @@ body>header {
 }
 
 /* 동아리 */
-.section-club {   
+.section-club {
     width: 100%;
     /* 임시 */
     min-width: 1317.007px;
@@ -61,19 +61,23 @@ body>header {
     font-weight: 700;
 }
 
-.option2{
+.option2 {
     border-bottom: 2px #0047FF solid;
     color: #002;
     font-size: 20px;
     margin-bottom: -2px;
 }
-.option2>a{
+
+.option2>a {
     color: #002;
 }
-.option3>a{
-    color: #AAB2C8;;
+
+.option3>a {
+    color: #AAB2C8;
+    ;
 }
-#adjust-container{
+
+#adjust-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -89,7 +93,7 @@ body>header {
     display: flex;
     box-sizing: border-box;
     column-gap: 17px;
-   margin: 40px 0;
+    margin: 40px 0;
 }
 
 .search-container>img {
@@ -112,7 +116,7 @@ body>header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-right: 23px; 
+    padding-right: 23px;
 }
 
 .club-list::-webkit-scrollbar {
@@ -149,7 +153,7 @@ body>header {
     gap: 32px;
 }
 
-.container1 img {
+.star {
     height: 24px;
 }
 
@@ -214,8 +218,13 @@ body>header {
 }
 
 .clubmember img {
-    width: 29px;
-    height: 24px;
+    /* width: 29px;
+    height: 24px; */
+    width: 100%;
+    /* 부모 요소의 너비에 맞춰 조정 */
+    max-width: 24px;
+    /* 최대 너비 설정 */
+    height: auto;
 }
 
 button {
@@ -229,4 +238,163 @@ button {
     color: #FFF;
     font-size: 14px;
     cursor: pointer;
+}
+
+
+/* 반응형 디자인 패드 */
+@media (max-width: 1024px) {
+    body>header {
+        padding: 25px 5%;
+    }
+
+    .nav {
+        max-width: 100%;
+    }
+
+    .mypage-img {
+        width: 20.503px;
+        height: 20.643px;
+    }
+
+    #main {
+        margin-top: 142px;
+        height: auto;
+        padding: 0 5%;
+    }
+
+    .section-club {
+        min-width: auto;
+        width: 100%;
+        width: 794px;
+    }
+
+    #club-text {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 19px;
+    }
+
+    .option2 {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 12px 6px;
+    }
+
+    .option3 {
+        color: #AAB2C8;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 12px 6px;
+    }
+
+    #club-container {
+        flex-wrap: wrap;
+        gap: 23px;
+    }
+
+    .search-container {
+        margin: 30px 0;
+        width: 408px;
+        height: 28px;
+        padding: 0;
+        color: #AAB2C8;
+        font-size: 10px;
+        font-weight: 700;
+        gap: 0;
+        border-radius: 6px;
+    }
+
+    #search-bar {
+        color: #AAB2C8;
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .search-container img {
+        width: 9.74px;
+        height: 9.663px;
+        margin: auto 12px;
+        /* margin-left: 12px; */
+    }
+
+    .club-list {
+        max-height: 500px;
+        padding-right: 10px;
+        width: 785px;
+    }
+
+    .article {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        /* width: 768px; */
+        height: 66px;
+    }
+
+
+    .container1 {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .star {
+        width: 14.941px;
+        height: 14.288px;
+    }
+
+    .apply {
+        width: 41.674px;
+        height: 11.907px;
+        color: #15D6B3;
+        font-size: 7.144px;
+        font-weight: 600;
+        border-radius: 3px;
+    }
+
+    .club-title {
+        color: #002;
+        font-size: 13.098px;
+        font-weight: 700;
+    }
+
+    .content {
+        color: #AAB2C8;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .teacher {
+        color: #ACACAC;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .title-container {
+        width: 340px;
+    }
+
+    .container2 {
+        width: 100%;
+        /* justify-content: space-between; */
+        gap: 23px;
+    }
+
+    .clubmember {
+        font-size: 5.953px;
+    }
+
+    .clubmember img {
+        width: 17.265px;
+        height: 14.288px;
+    }
+
+    button {
+        border-radius: 3px;
+        width: 51px;
+        height: 17px;
+        font-size: 8.335px;
+        font-weight: 600;
+        padding: 0;
+    }
+
 }
