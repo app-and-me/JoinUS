@@ -238,4 +238,61 @@ tbody {
     margin: 0 auto;
 }
 
+@media (max-width: 1024px) {
+    #thead{
+        height: 33px;
+    }
+    th,td{
+        padding-left: 0px;
+    }
+    .userEmail, .email{
+        padding-left: 30px;
+    }
+    .selectAll, .selectBox{
+        margin-left: 15px;
+    }
+    input {
+        width: 13.233px !important;
+        height: 13.224px !important;
+         
+    }
 
+    .detail th,
+    .rosterType {
+        font-size: 12px;
+    }
+    .roster-container{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    
+    .title {
+        font-size: 13px !important;
+    }
+
+    .detail td{
+        padding-top: 15px;
+    }
+    .detail:last-child td {
+        padding-bottom: 10px;
+    }
+    .btn {
+        width: 12.324px;
+        height: 12.324px;
+    }
+
+    .edit-button {
+        width: 4.138px;
+        height: 11.756px;
+    }
+
+
+
+    #listBtn-container{
+        gap: 9.72px;
+    }
+    .button {
+        width: 20.52px;
+        height: 20.52px;
+    }
+}
