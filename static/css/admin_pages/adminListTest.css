@@ -1,0 +1,298 @@
+#main {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+#adjust-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+    max-width: 1317.007px;
+    margin-bottom: 70px;
+    flex-grow: 1;
+}
+
+/* 동아리 */
+.section-club {
+    width: 100%;
+    max-width: 1317.007px;
+    border-bottom: 2px #F1F1F1 solid;
+}
+
+#club-container {
+    display: flex;
+    column-gap: 40px;
+}
+
+#club-text {
+    margin-bottom: 30px;
+    color: var(--color5);
+    font-size: var(--font-size6);
+    font-weight: 600;
+}
+
+.club {
+    display: flex;
+    padding: 20px 10px;
+    color: #AAB2C8;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.option3 {
+    padding-bottom: 19px;
+    color: #000;
+    border-bottom: 2px solid #0047FF;
+    margin-bottom: -2px;
+}
+
+/* 검색바 */
+.clubsearch-container {
+    display: flex;
+    column-gap: 87px;
+    margin: 40px 0;
+
+}
+
+.search-container {
+    background-color: #F5F6FA;
+    padding: 13px 17px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 679px;
+    min-width: 679px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-container>img {
+    width: 16px;
+    height: 16.014px;
+}
+
+.userButton-container {
+    display: flex;
+    column-gap: 17px;
+    cursor: pointer;
+}
+
+.userbtn {
+    width: 100%;
+    max-width: 150px;
+    height: 42px;
+}
+
+.updatebtn {
+    width: 100%;
+    max-width: 220px;
+    height: 42px;
+}
+
+#search-bar {
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    flex-grow: 1;
+}
+
+
+#table {
+    width: 100%;
+
+
+    max-width: 1344px;
+    border-radius: 5px;
+    background: #F5F6FA;
+    border-collapse: collapse;
+    white-space: nowrap;
+    margin-bottom: 150px;
+}
+
+thead {
+    border-radius: 5px 5px 0px 0px;
+    background: rgba(66, 133, 244, 0.10);
+    height: 55px;
+}
+
+th,
+td {
+    padding-left: 40px;
+    text-align: left;
+    vertical-align: middle;
+    /* 수직 가운데 정렬 */
+
+}
+
+
+th:nth-child(2),
+td:nth-child(2) {
+    padding-left: 3px;
+}
+
+.roster-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rosterType {
+    margin: 0 10px;
+}
+
+input {
+    width: 22px;
+    height: 22px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.roster-container {
+    margin-top: 15px;
+}
+
+.rosterType {
+    color: #AAB2C8;
+}
+
+.tbody {
+    overflow-x: auto;
+}
+
+.detail-start td {
+    padding-top: 20px;
+}
+
+.detail td {
+    padding-top: 30px;
+}
+
+.detail:last-child td {
+    padding-bottom: 30px;
+}
+
+
+.edit-button {
+    text-align: center;
+}
+
+.detail td:nth-child(3) {
+    font-size: 22px;
+}
+
+/* tbody 기본 스타일 */
+tbody {
+    background: #F5F6FA;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.detail td:nth-child(2) {
+    color: #0047FF;
+}
+
+.detail td:nth-child(3),
+.detail td:nth-child(4) {
+    color: #8B8B8B;
+}
+
+.userClub-container {
+    display: flex;
+}
+
+.userClub {
+    margin-right: 82px;
+}
+
+.edit-button {
+    width: 6.145px;
+    height: 20px;
+    cursor: pointer;
+
+}
+
+.btn {
+    height: 19px;
+    width: 19px;
+}
+
+.button {
+    width: 38px;
+    height: 38px;
+}
+
+#listBtn-container {
+    display: flex;
+    gap: 18px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    #thead{
+        height: 33px;
+    }
+    th,td{
+        padding-left: 0px;
+    }
+    .userEmail, .email{
+        padding-left: 30px;
+    }
+    .selectAll, .selectBox{
+        margin-left: 15px;
+    }
+    input {
+        width: 13.233px !important;
+        height: 13.224px !important;
+         
+    }
+
+    .detail th,
+    .rosterType {
+        font-size: 12px;
+    }
+    .roster-container{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    
+    .title {
+        font-size: 13px !important;
+    }
+
+    .detail td{
+        padding-top: 15px;
+    }
+    .detail:last-child td {
+        padding-bottom: 10px;
+    }
+    .btn {
+        width: 12.324px;
+        height: 12.324px;
+    }
+
+    .edit-button {
+        width: 4.138px;
+        height: 11.756px;
+    }
+
+
+
+    #listBtn-container{
+        gap: 9.72px;
+    }
+    .button {
+        width: 20.52px;
+        height: 20.52px;
+    }
+}
